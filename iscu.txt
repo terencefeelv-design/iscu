@@ -1,0 +1,237 @@
+Updatecheck<|||>3<|||>1
+DoUsageStatistics<|||>3<|||>1
+UpdatecheckLastrun<|||>1<|||>2026-03-17 20:56:47
+LastUsageStatisticCall<|||>1<|||>2026-03-17 20:57:00
+LastSessions<|||>1<|||>mariadb
+LastActiveSession<|||>1<|||>mariadb
+SessionManager_WindowLeft<|||>3<|||>400
+SessionManager_WindowTop<|||>3<|||>603
+ColWidths_connform.ListSessions<|||>1<|||>122,102,50,50,50,50,138
+ColsVisible_connform.ListSessions<|||>1<|||>0,1,4,6
+ColPositions_connform.ListSessions<|||>1<|||>0,1,2,3,4,5,6
+ColSort_connform.ListSessions<|||>1<|||>0,1
+CreateDbCollation<|||>1<|||>utf8mb4_uca1400_ai_ci
+ColWidths_frmTableEditor.listColumns<|||>1<|||>56,100,168,90,60,65,50,127,130,152,100,100,50,50,50
+ColsVisible_frmTableEditor.listColumns<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14
+ColPositions_frmTableEditor.listColumns<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14
+ColSort_frmTableEditor.listColumns<|||>1<|||>0,0
+ColWidths_frmTableEditor.treeIndexes<|||>1<|||>64,100,80,120,80
+ColsVisible_frmTableEditor.treeIndexes<|||>1<|||>0,1,2,3,4
+ColPositions_frmTableEditor.treeIndexes<|||>1<|||>0,1,2,3,4
+ColSort_frmTableEditor.treeIndexes<|||>1<|||>-1,0
+ColWidths_frmTableEditor.listForeignKeys<|||>1<|||>196,80,100,80,80,10
+ColsVisible_frmTableEditor.listForeignKeys<|||>1<|||>0,1,2,3,4,5
+ColPositions_frmTableEditor.listForeignKeys<|||>1<|||>0,1,2,3,4,5
+ColSort_frmTableEditor.listForeignKeys<|||>1<|||>-1,0
+ColWidths_frmTableEditor.listCheckConstraints<|||>1<|||>200,368
+ColsVisible_frmTableEditor.listCheckConstraints<|||>1<|||>0,1
+ColPositions_frmTableEditor.listCheckConstraints<|||>1<|||>0,1
+ColSort_frmTableEditor.listCheckConstraints<|||>1<|||>-1,0
+ExportSQL_CreateDatabases<|||>3<|||>1
+ExportSQL_CreateTables<|||>3<|||>1
+ExportSQL_DataHow<|||>3<|||>2
+ExportSQL_Filenames<|||>1<|||>C:\Users\teren\OneDrive - HFTM\1ere V2\Temporair\1ère V2\14. DATABASES\Exs\carHandling\dump-carhandling.sql<{{{><}}}>C:\Users\teren\OneDrive - HFTM\1ere V2\Temporair\1ère V2\14. DATABASES\Exs\carHandling\carHandling.sql<{{{><}}}>C:\Users\teren\OneDrive - HFTM\1ere V2\Temporair\1ère V2\14. DATABASES\Exs\garage_dump.sql<{{{><}}}>C:\Users\teren\OneDrive - HFTM\1ere V2\Temporair\1ère V2\14. DATABASES\Exs\carHandling.sql<{{{><}}}>C:\Users\teren\OneDrive - HFTM\1ere V2\Temporair\1ère V2\14. DATABASES\techElecGmbh.sql<{{{><}}}>C:\Users\teren\OneDrive - HFTM\Desktop\DATAEX.sql<{{{><}}}>
+FileDialogEncoding_MainForm<|||>3<|||>0
+querymemoheight<|||>3<|||>326
+queryhelperswidth<|||>3<|||>402
+dbtreewidth<|||>3<|||>470
+DataPreviewHeight<|||>3<|||>45
+sqloutheight<|||>3<|||>677
+MainWinLeft<|||>3<|||>461
+MainWinTop<|||>3<|||>8
+MainWinWidth<|||>3<|||>1232
+MainWinHeight<|||>3<|||>998
+ColWidths_MainForm.ListDatabases<|||>1<|||>150,80,50,50,50,50,50,50,50,50,120
+ColsVisible_MainForm.ListDatabases<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10
+ColPositions_MainForm.ListDatabases<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10
+ColSort_MainForm.ListDatabases<|||>1<|||>0,0
+ColWidths_MainForm.ListVariables<|||>1<|||>160,200,316
+ColsVisible_MainForm.ListVariables<|||>1<|||>0,1,2
+ColPositions_MainForm.ListVariables<|||>1<|||>0,1,2
+ColSort_MainForm.ListVariables<|||>1<|||>0,0
+ColWidths_MainForm.ListStatus<|||>1<|||>160,316,100,100
+ColsVisible_MainForm.ListStatus<|||>1<|||>0,1,2,3
+ColPositions_MainForm.ListStatus<|||>1<|||>0,1,2,3
+ColSort_MainForm.ListStatus<|||>1<|||>0,0
+ColWidths_MainForm.ListProcesses<|||>1<|||>70,80,80,80,80,50,50,47
+ColsVisible_MainForm.ListProcesses<|||>1<|||>0,1,2,3,4,5,6,7
+ColPositions_MainForm.ListProcesses<|||>1<|||>0,1,2,3,4,5,6,7
+ColSort_MainForm.ListProcesses<|||>1<|||>0,1
+ColWidths_MainForm.ListCommandStats<|||>1<|||>120,100,100,100,256
+ColsVisible_MainForm.ListCommandStats<|||>1<|||>0,1,2,3,4
+ColPositions_MainForm.ListCommandStats<|||>1<|||>0,1,2,3,4
+ColSort_MainForm.ListCommandStats<|||>1<|||>1,1
+ColWidths_MainForm.ListTables<|||>1<|||>120,70,70,120,120,70,100,50,70,70,70,70,70,90,120,70,70,70,50
+ColsVisible_MainForm.ListTables<|||>1<|||>0,1,2,3,4,5,6,18
+ColPositions_MainForm.ListTables<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18
+ColSort_MainForm.ListTables<|||>1<|||>0,0
+MainWinOnMonitor<|||>3<|||>0
+DateTimeEditor_CursorPos_Type4<|||>3<|||>5
+MainWinMaximized<|||>3<|||>1
+ColWidths_UserManagerForm.listUsers<|||>1<|||>97,80
+ColsVisible_UserManagerForm.listUsers<|||>1<|||>0,1
+ColPositions_UserManagerForm.listUsers<|||>1<|||>0,1
+ColSort_UserManagerForm.listUsers<|||>1<|||>0,0
+FilterVTHistory<|||>1<|||>grants<{{{><}}}>
+Usermanager_WindowWidth<|||>3<|||>775
+GridExportWindowWidth<|||>3<|||>530
+SessionManager_ListWidth<|||>3<|||>415
+SessionManager_WindowWidth<|||>3<|||>1151
+TableTools_WindowWidth<|||>3<|||>815
+TableTools_WindowHeight<|||>3<|||>473
+SQLFile0<|||>1<|||>C:\Users\teren\OneDrive - HFTM\Desktop\Labo\iscu\iscu_database.sql
+SQLFile1<|||>1<|||>C:\Users\teren\OneDrive - HFTM\1ere V2\Temporair\1ère V2\14. DATABASES\Exs\carHandling\carhandling.sql
+SQLFile2<|||>1<|||>C:\Users\teren\AppData\Roaming\HeidiSQL\Backups\query-tab-2025-11-17_22-11-59-475.sql
+SQLFile3<|||>1<|||>C:\Users\teren\AppData\Roaming\HeidiSQL\Backups\query-tab-2025-11-18_14-51-45-271.sql
+Servers\mariadb\SessionCreated<|||>1<|||>2025-11-25 14:20:24
+Servers\mariadb\Host<|||>1<|||>127.0.0.1
+Servers\mariadb\WindowsAuth<|||>3<|||>0
+Servers\mariadb\CleartextPluginEnabled<|||>3<|||>0
+Servers\mariadb\User<|||>1<|||>root
+Servers\mariadb\Password<|||>1<|||>3
+Servers\mariadb\LoginPrompt<|||>3<|||>0
+Servers\mariadb\Port<|||>1<|||>3306
+Servers\mariadb\NetType<|||>3<|||>0
+Servers\mariadb\Compressed<|||>3<|||>0
+Servers\mariadb\LocalTimeZone<|||>3<|||>0
+Servers\mariadb\QueryTimeout<|||>3<|||>30
+Servers\mariadb\KeepAlive<|||>3<|||>20
+Servers\mariadb\FullTableStatus<|||>3<|||>1
+Servers\mariadb\Databases<|||>1<|||>
+Servers\mariadb\Library<|||>1<|||>libmariadb.dll
+Servers\mariadb\Comment<|||>1<|||>
+Servers\mariadb\StartupScriptFilename<|||>1<|||>
+Servers\mariadb\TreeBackground<|||>3<|||>536870911
+Servers\mariadb\SSHtunnelActive<|||>3<|||>0
+Servers\mariadb\SshExecutable<|||>1<|||>
+Servers\mariadb\SSHtunnelHost<|||>1<|||>
+Servers\mariadb\SSHtunnelHostPort<|||>3<|||>22
+Servers\mariadb\SSHtunnelUser<|||>1<|||>
+Servers\mariadb\SSHtunnelPassword<|||>1<|||>3
+Servers\mariadb\SSHtunnelTimeout<|||>3<|||>4
+Servers\mariadb\SSHtunnelPrivateKey<|||>1<|||>
+Servers\mariadb\SSHtunnelPort<|||>3<|||>3307
+Servers\mariadb\SSL_Active<|||>3<|||>0
+Servers\mariadb\SSL_Key<|||>1<|||>
+Servers\mariadb\SSL_Cert<|||>1<|||>
+Servers\mariadb\SSL_CA<|||>1<|||>
+Servers\mariadb\SSL_Cipher<|||>1<|||>
+Servers\mariadb\SSL_Verification<|||>3<|||>2
+Servers\mariadb\IgnoreDatabasePattern<|||>1<|||>
+Servers\mariadb\LogFileDdl<|||>3<|||>0
+Servers\mariadb\LogFileDml<|||>3<|||>0
+Servers\mariadb\LogFilePath<|||>1<|||>C:\Users\teren\AppData\Roaming\HeidiSQL\Logs\%session\%db\%y%m%d.sql
+Servers\mariadb\RefusedCount<|||>3<|||>8
+Servers\mariadb\ServerVersionFull<|||>1<|||>11.8.5-MariaDB - MariaDB Server
+Servers\mariadb\ConnectCount<|||>3<|||>14
+Servers\mariadb\ServerVersion<|||>3<|||>110805
+Servers\mariadb\LastConnect<|||>1<|||>2026-03-18 21:41:33
+Servers\mariadb\lastUsedDB<|||>1<|||>iscu_db
+Servers\mariadb\QueryHistory\13<|||>1<|||>2026-03-17 21:01:57|iscu_db|0|CREATE DATABASE iscu_db<{{{><}}}>CHARACTER SET utf8mb4<{{{><}}}>COLLATE utf8mb4_general_ci;<{{{><}}}><{{{><}}}>USE iscu_db;<{{{><}}}><{{{><}}}>
+Servers\mariadb\QueryHistory\1<|||>1<|||>2026-03-17 21:03:11|iscu_db|15|CREATE TABLE questionnaire_responses (<{{{><}}}>  id INT AUTO_INCREMENT PRIMARY KEY,<{{{><}}}>  role VARCHAR(100),<{{{><}}}>  goal VARCHAR(150),<{{{><}}}>  message TEXT,<{{{><}}}>  firstname VARCHAR(100),<{{{><}}}>  lastname VARCHAR(100),<{{{><}}}>  email VARCHAR(150),<{{{><}}}>  phone VARCHAR(50),<{{{><}}}>  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP<{{{><}}}>);<{{{><}}}><{{{><}}}>
+Servers\mariadb\QueryHistory\2<|||>1<|||>2026-03-17 21:05:03|iscu_db|16|CREATE TABLE questionnaire_responses (<{{{><}}}>  id INT AUTO_INCREMENT PRIMARY KEY,<{{{><}}}>  role VARCHAR(100),<{{{><}}}>  goal VARCHAR(150),<{{{><}}}>  message TEXT,<{{{><}}}>  firstname VARCHAR(100),<{{{><}}}>  lastname VARCHAR(100),<{{{><}}}>  email VARCHAR(150),<{{{><}}}>  phone VARCHAR(50),<{{{><}}}>  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP<{{{><}}}>);<{{{><}}}>
+Servers\mariadb\QueryHistory\3<|||>1<|||>2026-03-17 21:06:58|iscu_db|16|CREATE TABLE jobs (<{{{><}}}>  id INT AUTO_INCREMENT PRIMARY KEY,<{{{><}}}>  title VARCHAR(150) NOT NULL,<{{{><}}}>  location VARCHAR(100),<{{{><}}}>  job_type VARCHAR(50),<{{{><}}}>  description TEXT,<{{{><}}}>  posted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP<{{{><}}}>);<{{{><}}}><{{{><}}}>
+Servers\tx\SessionCreated<|||>1<|||>2025-10-21 09:00:13
+Servers\tx\Host<|||>1<|||>127.0.0.1
+Servers\tx\WindowsAuth<|||>3<|||>0
+Servers\tx\CleartextPluginEnabled<|||>3<|||>0
+Servers\tx\User<|||>1<|||>root
+Servers\tx\Password<|||>1<|||>3E363E373E3D6
+Servers\tx\LoginPrompt<|||>3<|||>0
+Servers\tx\Port<|||>1<|||>3306
+Servers\tx\NetType<|||>3<|||>0
+Servers\tx\Compressed<|||>3<|||>0
+Servers\tx\LocalTimeZone<|||>3<|||>0
+Servers\tx\QueryTimeout<|||>3<|||>30
+Servers\tx\KeepAlive<|||>3<|||>20
+Servers\tx\FullTableStatus<|||>3<|||>1
+Servers\tx\Databases<|||>1<|||>
+Servers\tx\Library<|||>1<|||>libmariadb.dll
+Servers\tx\Comment<|||>1<|||>
+Servers\tx\StartupScriptFilename<|||>1<|||>
+Servers\tx\TreeBackground<|||>3<|||>536870911
+Servers\tx\SSHtunnelActive<|||>3<|||>0
+Servers\tx\SshExecutable<|||>1<|||>plink.exe
+Servers\tx\SSHtunnelHost<|||>1<|||>
+Servers\tx\SSHtunnelHostPort<|||>3<|||>22
+Servers\tx\SSHtunnelUser<|||>1<|||>
+Servers\tx\SSHtunnelPassword<|||>1<|||>8
+Servers\tx\SSHtunnelTimeout<|||>3<|||>4
+Servers\tx\SSHtunnelPrivateKey<|||>1<|||>
+Servers\tx\SSHtunnelPort<|||>3<|||>3307
+Servers\tx\SSL_Active<|||>3<|||>0
+Servers\tx\SSL_Key<|||>1<|||>
+Servers\tx\SSL_Cert<|||>1<|||>
+Servers\tx\SSL_CA<|||>1<|||>
+Servers\tx\SSL_Cipher<|||>1<|||>
+Servers\tx\SSL_Verification<|||>3<|||>2
+Servers\tx\IgnoreDatabasePattern<|||>1<|||>
+Servers\tx\LogFileDdl<|||>3<|||>0
+Servers\tx\LogFileDml<|||>3<|||>0
+Servers\tx\LogFilePath<|||>1<|||>C:\Users\teren\AppData\Roaming\HeidiSQL\Logs\%session\%db\%y%m%d.sql
+Servers\tx\RefusedCount<|||>3<|||>19
+Servers\tx\ServerVersionFull<|||>1<|||>11.8.5-MariaDB - MariaDB Server
+Servers\tx\ConnectCount<|||>3<|||>37
+Servers\tx\ServerVersion<|||>3<|||>110805
+Servers\tx\LastConnect<|||>1<|||>2025-11-25 14:14:47
+Servers\tx\lastUsedDB<|||>1<|||>
+Servers\tx\centre médical|historiquemedical\MemoEditorHighlighter_confidentiel<|||>1<|||>
+Servers\tx\centre médical|suivi\MemoEditorHighlighter_PRIMARY KEY<|||>1<|||>
+Servers\tx\medicenter|medemploye\Sort<|||>1<|||>1_id_employé|
+Servers\tx\QueryHistory\1<|||>1<|||>2025-10-26 18:30:58|centre médical|15|INSERT INTO historiquemedical (id_historique, id_dossier, date_creation, id_auteur, contenu, confidentiel) VALUES<{{{><}}}>(3 , 2, '2025-10-26 11:05:00', 'E003', 'TA 138/86 mmHg. Conseils hygiéno-diététiques.',                 x'00'),<{{{><}}}>(4 , 2, '2025-10-26 11:20:00', 'E001', 'Lombalgie aiguë. Paracétamol 1g x3j. Étirements prescrits.',     x'00'),<{{{><}}}>(5 , 3, '2025-10-26 14:10:00', 'E004', 'ECG repos: rythme sinusal, pas d’anomalies significatives.',     x'00'),<{{{><}}}>(6 , 3, '2025-10-26 14:25:00', 'E002', 'Gastralgies: oméprazole 20 mg le matin (7 jours).',              x'00'),<{{{><}}}>(7 , 4, '2025-10-26 15:00:00', 'E003', 'Plaie superficielle: nettoyage + pansement stérile.',            x'00'),<{{{><}}}>(8 , 4, '2025-10-26 15:30:00', 'E005', 'Note sociale sensible (accès restreint).',                       x'01'),<{{{><}}}>(9 , 5, '2025-10-26 16:05:00', 'E001', 'Diabète: HbA1c ant. 7.4%. Objectif <7%. Éducation thérapeutique.', x'00'),<{{{><}}}>(10, 5, '2025-10-26 16:20:00', 'E002', 'Renouvellement: metformine 500 mg 1-0-1. Bilan dans 3 mois.',    x'00'),<{{{><}}}>(11, 6, '2025-10-26 17:00:00', 'E003', 'Vaccin grippe administré. Aucune réaction immédiate.',           x'00'),<{{{><}}}>(12, 7, '2025-10-26 17:20:00', 'E001', 'Rhino-pharyngite virale probable. Repos + hydratation.',         x'00');
+Servers\tx\QueryHistory\2<|||>1<|||>2025-10-26 18:31:52|centre médical|16|INSERT INTO historiquemedical (id_historique, id_dossier, date_creation, id_auteur, contenu, confidentiel) VALUES<{{{><}}}>(3 , 2, '2025-10-26 11:05:00', 'E003', 'TA 138/86 mmHg. Conseils hygiéno-diététiques.',                 x'00'),<{{{><}}}>(4 , 2, '2025-10-26 11:20:00', 'E001', 'Lombalgie aiguë. Paracétamol 1g x3j. Étirements prescrits.',     x'00'),<{{{><}}}>(5 , 3, '2025-10-26 14:10:00', 'E004', 'ECG repos: rythme sinusal, pas d’anomalies significatives.',     x'00'),<{{{><}}}>(6 , 3, '2025-10-26 14:25:00', 'E002', 'Gastralgies: oméprazole 20 mg le matin (7 jours).',              x'00'),<{{{><}}}>(7 , 4, '2025-10-26 15:00:00', 'E003', 'Plaie superficielle: nettoyage + pansement stérile.',            x'00'),<{{{><}}}>(8 , 4, '2025-10-26 15:30:00', 'E005', 'Note sociale sensible (accès restreint).',                       x'01'),<{{{><}}}>(9 , 5, '2025-10-26 16:05:00', 'E001', 'Diabète: HbA1c ant. 7.4%. Objectif <7%. Éducation thérapeutique.', x'00'),<{{{><}}}>(10, 5, '2025-10-26 16:20:00', 'E002', 'Renouvellement: metformine 500 mg 1-0-1. Bilan dans 3 mois.',    x'00'),<{{{><}}}>(11, 6, '2025-10-26 17:00:00', 'E003', 'Vaccin grippe administré. Aucune réaction immédiate.',           x'00'),<{{{><}}}>(12, 7, '2025-10-26 17:20:00', 'E001', 'Rhino-pharyngite virale probable. Repos + hydratation.',         x'00')
+Servers\tx\QueryHistory\3<|||>1<|||>2025-10-26 18:34:31|centre médical|0|INSERT INTO historiquemedical (id_historique, id_dossier, date_creation, id_auteur, contenu, confidentiel) VALUES<{{{><}}}>(3 , 2, '2025-10-26 11:05:00', 'E003', 'TA 138/86 mmHg. Conseils hygiéno-diététiques.', x'00'),<{{{><}}}>(4 , 2, '2025-10-26 11:20:00', 'E001', 'Lombalgie aiguë. Paracétamol 1g x3j. Étirements prescrits.', x'00'),<{{{><}}}>(5 , 3, '2025-10-26 14:10:00', 'E004', 'ECG repos: rythme sinusal, pas d’anomalies significatives.', x'00'),<{{{><}}}>(6 , 3, '2025-10-26 14:25:00', 'E002', 'Gastralgies: oméprazole 20 mg le matin (7 jours).', x'00'),<{{{><}}}>(7 , 4, '2025-10-26 15:00:00', 'E003', 'Plaie superficielle: nettoyage + pansement stérile.', x'00'),<{{{><}}}>(8 , 4, '2025-10-26 15:30:00', 'E005', 'Note sociale sensible (accès restreint).', x'01'),<{{{><}}}>(9 , 5, '2025-10-26 16:05:00', 'E001', 'Diabète: HbA1c ant. 7.4%. Objectif <7%. Éducation thérapeutique.', x'00'),<{{{><}}}>(10, 5, '2025-10-26 16:20:00', 'E002', 'Renouvellement: metformine 500 mg 1-0-1. Bilan dans 3 mois.', x'00'),<{{{><}}}>(11, 6, '2025-10-26 17:00:00', 'E003', 'Vaccin grippe administré. Aucune réaction immédiate.', x'00'),<{{{><}}}>(12, 7, '2025-10-26 17:20:00', 'E001', 'Rhino-pharyngite virale probable. Repos + hydratation.', x'00')
+Servers\tx\QueryHistory\4<|||>1<|||>2025-10-26 18:36:38|centre médical|0|INSERT INTO historiquemedical (id_historique, id_dossier, date_creation, id_auteur, contenu, confidentiel) VALUES<{{{><}}}>(3 , 2, '2025-10-26 11:05:00', 'E003', 'TA 138/86 mmHg. Conseils hygiéno-diététiques.', x'00'),<{{{><}}}>(4 , 2, '2025-10-26 11:20:00', 'E001', 'Lombalgie aiguë. Paracétamol 1g x3j. Étirements prescrits.', x'00'),<{{{><}}}>(5 , 3, '2025-10-26 14:10:00', 'E004', 'ECG repos: rythme sinusal, pas d’anomalies significatives.', x'00'),<{{{><}}}>(6 , 3, '2025-10-26 14:25:00', 'E002', 'Gastralgies: oméprazole 20 mg le matin (7 jours).', x'00'),<{{{><}}}>(7 , 4, '2025-10-26 15:00:00', 'E003', 'Plaie superficielle: nettoyage + pansement stérile.', x'00'),<{{{><}}}>(8 , 4, '2025-10-26 15:30:00', 'E005', 'Note sociale sensible (accès restreint).', x'01'),<{{{><}}}>(9 , 5, '2025-10-26 16:05:00', 'E001', 'Diabète: HbA1c ant. 7.4%. Objectif <7%. Éducation thérapeutique.', x'00'),<{{{><}}}>(10, 5, '2025-10-26 16:20:00', 'E002', 'Renouvellement: metformine 500 mg 1-0-1. Bilan dans 3 mois.', x'00'),<{{{><}}}>(11, 6, '2025-10-26 17:00:00', 'E003', 'Vaccin grippe administré. Aucune réaction immédiate.', x'00'),<{{{><}}}>(12, 7, '2025-10-26 17:20:00', 'E001', 'Rhino-pharyngite virale probable. Repos + hydratation.', x'00');<{{{><}}}>
+Servers\tx\QueryHistory\5<|||>1<|||>2025-10-26 18:38:07|centre médical|15|USE `centre médical`;<{{{><}}}>SELECT DATABASE();<{{{><}}}>INSERT INTO historiquemedical (id_historique, id_dossier, date_creation, id_auteur, contenu, confidentiel) VALUES<{{{><}}}>(3 , 2, '2025-10-26 11:05:00', 'E003', 'TA 138/86 mmHg. Conseils hygiéno-diététiques.', x'00'),<{{{><}}}>(4 , 2, '2025-10-26 11:20:00', 'E001', 'Lombalgie aiguë. Paracétamol 1g x3j. Étirements prescrits.', x'00'),<{{{><}}}>(5 , 3, '2025-10-26 14:10:00', 'E004', 'ECG repos: rythme sinusal, pas d’anomalies significatives.', x'00'),<{{{><}}}>(6 , 3, '2025-10-26 14:25:00', 'E002', 'Gastralgies: oméprazole 20 mg le matin (7 jours).', x'00'),<{{{><}}}>(7 , 4, '2025-10-26 15:00:00', 'E003', 'Plaie superficielle: nettoyage + pansement stérile.', x'00'),<{{{><}}}>(8 , 4, '2025-10-26 15:30:00', 'E005', 'Note sociale sensible (accès restreint).', x'01'),<{{{><}}}>(9 , 5, '2025-10-26 16:05:00', 'E001', 'Diabète: HbA1c ant. 7.4%. Objectif <7%. Éducation thérapeutique.', x'00'),<{{{><}}}>(10, 5, '2025-10-26 16:20:00', 'E002', 'Renouvellement: metformine 500 mg 1-0-1. Bilan dans 3 mois.', x'00'),<{{{><}}}>(11, 6, '2025-10-26 17:00:00', 'E003', 'Vaccin grippe administré. Aucune réaction immédiate.', x'00'),<{{{><}}}>(12, 7, '2025-10-26 17:20:00', 'E001', 'Rhino-pharyngite virale probable. Repos + hydratation.', x'00');<{{{><}}}>
+Servers\tx\QueryHistory\7<|||>1<|||>2025-10-26 18:42:44|centre médical|15|DELETE FROM historiquemedical;<{{{><}}}><{{{><}}}><{{{><}}}>
+Servers\tx\QueryHistory\8<|||>1<|||>2025-10-26 18:42:52|centre médical|0|SELECT COUNT(*) FROM historiquemedical;<{{{><}}}><{{{><}}}>
+Servers\tx\QueryHistory\6<|||>1<|||>2025-10-26 18:43:09|centre médical|0|INSERT INTO `centre médical`.historiquemedical<{{{><}}}>(id_historique, id_dossier, date_creation, id_auteur, contenu, confidentiel) VALUES<{{{><}}}>(3 , 2, '2025-10-26 11:05:00', 'E003', 'TA 138/86 mmHg. Conseils hygiéno-diététiques.', x'00'),<{{{><}}}>(4 , 2, '2025-10-26 11:20:00', 'E001', 'Lombalgie aiguë. Paracétamol 1g x3j. Étirements prescrits.', x'00'),<{{{><}}}>(5 , 3, '2025-10-26 14:10:00', 'E004', 'ECG repos: rythme sinusal, pas d’anomalies significatives.', x'00'),<{{{><}}}>(6 , 3, '2025-10-26 14:25:00', 'E002', 'Gastralgies: oméprazole 20 mg le matin (7 jours).', x'00'),<{{{><}}}>(7 , 4, '2025-10-26 15:00:00', 'E003', 'Plaie superficielle: nettoyage + pansement stérile.', x'00'),<{{{><}}}>(8 , 4, '2025-10-26 15:30:00', 'E005', 'Note sociale sensible (accès restreint).', x'01'),<{{{><}}}>(9 , 5, '2025-10-26 16:05:00', 'E001', 'Diabète: HbA1c ant. 7.4%. Objectif <7%. Éducation thérapeutique.', x'00'),<{{{><}}}>(10, 5, '2025-10-26 16:20:00', 'E002', 'Renouvellement: metformine 500 mg 1-0-1. Bilan dans 3 mois.', x'00'),<{{{><}}}>(11, 6, '2025-10-26 17:00:00', 'E003', 'Vaccin grippe administré. Aucune réaction immédiate.', x'00'),<{{{><}}}>(12, 7, '2025-10-26 17:20:00', 'E001', 'Rhino-pharyngite virale probable. Repos + hydratation.', x'00');<{{{><}}}>
+Servers\tx\QueryHistory\9<|||>1<|||>2025-10-26 18:43:28|centre médical|0|SELECT COUNT(*) FROM historiquemedical;<{{{><}}}>
+Servers\tx\QueryHistory\10<|||>1<|||>2025-10-26 18:48:28|centre médical|16|INSERT INTO historiquemedical (id_historique, id_dossier, date_creation, id_auteur, contenu, confidentiel) VALUES<{{{><}}}>(13, 8, '2025-10-26 17:30:00', 'E003', 'Suivi de contrôle général. Pas de changement.', x'00'),<{{{><}}}>(14, 9, '2025-10-26 17:45:00', 'E001', 'Analyse sanguine en attente.', x'00'),<{{{><}}}>(15, 10, '2025-10-26 18:00:00', 'E002', 'Contrôle poids et tension. RAS.', x'00');<{{{><}}}>
+Servers\tx\QueryHistory\11<|||>1<|||>2025-10-26 18:49:40|centre médical|0|SELECT COUNT(*) FROM historiquemedical;
+Servers\tx\QueryHistory\12<|||>1<|||>2025-10-26 19:01:50|centre médical|15|INSERT INTO journalisation <{{{><}}}>(id_action, table_cible, id_enregistrement, cree_par, date_creation, modifie_par, date_modification) VALUES<{{{><}}}>(1, 'dossiermedical', 1, 'E001', '2025-10-26 10:00:00', NULL, NULL),<{{{><}}}>(2, 'historiquemedical', 1, 'E001', '2025-10-26 10:15:00', 'E002', '2025-10-26 10:45:00'),<{{{><}}}>(3, 'dossiermedical', 2, 'E003', '2025-10-26 11:00:00', NULL, NULL),<{{{><}}}>(4, 'historiquemedical', 3, 'E003', '2025-10-26 11:05:00', NULL, NULL),<{{{><}}}>(5, 'prescription', 1, 'E002', '2025-10-26 14:00:00', 'E002', '2025-10-26 14:25:00'),<{{{><}}}>(6, 'patient', 5, 'E004', '2025-10-26 15:00:00', NULL, NULL),<{{{><}}}>(7, 'historiquemedical', 7, 'E005', '2025-10-26 15:30:00', NULL, NULL),<{{{><}}}>(8, 'dossiermedical', 8, 'E001', '2025-10-26 16:00:00', 'E003', '2025-10-26 17:00:00');<{{{><}}}>
+Servers\tx\QueryHistory\13<|||>1<|||>2025-10-26 19:02:33|centre médical|0|SELECT COUNT(*) FROM journalisation;
+Servers\tx\QueryHistory\14<|||>1<|||>2025-10-26 19:06:01|centre médical|0|INSERT INTO patient <{{{><}}}>(`ID_Patient`, `Nom`, `Prénom`, `Adresse, Rue`, `Adresse, NPA`, `Num Sécu`, `Num Tel`, `E-mail`) VALUES<{{{><}}}>('P001', 'Durand', 'Alice', 'Rue du Parc 5', '2000', 7561234567890, '0791234567', 'alice.durand@mail.ch'),<{{{><}}}>('P002', 'Müller', 'Tom', 'Bahnhofstrasse 8', '2502', 7569876543210, '0786543210', 'tom.mueller@mail.ch'),<{{{><}}}>('P003', 'Dupont', 'Léa', 'Rue Centrale 2', '2300', 7563456789012, '0798765432', 'lea.dupont@mail.ch'),<{{{><}}}>('P004', 'Weber', 'Marc', 'Place du Marché 10', '2800', 7561112233445, '0762233445', 'marc.weber@mail.ch'),<{{{><}}}>('P005', 'Favre', 'Sophie', 'Chemin Vert 12', '2400', 7569988776655, '0796655443', 'sophie.favre@mail.ch'),<{{{><}}}>('P006', 'Rossi', 'Luca', 'Via Roma 14', '6600', 7562223334445, '0783344556', 'luca.rossi@mail.ch'),<{{{><}}}>('P007', 'Schmid', 'Anna', 'Waldstrasse 9', '3000', 7565556667778, '0775566778', 'anna.schmid@mail.ch'),<{{{><}}}>('P008', 'Nguyen', 'Thierry', 'Rue des Prés 18', '1700', 7564445556669, '0767788990', 'thierry.nguyen@mail.ch'),<{{{><}}}>('P009', 'Morel', 'Clara', 'Avenue du Lac 21', '1005', 7561122334455, '0791122334', 'clara.morel@mail.ch'),<{{{><}}}>('P010', 'Keller', 'Paul', 'Zentralweg 3', '3012', 7566677889900, '0789900112', 'paul.keller@mail.ch');<{{{><}}}>
+Servers\tx\QueryHistory\15<|||>1<|||>2025-10-26 19:06:20|centre médical|0|SELECT COUNT(*) FROM patient;
+Servers\tx\QueryHistory\16<|||>1<|||>2025-10-26 19:12:12|centre médical|15|INSERT INTO prescription <{{{><}}}>(id_prescription, id_patient, id_medicament, id_medecin, date, quantite) VALUES<{{{><}}}>('X001', 'P001', 'M001', 'E001', '2025-10-26 10:30:00', 20),<{{{><}}}>('X002', 'P002', 'M002', 'E002', '2025-10-26 11:10:00', 15),<{{{><}}}>('X003', 'P003', 'M003', 'E003', '2025-10-26 14:20:00', 30),<{{{><}}}>('X004', 'P004', 'M004', 'E001', '2025-10-26 14:35:00', 10),<{{{><}}}>('X005', 'P005', 'M005', 'E002', '2025-10-26 15:05:00', 40),<{{{><}}}>('X006', 'P006', 'M006', 'E003', '2025-10-26 15:30:00', 25),<{{{><}}}>('X007', 'P007', 'M007', 'E004', '2025-10-26 16:00:00', 60),<{{{><}}}>('X008', 'P008', 'M008', 'E001', '2025-10-26 16:15:00', 50),<{{{><}}}>('X009', 'P009', 'M009', 'E005', '2025-10-26 17:00:00', 35),<{{{><}}}>('X010', 'P010', 'M010', 'E002', '2025-10-26 17:30:00', 20);<{{{><}}}>
+Servers\tx\QueryHistory\17<|||>1<|||>2025-10-26 19:15:01|centre médical|16|CREATE TABLE medicament (<{{{><}}}>  id_medicament VARCHAR(10) PRIMARY KEY,<{{{><}}}>  nom VARCHAR(100),<{{{><}}}>  dosage VARCHAR(30),<{{{><}}}>  forme VARCHAR(30)<{{{><}}}>);<{{{><}}}><{{{><}}}>INSERT INTO medicament VALUES<{{{><}}}>('M001', 'Ibuprofène', '400 mg', 'Comprimé'),<{{{><}}}>('M002', 'Paracétamol', '1 g', 'Comprimé'),<{{{><}}}>('M003', 'Oméprazole', '20 mg', 'Gélule'),<{{{><}}}>('M004', 'Amoxicilline', '500 mg', 'Capsule'),<{{{><}}}>('M005', 'Metformine', '500 mg', 'Comprimé'),<{{{><}}}>('M006', 'Vitamine D3', '1000 UI', 'Goutte'),<{{{><}}}>('M007', 'Atorvastatine', '20 mg', 'Comprimé'),<{{{><}}}>('M008', 'Salbutamol', '100 µg', 'Inhalateur'),<{{{><}}}>('M009', 'Candesartan', '8 mg', 'Comprimé'),<{{{><}}}>('M010', 'Prednisolone', '10 mg', 'Comprimé');<{{{><}}}>
+Servers\tx\QueryHistory\18<|||>1<|||>2025-10-26 19:15:25|centre médical|0|SELECT COUNT(*) FROM medicament
+Servers\tx\QueryHistory\19<|||>1<|||>2025-10-26 19:18:49|centre médical|0|INSERT INTO prestation <{{{><}}}>(id_prestation, id_patient, type, date, facture_a, soumise_assurance_obligatoire) VALUES<{{{><}}}>('S001', 'P001', 'Consultation générale', '2025-10-26 10:00:00', 'Y', x'01'),<{{{><}}}>('S002', 'P002', 'Analyse sanguine complète', '2025-10-26 11:30:00', 'Y', x'01'),<{{{><}}}>('S003', 'P003', 'ECG de contrôle', '2025-10-26 14:15:00', 'Y', x'01'),<{{{><}}}>('S004', 'P004', 'Soin de plaie superficielle', '2025-10-26 14:40:00', 'N', x'00'),<{{{><}}}>('S005', 'P005', 'Consultation diabétologique', '2025-10-26 15:00:00', 'Y', x'01'),<{{{><}}}>('S006', 'P006', 'Vaccination grippe', '2025-10-26 15:25:00', 'N', x'00'),<{{{><}}}>('S007', 'P007', 'Contrôle tension artérielle', '2025-10-26 16:00:00', 'Y', x'01'),<{{{><}}}>('S008', 'P008', 'Consultation ORL', '2025-10-26 16:20:00', 'Y', x'01'),<{{{><}}}>('S009', 'P009', 'Bilan nutritionnel', '2025-10-26 17:00:00', 'N', x'00'),<{{{><}}}>('S010', 'P010', 'Renouvellement ordonnance', '2025-10-26 17:25:00', 'Y', x'01');<{{{><}}}>
+Servers\tx\QueryHistory\20<|||>1<|||>2025-10-26 19:19:12|centre médical|0|SELECT COUNT(*) from prestation;
+Servers\tx\QueryHistory\21<|||>1<|||>2025-10-26 19:21:01|centre médical|15|ALTER TABLE prestation ADD COLUMN cout DECIMAL(8,2) AFTER date;<{{{><}}}>
+Servers\tx\QueryHistory\22<|||>1<|||>2025-10-26 19:30:22|centre médical|16|DELETE FROM employé;<{{{><}}}>
+Servers\tx\QueryHistory\23<|||>1<|||>2025-10-26 19:30:38|centre médical|0|SELECT COUNT(*) FROM employé
+Servers\tx\QueryHistory\24<|||>1<|||>2025-10-26 19:32:32|centre médical|0|INSERT INTO employé (id_employé, nom, role) VALUES<{{{><}}}>-- Médecins<{{{><}}}>('DR01', 'Dr. André E.', 'Médecin généraliste'),<{{{><}}}>('DR02', 'Dr. James A.', 'Médecin interniste'),<{{{><}}}>('DR03', 'Dr. Loney F.', 'Cardiologue'),<{{{><}}}>('DR04', 'Dr. Felipe S.', 'Anesthésiste'),<{{{><}}}>('DR05', 'Dr. Marci X.', 'Radiologue'),<{{{><}}}><{{{><}}}>-- Infirmiers / Soignants (N3)<{{{><}}}>('N301', 'Berset M.', 'Infirmier chef'),<{{{><}}}>('N302', 'Dubois C.', 'Infirmière polyvalente'),<{{{><}}}>('N303', 'Ngoma T.', 'Infirmier bloc opératoire'),<{{{><}}}>('N304', 'Grob A.', 'Aide-soignante'),<{{{><}}}>('N305', 'Ivanova N.', 'Infirmière pédiatrique'),<{{{><}}}><{{{><}}}>-- Personnel technique et administratif (N2)<{{{><}}}>('N201', 'Perrenoud J.', 'Secrétaire médicale'),<{{{><}}}>('N202', 'Schmidt H.', 'Technicien de laboratoire'),<{{{><}}}>('N203', 'Bernasconi L.', 'Assistant radiologie'),<{{{><}}}>('N204', 'Weiss P.', 'Technicien en maintenance biomédicale'),<{{{><}}}>('N205', 'Bader E.', 'Agent administratif');<{{{><}}}>
+Servers\tx\QueryHistory\25<|||>1<|||>2025-10-26 19:34:02|centre médical|0|INSERT INTO suivi (id_patient, id_medecin) VALUES<{{{><}}}>('P001', 'DR01'),<{{{><}}}>('P002', 'DR02'),<{{{><}}}>('P003', 'DR03'),<{{{><}}}>('P004', 'DR01'),<{{{><}}}>('P005', 'DR02'),<{{{><}}}>('P006', 'DR03'),<{{{><}}}>('P007', 'DR04'),<{{{><}}}>('P008', 'DR05'),<{{{><}}}>('P009', 'DR01'),<{{{><}}}>('P010', 'DR02');<{{{><}}}>
+Servers\tx\QueryHistory\26<|||>1<|||>2025-10-26 19:38:31|centre médical|0|CREATE OR REPLACE VIEW v_audit_detail AS<{{{><}}}>SELECT <{{{><}}}>  j.id_action,<{{{><}}}>  j.table_cible,<{{{><}}}>  j.id_enregistrement,<{{{><}}}>  j.date_creation,<{{{><}}}>  j.date_modification,<{{{><}}}>  j.cree_par,<{{{><}}}>  e1.nom  AS cree_par_nom,<{{{><}}}>  j.modifie_par,<{{{><}}}>  e2.nom  AS modifie_par_nom<{{{><}}}>FROM journalisation j<{{{><}}}>LEFT JOIN `employé` e1 ON e1.id_employé = j.cree_par<{{{><}}}>LEFT JOIN `employé` e2 ON e2.id_employé = j.modifie_par;<{{{><}}}>
+Servers\tx\QueryHistory\27<|||>1<|||>2025-10-26 19:38:45|centre médical|15|SELECT * FROM v_audit_detail ORDER BY id_action DESC LIMIT 20;<{{{><}}}>
+Servers\tx\QueryHistory\28<|||>1<|||>2025-10-26 19:39:15|centre médical|16|SELECT * FROM journalisation ORDER BY id_action DESC LIMIT 10;<{{{><}}}>
+Servers\tx\QueryHistory\29<|||>1<|||>2025-11-03 12:51:05||16|CREATE USER 'foreignUser'@'localhost' IDENTIFIED BY 'motdepasse';<{{{><}}}><{{{><}}}>
+Servers\tx\QueryHistory\30<|||>1<|||>2025-11-03 12:52:42||16|GRANT ALL PRIVILEGES ON centre_medical.* TO 'foreignUser'@'localhost'; FLUSH PRIVILEGES;<{{{><}}}>
+Servers\tx\QueryHistory\31<|||>1<|||>2025-11-03 13:17:03||0|CREATE DATABASE `medicenter`
+Servers\tx\QueryHistory\32<|||>1<|||>2025-11-03 15:48:41|centre médical|15|CREATE TABLE medicenter.medfolder  SELECT * FROM `centre médical`.dossiermedical
+Servers\tx\QueryHistory\34<|||>1<|||>2025-11-03 15:53:26|centre médical|0|CREATE TABLE medicenter.medemploye SELECT * FROM `centre médical`.employé;
+Servers\tx\QueryHistory\35<|||>1<|||>2025-11-03 15:55:38|centre médical|16|CREATE TABLE medicenter.medhistorical SELECT * FROM `centre médical`.historiquemedical;
+Servers\tx\QueryHistory\36<|||>1<|||>2025-11-03 15:57:15|centre médical|16|CREATE TABLE medicenter.medjournalisation SELECT * FROM `centre médical`.journalisation;<{{{><}}}>
+Servers\tx\QueryHistory\37<|||>1<|||>2025-11-03 15:58:24|centre médical|16|CREATE TABLE medicenter.medication SELECT * FROM `centre médical`.medicament;
+Servers\tx\QueryHistory\38<|||>1<|||>2025-11-03 15:59:15|centre médical|15|CREATE TABLE medicenter.medpatient SELECT * FROM `centre médical`.patient;<{{{><}}}>
+Servers\tx\QueryHistory\39<|||>1<|||>2025-11-03 16:00:17|centre médical|0|CREATE TABLE medicenter.medprestation SELECT * FROM `centre médical`.prestation;<{{{><}}}>CREATE TABLE medicenter.medFollowing SELECT * FROM `centre médical`.suivi;<{{{><}}}>
+Servers\tx\QueryHistory\40<|||>1<|||>2025-11-03 16:06:46|medicenter|0|GRANT ALL PRIVILEGES ON medicenter.* TO 'foreignUser'@'localhost'; FLUSH PRIVILEGES;
+Servers\tx\QueryHistory\33<|||>1<|||>2025-11-03 16:29:52|medicenter|16|SELECT * FROM mysql.user;
+Servers\tx\QueryHistory\41<|||>1<|||>2025-11-03 16:30:54|medicenter|0|SHOW GRANTS FOR 'foreignUser'@'localhost';
+Servers\tx\QueryHistory\42<|||>1<|||>2025-11-04 15:32:55|centre médical|0|CREATE DATABASE TechElec_Gmbh;
+Servers\tx\QueryHistory\43<|||>1<|||>2025-11-09 19:50:13|techelec_gmbh|16|CREATE TABLE `techelec_gmbh`. `qualifications` (<{{{><}}}>    id_qualification INT PRIMARY KEY AUTO_INCREMENT,<{{{><}}}>    nom VARCHAR(100) NOT NULL,<{{{><}}}>    numero_certif VARCHAR(50) NOT NULL,<{{{><}}}>    date_expiration DATE NOT NULL<{{{><}}}>);<{{{><}}}>
+Servers\tx\QueryHistory\44<|||>1<|||>2025-11-11 14:03:04|chinook_autoincrement|16|SELECT invoiceid, invoicedate, total, firstname, lastname, company, invoice.customerId <{{{><}}}>FROM invoice<{{{><}}}>	JOIN customer ON invoice.customerId=customer.CustomerId
+Servers\tx\QueryHistory\45<|||>1<|||>2025-11-15 21:12:37|carhandling|16|CREATE TABLE Proprietaire (<{{{><}}}>  proprietaire_id INT,<{{{><}}}>  nom VARCHAR(100),<{{{><}}}>  adresse VARCHAR(200),<{{{><}}}>  telephone VARCHAR(20)<{{{><}}}>);<{{{><}}}>
+Servers\tx\QueryHistory\46<|||>1<|||>2025-11-15 21:12:47|carhandling|16|CREATE TABLE Vehicule (<{{{><}}}>  vehicule_id INT,<{{{><}}}>  immatriculation VARCHAR(20),<{{{><}}}>  marque VARCHAR(50),<{{{><}}}>  modele VARCHAR(50),<{{{><}}}>  annee INT,<{{{><}}}>  proprietaire_id INT<{{{><}}}>);<{{{><}}}>
+Servers\tx\QueryHistory\47<|||>1<|||>2025-11-15 21:12:56|carhandling|32|CREATE TABLE Service (<{{{><}}}>  service_id INT,<{{{><}}}>  vehicule_id INT,<{{{><}}}>  type_service VARCHAR(100),<{{{><}}}>  date_service DATE,<{{{><}}}>  cout DECIMAL(10,2)<{{{><}}}>);<{{{><}}}>
+Servers\tx\QueryHistory\48<|||>1<|||>2025-11-15 21:13:05|carhandling|16|CREATE TABLE Garage (<{{{><}}}>  garage_id INT,<{{{><}}}>  nom VARCHAR(100),<{{{><}}}>  adresse VARCHAR(200)<{{{><}}}>);<{{{><}}}>
+Servers\tx\QueryHistory\49<|||>1<|||>2025-11-15 21:13:17|carhandling|16|CREATE TABLE Reparation (<{{{><}}}>  reparation_id INT,<{{{><}}}>  vehicule_id INT,<{{{><}}}>  garage_id INT,<{{{><}}}>  description TEXT,<{{{><}}}>  date_reparation DATE,<{{{><}}}>  cout DECIMAL(10,2)<{{{><}}}>);<{{{><}}}>
+Servers\tx\QueryHistory\50<|||>1<|||>2025-11-15 21:45:59|carhandling|0|ALTER TABLE Vehicule MODIFY proprietaire_id INT NULL;<{{{><}}}>
+Servers\tx\QueryHistory\51<|||>1<|||>2025-11-15 21:48:00|carhandling|0|SHOW CREATE TABLE Vehicule;<{{{><}}}>
+Servers\tx\QueryHistory\52<|||>1<|||>2025-11-15 21:49:42|carhandling|32|ALTER TABLE vehicule MODIFY vehicule_id INT(11) NOT NULL AUTO_INCREMENT;<{{{><}}}>
+Servers\tx\QueryHistory\53<|||>1<|||>2025-11-15 21:52:39|carhandling|31|ALTER TABLE Proprietaire MODIFY proprietaire_id INT(11) NOT NULL AUTO_INCREMENT;<{{{><}}}>
+Servers\tx\QueryHistory\54<|||>1<|||>2025-11-15 21:52:48|carhandling|0|INSERT INTO Proprietaire (nom, adresse, telephone) VALUES<{{{><}}}>('Alice Dupont', 'Rue des Prés 12, Lausanne', '0791234567'),<{{{><}}}>('Marc Steiner', 'Avenue du Jura 45, Bienne', '0789876543'),<{{{><}}}>('Nora Keller', 'Chemin du Lac 8, Genève', '0776543210');<{{{><}}}>
+Servers\tx\QueryHistory\55<|||>1<|||>2025-11-15 21:54:34|carhandling|110|-- Activer AUTO_INCREMENT sur toutes les clés primaires<{{{><}}}><{{{><}}}>ALTER TABLE Proprietaire MODIFY proprietaire_id INT(11) NOT NULL AUTO_INCREMENT;<{{{><}}}>ALTER TABLE Vehicule MODIFY vehicule_id INT(11) NOT NULL AUTO_INCREMENT;<{{{><}}}>ALTER TABLE Garage MODIFY garage_id INT(11) NOT NULL AUTO_INCREMENT;<{{{><}}}>ALTER TABLE Service MODIFY service_id INT(11) NOT NULL AUTO_INCREMENT;<{{{><}}}>ALTER TABLE Reparation MODIFY reparation_id INT(11) NOT NULL AUTO_INCREMENT;<{{{><}}}>
+Servers\tx\QueryHistory\56<|||>1<|||>2025-11-15 22:00:31|carhandling|15|<{{{><}}}>INSERT INTO vehicule (immatriculation, marque, modele, annee, proprietaire_id) VALUES<{{{><}}}>('VS112244', 'Ford', 'Focus', 2017, 7),<{{{><}}}>('NE556677', 'Hyundai', 'i30', 2019, 8),<{{{><}}}>('JU889900', 'Audi', 'A3', 2020, 9);<{{{><}}}><{{{><}}}>-- 🧰 SERVICE (minimum 5, liés aux véhicules 1 à 7)<{{{><}}}>INSERT INTO service (vehicule_id, type_service, date_service, cout) VALUES<{{{><}}}>(1, 'Vidange moteur', '2023-03-15', 120.00),<{{{><}}}>(2, 'Contrôle technique', '2023-06-10', 150.00),<{{{><}}}>(3, 'Changement de pneus', '2023-09-05', 400.00),<{{{><}}}>(4, 'Révision annuelle', '2024-01-20', 250.00),<{{{><}}}>(5, 'Diagnostic électronique', '2023-11-12', 180.00),<{{{><}}}>(6, 'Remplacement filtre à air', '2024-02-08', 90.00),<{{{><}}}>(7, 'Recharge climatisation', '2024-03-01', 95.00);<{{{><}}}><{{{><}}}>-- 🔧 REPARATION (minimum 5, garages 1 à 5, véhicules 1 à 7)<{{{><}}}>INSERT INTO reparation (vehicule_id, garage_id, description, date_reparation, cout) VALUES<{{{><}}}>(1, 1, 'Remplacement des freins avant', '2023-04-12', 320.00),<{{{><}}}>(2, 2, 'Réparation du pare-chocs arrière', '2023-07-18', 600.00),<{{{><}}}>(3, 3, 'Remplacement batterie', '2023-10-03', 180.00),<{{{><}}}>(4, 4, 'Réparation capteur de recul', '2024-02-05', 220.00),<{{{><}}}>(5, 5, 'Réparation climatisation', '2023-08-22', 350.00),<{{{><}}}>(6, 1, 'Remplacement courroie de distribution', '2023-12-01', 700.00),<{{{><}}}>(7, 2, 'Réparation système ABS', '2024-03-15', 480.00),<{{{><}}}>(1, 3, 'Réparation suspension arrière', '2024-04-10', 390.00);<{{{><}}}><{{{><}}}>
+Servers\tx\QueryHistory\57<|||>1<|||>2025-11-18 16:04:50|carhandling|0|SELECT user, host, plugin FROM mysql.user;<{{{><}}}><{{{><}}}>
