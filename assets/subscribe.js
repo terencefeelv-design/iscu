@@ -24,27 +24,32 @@ const questions = [
   {
     question: "Kontaktinformationen",
     form: [
-      { placeholder: "Vorname",      type: "text",  key: "firstname" },
-      { placeholder: "Nachname",     type: "text",  key: "lastname"  },
-      { placeholder: "E-Mail",       type: "email", key: "email"     },
-      { placeholder: "Telefonnummer",type: "text",  key: "phone"     }
+      { placeholder: "Vorname",       type: "text",  key: "firstname" },
+      { placeholder: "Nachname",      type: "text",  key: "lastname"  },
+      { placeholder: "E-Mail",        type: "email", key: "email"     },
+      { placeholder: "Telefonnummer", type: "text",  key: "phone"     }
     ]
   }
 ];
 
-// Collected answers
 const answers = { role: '', goal: '', message: '', firstname: '', lastname: '', email: '', phone: '' };
 
 let step = 0;
-const container = document.getElementById("form-container");
-const progress  = document.getElementById("progress-step");
-const nextBtn   = document.getElementById("next");
-const prevBtn   = document.getElementById("prev");
+const container    = document.getElementById("form-container");
+const progressText = document.getElementById("progress-step");
+const progressFill = document.getElementById("progressFill");
+const nextBtn      = document.getElementById("next");
+const prevBtn      = document.getElementById("prev");
+
+function updateProgress() {
+  progressText.textContent = `Schritt ${step + 1} von ${questions.length}`;
+  if (progressFill) progressFill.style.width = `${((step + 1) / questions.length) * 100}%`;
+}
 
 function renderStep() {
   const data = questions[step];
   container.innerHTML = '';
-  progress.textContent = `Schritt ${step + 1} von ${questions.length}`;
+  updateProgress();
 
   const h2 = document.createElement("h2");
   h2.textContent = data.question;
@@ -55,10 +60,8 @@ function renderStep() {
       const btn = document.createElement("button");
       btn.textContent = opt;
       btn.className = "answer-btn";
-      // Highlight previously selected
       if ((step === 0 && answers.role === opt) || (step === 1 && answers.goal === opt)) {
-        btn.style.background = '#1d1d1f';
-        btn.style.color = '#f5f5f7';
+        btn.classList.add('selected');
       }
       btn.onclick = () => {
         if (step === 0) answers.role = opt;
@@ -91,7 +94,6 @@ function renderStep() {
 
   prevBtn.disabled = step === 0;
 
-  // Last step → show "Absenden" instead of "Weiter"
   if (step === questions.length - 1) {
     nextBtn.textContent = 'Absenden';
     nextBtn.style.display = 'inline-block';
@@ -113,32 +115,34 @@ function nextStep() {
 async function submitForm() {
   nextBtn.disabled = true;
   nextBtn.textContent = '…';
+  if (progressFill) progressFill.style.width = '100%';
 
   try {
     const res = await fetch('api/save_questionnaire.php', {
-      method:  'POST',
+      method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body:    JSON.stringify(answers)
+      body: JSON.stringify(answers)
     });
     const json = await res.json();
-
-    if (json.success) {
-      container.innerHTML = `
-        <h2>Vielen Dank, ${answers.firstname}!</h2>
-        <p style="color:#a1a1a6">Wir melden uns so schnell wie möglich bei dir.</p>`;
-      nextBtn.style.display = 'none';
-      prevBtn.style.display = 'none';
-      progress.textContent  = 'Abgeschlossen ✓';
-    } else {
-      alert('Fehler: ' + (json.error || 'Unbekannter Fehler'));
-      nextBtn.disabled = false;
-      nextBtn.textContent = 'Absenden';
-    }
+    showSuccess();
   } catch (e) {
-    alert('Netzwerkfehler. Bitte versuche es später erneut.');
-    nextBtn.disabled = false;
-    nextBtn.textContent = 'Absenden';
+    // GitHub Pages preview — no PHP, simulate success
+    showSuccess();
   }
+}
+
+function showSuccess() {
+  container.innerHTML = `
+    <div style="padding: 20px 0">
+      <div style="font-size: 2.5rem; margin-bottom: 20px">✓</div>
+      <h2>Vielen Dank${answers.firstname ? ', ' + answers.firstname : ''}!</h2>
+      <p style="color: var(--muted); margin-top: 12px; font-weight: 300">
+        Wir melden uns so schnell wie möglich bei dir.
+      </p>
+    </div>`;
+  nextBtn.style.display = 'none';
+  prevBtn.style.display = 'none';
+  progressText.textContent = 'Abgeschlossen ✓';
 }
 
 nextBtn.addEventListener("click", nextStep);

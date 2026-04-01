@@ -4,34 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iscu.ch – Registrierung</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <script defer src="assets/subscribe.js"></script>
 </head>
 
 <body>
 
-  <!-- NAVBAR - même que index -->
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- NAVBAR -->
   <nav class="nav">
-<a href="index.html" style="text-decoration:none;color:inherit">
-  <div class="brand">iscu<span>.ch</span></div>
-</a>
+    <a href="index.html" class="brand-link">
+      <div class="brand">iscu<span>.ch</span></div>
+    </a>
     <div class="nav-links">
       <a href="index.html#about">Über uns</a>
       <a href="index.html#jobs">Jobs</a>
       <a href="index.html#contact">Kontakt</a>
     </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
   </nav>
 
-  <!-- CONTENU SPÉCIFIQUE -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#about">Über uns</a>
+    <a href="index.html#jobs">Jobs</a>
+    <a href="index.html#contact">Kontakt</a>
+  </div>
+
+  <!-- QUESTIONNAIRE -->
   <main class="subscribe-wrapper">
     <div class="questionnaire">
       <div class="progress">
         <span id="progress-step">Schritt 1 von 4</span>
       </div>
-
-      <div id="form-container">
-        <!-- step content injecté ici -->
+      <div class="progress-bar">
+        <div class="progress-bar-fill" id="progressFill" style="width: 25%"></div>
       </div>
+
+      <div id="form-container"></div>
 
       <div class="actions">
         <button id="prev" disabled>Zurück</button>
@@ -40,10 +57,37 @@
     </div>
   </main>
 
-  <!-- FOOTER - idem index -->
   <footer>
     <p>© 2024 iscu.ch – Recruiting neu gedacht</p>
   </footer>
 
+  <script>
+    // Cursor on subscribe page
+    const cursor = document.querySelector('.cursor');
+    const follower = document.querySelector('.cursor-follower');
+    let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX; mouseY = e.clientY;
+      cursor.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+    });
+    function animateFollower() {
+      followerX += (mouseX - followerX) * 0.12;
+      followerY += (mouseY - followerY) * 0.12;
+      follower.style.transform = `translate(${followerX}px, ${followerY}px)`;
+      requestAnimationFrame(animateFollower);
+    }
+    animateFollower();
+
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => { cursor.classList.add('hover'); follower.classList.add('hover'); });
+      el.addEventListener('mouseleave', () => { cursor.classList.remove('hover'); follower.classList.remove('hover'); });
+    });
+
+    // Hamburger
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('open');
+      document.getElementById('hamburger').classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
