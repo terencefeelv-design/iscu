@@ -4,64 +4,147 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iscu.ch – Digitale Recruiting-Lösungen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- PAGE TRANSITION -->
+  <div class="page-transition"></div>
+
   <!-- NAVBAR -->
   <nav class="nav">
-    <div class="brand">iscu<span>.ch</span></div>
+    <a href="index.html" class="brand-link">
+      <div class="brand">iscu<span>.ch</span></div>
+    </a>
     <div class="nav-links">
       <a href="#about">Über uns</a>
       <a href="#jobs">Jobs</a>
       <a href="#contact">Kontakt</a>
     </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
   </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">Über uns</a>
+    <a href="#jobs" onclick="closeMobile()">Jobs</a>
+    <a href="#contact" onclick="closeMobile()">Kontakt</a>
+  </div>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>Wir verbinden Talente mit Möglichkeiten</h1>
+    <div class="hero-bg-text">ISCU</div>
+    <div class="hero-text reveal">
+      <span class="hero-label">Schweizer Recruiting 2.0</span>
+      <h1>Wir verbinden<br><em>Talente</em> mit<br>Möglichkeiten</h1>
       <p>iscu.ch – moderne Recruiting‑Lösungen für Schweizer Unternehmen.</p>
-     <a href="subscribe.html" class="cta alt">Jetzt registrieren</a>
+      <div class="hero-actions">
+        <a href="subscribe.html" class="cta" id="ctaBtn">Jetzt registrieren</a>
+        <a href="#about" class="cta alt">Mehr erfahren</a>
+      </div>
     </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-
+  <!-- STATS -->
+  <section class="stats reveal">
+    <div class="stat">
+      <span class="counter" data-target="37">0</span>
+      <p>Unternehmen vertrauen uns</p>
+    </div>
+    <div class="stat">
+      <span class="counter" data-target="142">0</span>
+      <p>Talente erfolgreich vermittelt</p>
+    </div>
+    <div class="stat">
+      <span class="counter" data-target="98">0</span>
+      <p>% Kundenzufriedenheit</p>
+    </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2>Über uns</h2>
+  <section id="about" class="section reveal">
+    <div class="section-label">Über uns</div>
+    <h2>Technologie trifft<br><em>menschliche Intuition</em></h2>
     <p>Wir helfen Unternehmen, passende Mitarbeitende zu finden – ehrlich, einfach und digital. 
        Unser Ansatz kombiniert Technologie und menschliche Intuition, um die besten Talente zu erreichen.</p>
+    <div class="pillars">
+      <div class="pillar reveal">
+        <div class="pillar-icon">⚡</div>
+        <h3>Schnell</h3>
+        <p>Erste Kandidaten in 72h</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-icon">🎯</div>
+        <h3>Präzise</h3>
+        <p>KI-gestütztes Matching</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-icon">🤝</div>
+        <h3>Persönlich</h3>
+        <p>Echter Ansprechpartner</p>
+      </div>
+    </div>
   </section>
 
   <!-- JOBS -->
-  <section id="jobs" class="section">
-    <h2>Offene Stellen</h2>
-    <div class="job-list">
-      <div class="job">
+  <section id="jobs" class="section jobs-section reveal">
+    <div class="section-label">Offene Stellen</div>
+    <h2>Aktuelle <em>Stellenangebote</em></h2>
+
+    <div class="job-filters">
+      <button class="filter-btn active" data-filter="all">Alle</button>
+      <button class="filter-btn" data-filter="Vollzeit">Vollzeit</button>
+      <button class="filter-btn" data-filter="Teilzeit">Teilzeit</button>
+    </div>
+
+    <div class="job-list" id="jobList">
+      <div class="job reveal" data-type="Vollzeit">
+        <div class="job-meta">
+          <span class="job-tag">Vollzeit</span>
+          <span class="job-location">📍 Zürich</span>
+        </div>
         <h3>Projektleiter Bau (m/w)</h3>
-        <p>Zürich · Vollzeit</p>
-        <a href="#contact" class="apply">Jetzt bewerben</a>
+        <p>Leitung von Hochbauprojekten mit Erfahrung in der Schweizer Baubranche.</p>
+        <a href="#contact" class="apply">Jetzt bewerben →</a>
       </div>
-      <div class="job">
+      <div class="job reveal" data-type="Teilzeit">
+        <div class="job-meta">
+          <span class="job-tag">Teilzeit</span>
+          <span class="job-location">📍 Basel</span>
+        </div>
         <h3>Servicetechniker Industrie (m/w)</h3>
-        <p>Basel · Teilzeit</p>
-        <a href="#contact" class="apply">Jetzt bewerben</a>
+        <p>Wartung und Reparatur industrieller Anlagen in der Nordwestschweiz.</p>
+        <a href="#contact" class="apply">Jetzt bewerben →</a>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Kontakt</h2>
-    <form class="form">
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="E‑Mail">
-      <textarea placeholder="Nachricht"></textarea>
-      <button type="submit">Senden</button>
+  <section id="contact" class="contact reveal">
+    <div class="section-label light">Kontakt</div>
+    <h2>Bereit für den<br><em>nächsten Schritt?</em></h2>
+    <form class="form" id="contactForm">
+      <div class="form-row">
+        <input type="text"  name="name"    placeholder="Name" required>
+        <input type="email" name="email"   placeholder="E‑Mail" required>
+      </div>
+      <textarea name="message" placeholder="Ihre Nachricht…" required></textarea>
+      <button type="submit" id="submitBtn">Senden</button>
+      <p class="form-success" id="formSuccess">✓ Nachricht gesendet – wir melden uns bald!</p>
     </form>
   </section>
 
@@ -69,5 +152,120 @@
     <p>© 2024 iscu.ch – Recruiting neu gedacht</p>
   </footer>
 
+<script>
+// ── CUSTOM CURSOR ─────────────────────────────────
+const cursor = document.querySelector('.cursor');
+const follower = document.querySelector('.cursor-follower');
+let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
+
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX; mouseY = e.clientY;
+  cursor.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+});
+
+function animateFollower() {
+  followerX += (mouseX - followerX) * 0.12;
+  followerY += (mouseY - followerY) * 0.12;
+  follower.style.transform = `translate(${followerX}px, ${followerY}px)`;
+  requestAnimationFrame(animateFollower);
+}
+animateFollower();
+
+document.querySelectorAll('a, button, .job, .pillar').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursor.classList.add('hover');
+    follower.classList.add('hover');
+  });
+  el.addEventListener('mouseleave', () => {
+    cursor.classList.remove('hover');
+    follower.classList.remove('hover');
+  });
+});
+
+// ── PAGE TRANSITION ───────────────────────────────
+const transition = document.querySelector('.page-transition');
+document.getElementById('ctaBtn').addEventListener('click', e => {
+  e.preventDefault();
+  transition.classList.add('active');
+  setTimeout(() => window.location.href = 'subscribe.html', 500);
+});
+
+// ── SCROLL REVEAL ─────────────────────────────────
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ── COUNTERS ──────────────────────────────────────
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = +el.dataset.target;
+      const suffix = target === 98 ? '%' : '+';
+      let count = 0;
+      const step = Math.ceil(target / 60);
+      const timer = setInterval(() => {
+        count = Math.min(count + step, target);
+        el.textContent = count + suffix;
+        if (count >= target) clearInterval(timer);
+      }, 25);
+      counterObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+// ── JOB FILTERS ───────────────────────────────────
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.job').forEach(job => {
+      const match = filter === 'all' || job.dataset.type === filter;
+      job.style.opacity = match ? '1' : '0.2';
+      job.style.transform = match ? 'scale(1)' : 'scale(0.97)';
+      job.style.pointerEvents = match ? 'auto' : 'none';
+    });
+  });
+});
+
+// ── CONTACT FORM ──────────────────────────────────
+document.getElementById('contactForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  btn.textContent = '…';
+  btn.disabled = true;
+  const data = Object.fromEntries(new FormData(e.target));
+  try {
+    await fetch('api/save_contact.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+  } catch(_) {}
+  document.getElementById('formSuccess').style.display = 'block';
+  e.target.reset();
+  btn.textContent = 'Gesendet ✓';
+});
+
+// ── HAMBURGER ─────────────────────────────────────
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('mobileMenu').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('open');
+});
+function closeMobile() {
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+}
+</script>
 </body>
 </html>
