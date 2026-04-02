@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iscu.ch – Digitale Recruiting-Lösungen</title>
+  <title>iscu.ch – Social Recruiting Agentur Schweiz</title>
+  <meta name="description" content="iscu.ch – Die Schweizer Social Recruiting Agentur. Wir gewinnen Kandidaten via Instagram, TikTok, Facebook und LinkedIn für Ihr Unternehmen.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
   <!-- CUSTOM CURSOR -->
@@ -25,10 +25,12 @@
       <div class="brand">iscu<span>.ch</span></div>
     </a>
     <div class="nav-links">
-      <a href="#about">Über uns</a>
-      <a href="#jobs">Jobs</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#prozess">Prozess</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Kontakt</a>
     </div>
+    <a href="#contact" class="nav-cta">Gratis Erstgespräch</a>
     <div class="hamburger" id="hamburger">
       <span></span><span></span><span></span>
     </div>
@@ -36,21 +38,29 @@
 
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#about" onclick="closeMobile()">Über uns</a>
-    <a href="#jobs" onclick="closeMobile()">Jobs</a>
+    <a href="#leistungen" onclick="closeMobile()">Leistungen</a>
+    <a href="#prozess" onclick="closeMobile()">Prozess</a>
+    <a href="#faq" onclick="closeMobile()">FAQ</a>
     <a href="#contact" onclick="closeMobile()">Kontakt</a>
+    <a href="#contact" onclick="closeMobile()" class="mobile-cta">Gratis Erstgespräch →</a>
   </div>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-bg-text">ISCU</div>
     <div class="hero-text reveal">
-      <span class="hero-label">Schweizer Recruiting 2.0</span>
-      <h1>Wir verbinden<br><em>Talente</em> mit<br>Möglichkeiten</h1>
-      <p>iscu.ch – moderne Recruiting‑Lösungen für Schweizer Unternehmen.</p>
+      <span class="hero-label">Social Recruiting Agentur · Schweiz</span>
+      <h1>Kandidaten gewinnen<br>via <em>Social Media</em></h1>
+      <p>iscu.ch bringt Ihre Stellenangebote dorthin, wo Talente wirklich sind –<br>auf Instagram, TikTok, Facebook und LinkedIn.</p>
+      <div class="hero-platforms">
+        <span class="platform-badge">Instagram</span>
+        <span class="platform-badge">TikTok</span>
+        <span class="platform-badge">Facebook</span>
+        <span class="platform-badge">LinkedIn</span>
+      </div>
       <div class="hero-actions">
-        <a href="subscribe.html" class="cta" id="ctaBtn">Jetzt registrieren</a>
-        <a href="#about" class="cta alt">Mehr erfahren</a>
+        <a href="#contact" class="cta" id="ctaBtn">Gratis Erstgespräch buchen</a>
+        <a href="#prozess" class="cta alt">Wie es funktioniert</a>
       </div>
     </div>
     <div class="scroll-hint">
@@ -62,94 +72,259 @@
   <!-- STATS -->
   <section class="stats reveal">
     <div class="stat">
-      <span class="counter" data-target="37">0</span>
-      <p>Unternehmen vertrauen uns</p>
+      <span class="counter" data-target="120" data-suffix="+">0</span>
+      <p>Kampagnen erfolgreich umgesetzt</p>
     </div>
     <div class="stat">
-      <span class="counter" data-target="142">0</span>
-      <p>Talente erfolgreich vermittelt</p>
+      <span class="counter" data-target="4" data-suffix="">0</span>
+      <p>Plattformen · maximale Reichweite</p>
     </div>
     <div class="stat">
-      <span class="counter" data-target="98">0</span>
-      <p>% Kundenzufriedenheit</p>
+      <span class="counter" data-target="3" data-suffix="×">0</span>
+      <p>mehr Bewerbungen als klassisch</p>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="section reveal">
-    <div class="section-label">Über uns</div>
-    <h2>Technologie trifft<br><em>menschliche Intuition</em></h2>
-    <p>Wir helfen Unternehmen, passende Mitarbeitende zu finden – ehrlich, einfach und digital. 
-       Unser Ansatz kombiniert Technologie und menschliche Intuition, um die besten Talente zu erreichen.</p>
+    <div class="section-label">Über iscu.ch</div>
+    <h2>Social Recruiting,<br><em>das wirklich funktioniert</em></h2>
+    <p>Klassische Jobportale erreichen nur aktiv Suchende – rund 20 % aller Talente. Wir sprechen die anderen 80 % dort an, wo sie täglich Zeit verbringen: in sozialen Netzwerken. Mit präzisem Targeting, professionellem Content und algorithmischer Optimierung.</p>
     <div class="pillars">
       <div class="pillar reveal">
         <div class="pillar-icon">⚡</div>
         <h3>Schnell</h3>
-        <p>Erste Kandidaten in 72h</p>
+        <p>Erste qualifizierte Bewerbungen bereits nach 2–3 Wochen</p>
       </div>
       <div class="pillar reveal">
         <div class="pillar-icon">🎯</div>
         <h3>Präzise</h3>
-        <p>KI-gestütztes Matching</p>
+        <p>Targeting nach Region, Beruf, Alter und Interessen</p>
       </div>
       <div class="pillar reveal">
         <div class="pillar-icon">🤝</div>
         <h3>Persönlich</h3>
-        <p>Echter Ansprechpartner</p>
+        <p>Dedizierter Ansprechpartner – kein Ticketsystem</p>
       </div>
     </div>
   </section>
 
-  <!-- JOBS -->
-  <section id="jobs" class="section jobs-section reveal">
-    <div class="section-label">Offene Stellen</div>
-    <h2>Aktuelle <em>Stellenangebote</em></h2>
-
-    <div class="job-filters">
-      <button class="filter-btn active" data-filter="all">Alle</button>
-      <button class="filter-btn" data-filter="Vollzeit">Vollzeit</button>
-      <button class="filter-btn" data-filter="Teilzeit">Teilzeit</button>
-    </div>
-
-    <div class="job-list" id="jobList">
-      <div class="job reveal" data-type="Vollzeit">
-        <div class="job-meta">
-          <span class="job-tag">Vollzeit</span>
-          <span class="job-location">📍 Zürich</span>
+  <!-- LEISTUNGEN -->
+  <section id="leistungen" class="section leistungen-section">
+    <div class="section-label">Leistungen</div>
+    <h2>Ihre Stellen auf allen<br><em>relevanten Plattformen</em></h2>
+    <p>Wir erstellen, schalten und optimieren Ihre Recruiting-Kampagnen auf den vier wichtigsten Social-Media-Kanälen der Schweiz.</p>
+    <div class="platforms-grid reveal">
+      <div class="platform-card">
+        <div class="platform-logo insta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
         </div>
-        <h3>Projektleiter Bau (m/w)</h3>
-        <p>Leitung von Hochbauprojekten mit Erfahrung in der Schweizer Baubranche.</p>
-        <a href="#contact" class="apply">Jetzt bewerben →</a>
+        <h3>Instagram</h3>
+        <p>Stories, Reels &amp; Feed-Ads, die Bewerber ansprechen – visuell, emotional, wirkungsvoll.</p>
+        <ul class="platform-features">
+          <li>Video- &amp; Bild-Ads</li>
+          <li>Story-Formate</li>
+          <li>Employer Branding</li>
+        </ul>
       </div>
-      <div class="job reveal" data-type="Teilzeit">
-        <div class="job-meta">
-          <span class="job-tag">Teilzeit</span>
-          <span class="job-location">📍 Basel</span>
+      <div class="platform-card">
+        <div class="platform-logo tiktok">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.44a8.16 8.16 0 004.77 1.53V7.5a4.85 4.85 0 01-1-.81z"/></svg>
         </div>
-        <h3>Servicetechniker Industrie (m/w)</h3>
-        <p>Wartung und Reparatur industrieller Anlagen in der Nordwestschweiz.</p>
-        <a href="#contact" class="apply">Jetzt bewerben →</a>
+        <h3>TikTok</h3>
+        <p>Authentische Kurzvideos, die viral gehen – ideal für junge Fachkräfte und Gen Z.</p>
+        <ul class="platform-features">
+          <li>Short-Form Video Ads</li>
+          <li>In-Feed Ads</li>
+          <li>TopView Formate</li>
+        </ul>
+      </div>
+      <div class="platform-card">
+        <div class="platform-logo facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </div>
+        <h3>Facebook</h3>
+        <p>Grösste Reichweite in der Schweiz – präzises Targeting nach Beruf, Region und Demographie.</p>
+        <ul class="platform-features">
+          <li>Carousel &amp; Video Ads</li>
+          <li>Lead Gen Formulare</li>
+          <li>Retargeting</li>
+        </ul>
+      </div>
+      <div class="platform-card">
+        <div class="platform-logo linkedin">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </div>
+        <h3>LinkedIn</h3>
+        <p>Das Netzwerk für Fach- und Führungskräfte – ideal für spezialisierte Profile.</p>
+        <ul class="platform-features">
+          <li>Sponsored Content</li>
+          <li>InMail Kampagnen</li>
+          <li>Job Ads</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- PROZESS -->
+  <section id="prozess" class="section prozess-section">
+    <div class="section-label">Unser Prozess</div>
+    <h2>In 4 Schritten zu<br><em>Ihren Wunschkandidaten</em></h2>
+    <p>Klar strukturiert, transparent und effizient – so sieht unsere Zusammenarbeit aus.</p>
+    <div class="prozess-steps">
+      <div class="prozess-step">
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h3>Erstgespräch</h3>
+          <p>Wir lernen Ihr Unternehmen kennen: Kultur, offene Stellen, Zielgruppe und bisherige Erfahrungen im Recruiting. Kostenlos und unverbindlich.</p>
+        </div>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="prozess-step">
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h3>Strategie</h3>
+          <p>Wir entwickeln eine massgeschneiderte Social-Media-Strategie: Plattformwahl, Zielgruppendefinition, Budget und Messaging.</p>
+        </div>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="prozess-step">
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h3>Produktion</h3>
+          <p>Unser Team produziert professionellen Content – Videos, Bilder, Texte – und schaltet die Kampagnen auf den definierten Plattformen.</p>
+        </div>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="prozess-step last">
+        <div class="step-number">04</div>
+        <div class="step-content">
+          <h3>Resultate</h3>
+          <p>Sie erhalten qualifizierte Bewerbungen. Wir liefern wöchentliche Reports und optimieren die Kampagnen kontinuierlich.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERGLEICH -->
+  <section id="vergleich" class="section vergleich-section reveal">
+    <div class="section-label">Vergleich</div>
+    <h2>iscu.ch vs.<br><em>klassische Agenturen</em></h2>
+    <p>Was unterscheidet Social Recruiting von traditionellen Methoden? Alles.</p>
+    <div class="vergleich-table">
+      <div class="vergleich-header">
+        <div class="col-label"></div>
+        <div class="col-iscu">iscu.ch</div>
+        <div class="col-klassisch">Klassische Agentur</div>
+      </div>
+      <div class="vergleich-row">
+        <div class="col-label">Plattformen</div>
+        <div class="col-iscu good">Instagram, TikTok, Facebook, LinkedIn</div>
+        <div class="col-klassisch bad">Jobportale (Indeed, Jobs.ch)</div>
+      </div>
+      <div class="vergleich-row">
+        <div class="col-label">Zielgruppe</div>
+        <div class="col-iscu good">Aktiv &amp; passiv Suchende (100 %)</div>
+        <div class="col-klassisch bad">Nur aktiv Suchende (~20 %)</div>
+      </div>
+      <div class="vergleich-row">
+        <div class="col-label">Content</div>
+        <div class="col-iscu good">Videos, Reels, Stories &amp; Ads</div>
+        <div class="col-klassisch bad">Textinserate</div>
+      </div>
+      <div class="vergleich-row">
+        <div class="col-label">Transparenz</div>
+        <div class="col-iscu good">Echtzeit-Dashboard &amp; Reports</div>
+        <div class="col-klassisch bad">Monatlicher Kurzbericht</div>
+      </div>
+      <div class="vergleich-row">
+        <div class="col-label">Kosten</div>
+        <div class="col-iscu good">Transparentes Pauschalmodell</div>
+        <div class="col-klassisch bad">15–25 % vom Jahressalär</div>
+      </div>
+      <div class="vergleich-row">
+        <div class="col-label">Erste Resultate</div>
+        <div class="col-iscu good">2–4 Wochen</div>
+        <div class="col-klassisch bad">2–5 Monate</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq-section">
+    <div class="section-label">FAQ</div>
+    <h2>Häufige <em>Fragen</em></h2>
+    <p>Alles Wichtige auf einen Blick – und wenn Sie weitere Fragen haben, sprechen wir gerne persönlich.</p>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question">Was ist Social Recruiting?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Social Recruiting bezeichnet die gezielte Suche und Ansprache von Kandidaten über soziale Netzwerke wie Instagram, TikTok, Facebook und LinkedIn. Im Gegensatz zu klassischen Jobportalen erreicht man so auch Fachkräfte, die nicht aktiv suchen – die grösste und oft ungenutzte Talentgruppe.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Für welche Branchen eignet sich Social Recruiting?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Social Recruiting funktioniert branchenübergreifend: Handwerk, Pflege, IT, Gastronomie, Industrie, Detailhandel und viele mehr. Wir passen Plattform und Ansprache an die Zielgruppe der jeweiligen Stelle an – ob Polymechaniker in Zürich oder Pflegefachperson in Genf.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Wie schnell sehe ich erste Resultate?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Bereits nach 2–3 Wochen erhalten die meisten Kunden erste qualifizierte Bewerbungen. Die Kampagne wird in den ersten Wochen aktiv optimiert, sodass die Performance kontinuierlich steigt. Wir teilen mit Ihnen wöchentliche Reports zu Reichweite, Klicks und Bewerbungseingängen.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Was kostet eine Kampagne bei iscu.ch?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Wir arbeiten mit transparenten Pauschalmodellen – keine versteckten Kosten, keine Erfolgsprovision auf Jahressalär. Die genauen Kosten hängen von Anzahl Stellen, Plattformen und Laufzeit ab. Im kostenlosen Erstgespräch erstellen wir Ihnen ein individuelles Angebot.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Muss ich selbst Content produzieren oder Werbung kennen?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Nein. Wir übernehmen alles: Strategie, Content-Produktion, Kampagnenmanagement und Reporting. Ihr Aufwand beschränkt sich auf das Erstgespräch und die Freigabe des Contents. Sie konzentrieren sich auf Ihr Kerngeschäft – wir kümmern uns um die Bewerbungen.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Arbeitet iscu.ch auch mit KMU?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Absolut. Ein Grossteil unserer Kunden sind KMU aus der ganzen Schweiz. Wir skalieren unsere Leistungen entsprechend Ihrem Budget und Ihren Bedürfnissen – Social Recruiting ist kein Privileg grosser Konzerne.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / BOOKING -->
   <section id="contact" class="contact reveal">
-    <div class="section-label light">Kontakt</div>
-    <h2>Bereit für den<br><em>nächsten Schritt?</em></h2>
-    <form class="form" id="contactForm">
-      <div class="form-row">
-        <input type="text"  name="name"    placeholder="Name" required>
-        <input type="email" name="email"   placeholder="E‑Mail" required>
+    <div class="section-label light">Gratis Erstgespräch</div>
+    <h2>Bereit, mehr Bewerbungen<br><em>zu erhalten?</em></h2>
+    <p class="contact-intro">30 Minuten. Kostenlos. Unverbindlich.<br>Wir zeigen Ihnen, was Social Recruiting für Ihr Unternehmen möglich macht.</p>
+    <div class="contact-options">
+      <div class="booking-card">
+        <div class="booking-icon">📅</div>
+        <h3>Termin online buchen</h3>
+        <p>Wählen Sie direkt einen freien Termin in unserem Kalender – unkompliziert und ohne Wartezeit.</p>
+        <a href="https://calendly.com/iscu" target="_blank" rel="noopener" class="cta booking-cta">Jetzt Termin buchen →</a>
       </div>
-      <textarea name="message" placeholder="Ihre Nachricht…" required></textarea>
-      <button type="submit" id="submitBtn">Senden</button>
-      <p class="form-success" id="formSuccess">✓ Nachricht gesendet – wir melden uns bald!</p>
-    </form>
+      <div class="or-divider"><span>oder</span></div>
+      <div class="contact-form-card">
+        <h3>Nachricht senden</h3>
+        <form class="form" id="contactForm">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="company" placeholder="Unternehmen">
+          </div>
+          <input type="email" name="email" placeholder="E-Mail" required style="width:100%">
+          <textarea name="message" placeholder="Was suchen Sie? Wir melden uns innerhalb von 24h." required></textarea>
+          <button type="submit" id="submitBtn">Nachricht senden</button>
+          <p class="form-success" id="formSuccess">✓ Nachricht gesendet – wir melden uns bald!</p>
+        </form>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2024 iscu.ch – Recruiting neu gedacht</p>
+    <div class="footer-inner">
+      <div class="brand footer-brand">iscu<span>.ch</span></div>
+      <p class="footer-tagline">Social Recruiting · Made in Switzerland</p>
+      <div class="footer-links">
+        <a href="#about">Über uns</a>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#prozess">Prozess</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+      <p class="footer-copy">© 2025 iscu.ch – Social Recruiting neu gedacht</p>
+    </div>
   </footer>
 
 <script>
@@ -157,12 +332,10 @@
 const cursor = document.querySelector('.cursor');
 const follower = document.querySelector('.cursor-follower');
 let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
-
 document.addEventListener('mousemove', e => {
   mouseX = e.clientX; mouseY = e.clientY;
   cursor.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
 });
-
 function animateFollower() {
   followerX += (mouseX - followerX) * 0.12;
   followerY += (mouseY - followerY) * 0.12;
@@ -170,36 +343,23 @@ function animateFollower() {
   requestAnimationFrame(animateFollower);
 }
 animateFollower();
-
-document.querySelectorAll('a, button, .job, .pillar').forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    cursor.classList.add('hover');
-    follower.classList.add('hover');
-  });
-  el.addEventListener('mouseleave', () => {
-    cursor.classList.remove('hover');
-    follower.classList.remove('hover');
-  });
+document.querySelectorAll('a, button, .platform-card, .pillar, .faq-item').forEach(el => {
+  el.addEventListener('mouseenter', () => { cursor.classList.add('hover'); follower.classList.add('hover'); });
+  el.addEventListener('mouseleave', () => { cursor.classList.remove('hover'); follower.classList.remove('hover'); });
 });
 
-// ── PAGE TRANSITION ───────────────────────────────
-const transition = document.querySelector('.page-transition');
+// ── SMOOTH SCROLL CTA ─────────────────────────────
 document.getElementById('ctaBtn').addEventListener('click', e => {
   e.preventDefault();
-  transition.classList.add('active');
-  setTimeout(() => window.location.href = 'subscribe.html', 500);
+  document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
 });
 
 // ── SCROLL REVEAL ─────────────────────────────────
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
   });
-}, { threshold: 0.12 });
-
+}, { threshold: 0.1 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // ── COUNTERS ──────────────────────────────────────
@@ -208,9 +368,9 @@ const counterObserver = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       const el = entry.target;
       const target = +el.dataset.target;
-      const suffix = target === 98 ? '%' : '+';
+      const suffix = el.dataset.suffix !== undefined ? el.dataset.suffix : '+';
       let count = 0;
-      const step = Math.ceil(target / 60);
+      const step = Math.max(1, Math.ceil(target / 60));
       const timer = setInterval(() => {
         count = Math.min(count + step, target);
         el.textContent = count + suffix;
@@ -220,41 +380,47 @@ const counterObserver = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.5 });
-
 document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
 
-// ── JOB FILTERS ───────────────────────────────────
-document.querySelectorAll('.filter-btn').forEach(btn => {
+// ── FAQ ACCORDION ─────────────────────────────────
+document.querySelectorAll('.faq-question').forEach(btn => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter = btn.dataset.filter;
-    document.querySelectorAll('.job').forEach(job => {
-      const match = filter === 'all' || job.dataset.type === filter;
-      job.style.opacity = match ? '1' : '0.2';
-      job.style.transform = match ? 'scale(1)' : 'scale(0.97)';
-      job.style.pointerEvents = match ? 'auto' : 'none';
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-icon').textContent = '+';
     });
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.querySelector('.faq-icon').textContent = '×';
+    }
   });
 });
+
+// ── PROZESS STAGGERED REVEAL ──────────────────────
+const prozessObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.prozess-step').forEach((step, i) => {
+        setTimeout(() => step.classList.add('visible'), i * 160);
+      });
+      prozessObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+const ps = document.querySelector('.prozess-steps');
+if (ps) prozessObserver.observe(ps);
 
 // ── CONTACT FORM ──────────────────────────────────
 document.getElementById('contactForm').addEventListener('submit', async e => {
   e.preventDefault();
   const btn = document.getElementById('submitBtn');
-  btn.textContent = '…';
-  btn.disabled = true;
+  btn.textContent = '…'; btn.disabled = true;
   const data = Object.fromEntries(new FormData(e.target));
-  try {
-    await fetch('api/save_contact.php', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    });
-  } catch(_) {}
+  try { await fetch('api/save_contact.php', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) }); } catch(_) {}
   document.getElementById('formSuccess').style.display = 'block';
-  e.target.reset();
-  btn.textContent = 'Gesendet ✓';
+  e.target.reset(); btn.textContent = 'Gesendet ✓';
 });
 
 // ── HAMBURGER ─────────────────────────────────────
