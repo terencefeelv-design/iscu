@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap');
 
 :root {
-  --bg: #F5F4F0;
-  --text: #1A1A18;
-  --muted: #8A8A82;
-  --accent: #D4CFC5;
-  --warm: #E8E2D5;
-  --highlight: #C8B89A;
+  --bg: #F2F8FC;
+  --text: #0D2535;
+  --muted: #6A90A5;
+  --accent: #B5D5E6;
+  --warm: #D5EBF5;
+  --highlight: #5AAED0;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -524,4 +524,30 @@ footer { background: var(--text); border-top: 1px solid rgba(255,255,255,.08); p
   .prozess-section { max-width: 1100px; }
   .questionnaire { max-width: 680px; }
   .counter { font-size: 3.6rem; }
+}
+
+/* ── FOOTER SOCIALS ───────────────────────────── */
+.footer-socials {
+  display: flex; gap: 20px; justify-content: center;
+  margin-bottom: 28px; flex-wrap: wrap;
+}
+.social-link {
+  display: flex; align-items: center; gap: 8px;
+  font-size: .85rem; font-weight: 500; color: rgba(242,248,252,.6);
+  text-decoration: none; padding: 9px 18px;
+  border: 1px solid rgba(255,255,255,.12); border-radius: 30px;
+  transition: color .25s, border-color .25s, background .25s;
+}
+.social-link:hover {
+  color: #fff; border-color: var(--highlight);
+  background: rgba(90,174,208,.15);
+}
+
+/* ── PLATFORM BADGES AS LINKS ─────────────────── */
+a.platform-badge {
+  text-decoration: none; transition: background .2s, border-color .2s, color .2s;
+}
+a.platform-badge:hover {
+  background: var(--highlight); border-color: var(--highlight);
+  color: white;
 }
