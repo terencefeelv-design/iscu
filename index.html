@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,15 +22,26 @@
   <!-- NAVBAR -->
   <nav class="nav">
     <a href="index.html" class="brand-link">
-      <div class="brand">iscu<span>.ch</span></div>
+      <img src="assets/img/ISCU logo.jpeg" alt="iscu.ch" class="brand-logo">
     </a>
     <div class="nav-links">
-      <a href="#leistungen">Leistungen</a>
-      <a href="#prozess">Prozess</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Kontakt</a>
+      <a href="#angebot" data-de="Angebot" data-fr="Offre" data-en="Services">Angebot</a>
+      <a href="#prozess" data-de="Prozess" data-fr="Processus" data-en="Process">Prozess</a>
+      <a href="#team" data-de="Team" data-fr="Equipe" data-en="Team">Team</a>
+      <a href="#faq" data-de="FAQ" data-fr="FAQ" data-en="FAQ">FAQ</a>
+      <a href="karriere.html" data-de="Karriere" data-fr="Carrière" data-en="Careers">Karriere</a>
+      <a href="#contact" data-de="Kontakt" data-fr="Contact" data-en="Contact">Kontakt</a>
     </div>
-    <a href="#contact" class="nav-cta">Gratis Erstgespräch</a>
+    <div class="nav-right">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="de">DE</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="#contact" class="nav-cta" data-de="Gratis Erstgespräch" data-fr="Entretien gratuit" data-en="Free Discovery Call">Gratis Erstgespräch</a>
+    </div>
     <div class="hamburger" id="hamburger">
       <span></span><span></span><span></span>
     </div>
@@ -38,20 +49,22 @@
 
   <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#leistungen" onclick="closeMobile()">Leistungen</a>
-    <a href="#prozess" onclick="closeMobile()">Prozess</a>
-    <a href="#faq" onclick="closeMobile()">FAQ</a>
-    <a href="#contact" onclick="closeMobile()">Kontakt</a>
-    <a href="#contact" onclick="closeMobile()" class="mobile-cta">Gratis Erstgespräch →</a>
+    <a href="#angebot" onclick="closeMobile()" data-de="Angebot" data-fr="Offre" data-en="Services">Angebot</a>
+    <a href="#prozess" onclick="closeMobile()" data-de="Prozess" data-fr="Processus" data-en="Process">Prozess</a>
+    <a href="#team" onclick="closeMobile()" data-de="Team" data-fr="Equipe" data-en="Team">Team</a>
+    <a href="#faq" onclick="closeMobile()" data-de="FAQ" data-fr="FAQ" data-en="FAQ">FAQ</a>
+    <a href="karriere.html" onclick="closeMobile()" data-de="Karriere" data-fr="Carrière" data-en="Careers">Karriere</a>
+    <a href="#contact" onclick="closeMobile()" data-de="Kontakt" data-fr="Contact" data-en="Contact">Kontakt</a>
+    <a href="#contact" onclick="closeMobile()" class="mobile-cta" data-de="Gratis Erstgespräch →" data-fr="Entretien gratuit →" data-en="Free Discovery Call →">Gratis Erstgespräch →</a>
   </div>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-bg-text">ISCU</div>
     <div class="hero-text reveal">
-      <span class="hero-label">Social Recruiting Agentur · Schweiz</span>
-      <h1>Kandidaten gewinnen<br>via <em>Social Media</em></h1>
-      <p>iscu.ch bringt Ihre Stellenangebote dorthin, wo Talente wirklich sind –<br>auf Instagram, TikTok, Facebook und LinkedIn.</p>
+      <span class="hero-label" data-de="Social Recruiting Agentur · Schweiz" data-fr="Agence Social Recruiting · Suisse" data-en="Social Recruiting Agency · Switzerland">Social Recruiting Agentur · Schweiz</span>
+      <h1 data-de="Kandidaten gewinnen&lt;br&gt;via &lt;em&gt;Social Media&lt;/em&gt;" data-fr="Attirer des candidats&lt;br&gt;via &lt;em&gt;les réseaux sociaux&lt;/em&gt;" data-en="Attract Candidates&lt;br&gt;via &lt;em&gt;Social Media&lt;/em&gt;">Kandidaten gewinnen<br>via <em>Social Media</em></h1>
+      <p data-de="iscu.ch bringt Ihre Stellenangebote dorthin, wo Talente wirklich sind – auf Instagram, TikTok, Facebook und LinkedIn." data-fr="iscu.ch place vos offres d’emploi là où les talents se trouvent vraiment – sur Instagram, TikTok, Facebook et LinkedIn." data-en="iscu.ch brings your job offers where talent really is – on Instagram, TikTok, Facebook and LinkedIn.">iscu.ch bringt Ihre Stellenangebote dorthin, wo Talente wirklich sind –<br>auf Instagram, TikTok, Facebook und LinkedIn.</p>
       <div class="hero-platforms">
         <a href="https://www.instagram.com/iscu.ch?igsh=NnRhNHYzNWF0b3Mx&utm_source=qr" target="_blank" rel="noopener" class="platform-badge">Instagram</a>
         <a href="https://www.tiktok.com/@iscu.ch" target="_blank" rel="noopener" class="platform-badge">TikTok</a>
@@ -59,8 +72,8 @@
         <span class="platform-badge">LinkedIn</span>
       </div>
       <div class="hero-actions">
-        <a href="#contact" class="cta" id="ctaBtn">Gratis Erstgespräch buchen</a>
-        <a href="#prozess" class="cta alt">Wie es funktioniert</a>
+        <a href="#contact" class="cta" id="ctaBtn" data-de="Gratis Erstgespräch buchen" data-fr="Réserver un entretien gratuit" data-en="Book Free Discovery Call">Gratis Erstgespräch buchen</a>
+        <a href="#prozess" class="cta alt" data-de="Wie es funktioniert" data-fr="Comment ça fonctionne" data-en="How it works">Wie es funktioniert</a>
       </div>
     </div>
     <div class="scroll-hint">
@@ -73,94 +86,85 @@
   <section class="stats reveal">
     <div class="stat">
       <span class="counter" data-target="120" data-suffix="+">0</span>
-      <p>Kampagnen erfolgreich umgesetzt</p>
+      <p data-de="Kampagnen erfolgreich umgesetzt" data-fr="Campagnes réalisées avec succès" data-en="Campaigns successfully delivered">Kampagnen erfolgreich umgesetzt</p>
     </div>
     <div class="stat">
       <span class="counter" data-target="4" data-suffix="">0</span>
-      <p>Plattformen · maximale Reichweite</p>
+      <p data-de="Plattformen · maximale Reichweite" data-fr="Plateformes · portée maximale" data-en="Platforms · maximum reach">Plattformen · maximale Reichweite</p>
     </div>
     <div class="stat">
       <span class="counter" data-target="3" data-suffix="×">0</span>
-      <p>mehr Bewerbungen als klassisch</p>
+      <p data-de="mehr Bewerbungen als klassisch" data-fr="plus de candidatures qu’en classique" data-en="more applications than traditional">mehr Bewerbungen als klassisch</p>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section reveal">
-    <div class="section-label">Über iscu.ch</div>
-    <h2>Social Recruiting,<br><em>das wirklich funktioniert</em></h2>
-    <p>Klassische Jobportale erreichen nur aktiv Suchende – rund 20 % aller Talente. Wir sprechen die anderen 80 % dort an, wo sie täglich Zeit verbringen: in sozialen Netzwerken. Mit präzisem Targeting, professionellem Content und algorithmischer Optimierung.</p>
-    <div class="pillars">
-      <div class="pillar reveal">
-        <div class="pillar-icon">⚡</div>
-        <h3>Schnell</h3>
-        <p>Erste qualifizierte Bewerbungen bereits nach 2–3 Wochen</p>
+  <!-- WARUM GIBT ES UNS -->
+  <section id="about" class="section about-section reveal">
+    <div class="section-label" data-de="Über iscu.ch" data-fr="À propos d’iscu.ch" data-en="About iscu.ch">Über iscu.ch</div>
+    <h2 data-de="Warum gibt es uns?" data-fr="Pourquoi existons-nous ?" data-en="Why do we exist?">Warum gibt es uns?</h2>
+    <div class="about-text">
+      <p data-de="Bei iscu.ch sind wir überzeugt: Recruiting muss heute neu gedacht werden. Klassische Jobportale erreichen vor allem aktiv Suchende – doch die besten Talente sind oft gar nicht auf Jobsuche. Sie sind bereits in festen Positionen und offen für neue Chancen, ohne aktiv danach zu suchen." data-fr="Chez iscu.ch, nous sommes convaincus : le recrutement doit être repensé aujourd’hui. Les portails d’emploi classiques touchent surtout les candidats actifs – mais les meilleurs talents ne cherchent souvent pas activement." data-en="At iscu.ch we believe recruiting must be reimagined. Traditional job portals mainly reach active job seekers – but the best talent is often not actively looking.">Bei iscu.ch sind wir überzeugt: Recruiting muss heute neu gedacht werden. Klassische Jobportale erreichen vor allem aktiv Suchende – doch die besten Talente sind oft gar nicht auf Jobsuche. Sie sind bereits in festen Positionen und offen für neue Chancen, ohne aktiv danach zu suchen.</p>
+      <p data-de="Genau hier setzen wir an. Wir machen Arbeitgebermarken sichtbar und sprechen Talente dort an, wo sie täglich Zeit verbringen: in sozialen Netzwerken. Mit kreativem Storytelling und datengetriebenem Social Recruiting schaffen wir Inhalte, die nicht nur informieren, sondern begeistern." data-fr="C’est exactement là que nous intervenons. Nous rendons les marques employeurs visibles et atteignons les talents là où ils passent leur temps : sur les réseaux sociaux." data-en="That’s exactly where we come in. We make employer brands visible and reach talent where they spend their time: on social networks.">Genau hier setzen wir an. Wir machen Arbeitgebermarken sichtbar und sprechen Talente dort an, wo sie täglich Zeit verbringen: in sozialen Netzwerken. Mit kreativem Storytelling und datengetriebenem Social Recruiting schaffen wir Inhalte, die nicht nur informieren, sondern begeistern.</p>
+      <p class="about-tagline" data-de="Wir sind mehr als eine Agentur – wir sind Brückenbauer zwischen Unternehmen und den Talenten von morgen." data-fr="Nous sommes plus qu’une agence – nous sommes bâtisseurs de ponts entre les entreprises et les talents de demain." data-en="We are more than an agency – we are bridge builders between companies and the talent of tomorrow.">Wir sind mehr als eine Agentur – wir sind Brückenbauer zwischen Unternehmen und den Talenten von morgen.</p>
+    </div>
+    <div class="mission-vision">
+      <div class="mv-card reveal">
+        <div class="mv-icon">&#127919;</div>
+        <h3 data-de="Mission" data-fr="Mission" data-en="Mission">Mission</h3>
+        <p data-de="Unsere Mission ist es, die richtigen Talente zur richtigen Zeit zu erreichen – auch dann, wenn sie nicht aktiv suchen. Wir verbinden strategisches Social Recruiting mit kreativem Content, präzisem Targeting und algorithmischer Optimierung." data-fr="Notre mission est d’atteindre les bons talents au bon moment – même lorsqu’ils ne cherchent pas activement." data-en="Our mission is to reach the right talent at the right time – even when they’re not actively looking.">Unsere Mission ist es, die richtigen Talente zur richtigen Zeit zu erreichen – auch dann, wenn sie nicht aktiv suchen. Wir verbinden strategisches Social Recruiting mit kreativem Content, präzisem Targeting und algorithmischer Optimierung.</p>
       </div>
-      <div class="pillar reveal">
-        <div class="pillar-icon">🎯</div>
-        <h3>Präzise</h3>
-        <p>Targeting nach Region, Beruf, Alter und Interessen</p>
-      </div>
-      <div class="pillar reveal">
-        <div class="pillar-icon">🤝</div>
-        <h3>Persönlich</h3>
-        <p>Dedizierter Ansprechpartner – kein Ticketsystem</p>
+      <div class="mv-card reveal">
+        <div class="mv-icon">&#9728;</div>
+        <h3 data-de="Vision" data-fr="Vision" data-en="Vision">Vision</h3>
+        <p data-de="Wir glauben an eine Recruiting-Welt, in der Unternehmen nicht mehr darauf warten müssen, gefunden zu werden – sondern selbst sichtbar sind. Unsere Vision: Social Recruiting als echten Wettbewerbsvorteil etablieren – effizient, messbar und nachhaltig erfolgreich." data-fr="Nous croyons en un monde du recrutement où les entreprises n’attendent plus d’être trouvées – mais sont elles-mêmes visibles." data-en="We believe in a recruiting world where companies no longer wait to be found – but are themselves visible.">Wir glauben an eine Recruiting-Welt, in der Unternehmen nicht mehr darauf warten müssen, gefunden zu werden – sondern selbst sichtbar sind. Unsere Vision: Social Recruiting als echten Wettbewerbsvorteil etablieren – effizient, messbar und nachhaltig erfolgreich.</p>
       </div>
     </div>
   </section>
 
-  <!-- LEISTUNGEN -->
-  <section id="leistungen" class="section leistungen-section">
-    <div class="section-label">Leistungen</div>
-    <h2>Ihre Stellen auf allen<br><em>relevanten Plattformen</em></h2>
-    <p>Wir erstellen, schalten und optimieren Ihre Recruiting-Kampagnen auf den vier wichtigsten Social-Media-Kanälen der Schweiz.</p>
-    <div class="platforms-grid reveal">
-      <div class="platform-card">
-        <div class="platform-logo insta">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-        </div>
-        <h3>Instagram</h3>
-        <p>Stories, Reels &amp; Feed-Ads, die Bewerber ansprechen – visuell, emotional, wirkungsvoll.</p>
-        <ul class="platform-features">
-          <li>Video- &amp; Bild-Ads</li>
-          <li>Story-Formate</li>
-          <li>Employer Branding</li>
+  <!-- UNSER ANGEBOT -->
+  <section id="angebot" class="section angebot-section">
+    <div class="section-label" data-de="Unser Angebot" data-fr="Notre Offre" data-en="Our Services">Unser Angebot</div>
+    <h2 data-de="Wir optimieren Ihr Recruiting&lt;br&gt;&lt;em&gt;mit zielgerichteten Strategien&lt;/em&gt;" data-fr="Nous optimisons votre recrutement&lt;br&gt;&lt;em&gt;avec des stratégies ciblées&lt;/em&gt;" data-en="We optimize your recruiting&lt;br&gt;&lt;em&gt;with targeted strategies&lt;/em&gt;">Wir optimieren Ihr Recruiting<br><em>mit zielgerichteten Strategien</em></h2>
+    <p data-de="Mehr Reichweite, bessere Bewerber, starke Arbeitgebermarke – mit vier Leistungen, die ineinandergreifen." data-fr="Plus de portée, de meilleurs candidats, une marque employeur forte – avec quatre services complémentaires." data-en="More reach, better applicants, strong employer brand – with four interlocking services.">Mehr Reichweite, bessere Bewerber, starke Arbeitgebermarke – mit vier Leistungen, die ineinandergreifen.</p>
+    <div class="angebot-grid reveal">
+      <div class="angebot-card">
+        <div class="angebot-icon">&#127919;</div>
+        <h3 data-de="Social Media Recruiting" data-fr="Social Media Recruiting" data-en="Social Media Recruiting">Social Media Recruiting</h3>
+        <p data-de="Mit datenbasierten Kampagnen auf Instagram, TikTok, Facebook und LinkedIn finden wir genau die richtigen Kandidaten und erhöhen die Bewerberqualität." data-fr="Avec des campagnes basées sur les données sur Instagram, TikTok, Facebook et LinkedIn, nous trouvons exactement les bons candidats." data-en="With data-driven campaigns on Instagram, TikTok, Facebook and LinkedIn, we find exactly the right candidates.">Mit datenbasierten Kampagnen auf Instagram, TikTok, Facebook und LinkedIn finden wir genau die richtigen Kandidaten und erhöhen die Bewerberqualität.</p>
+        <ul class="angebot-features">
+          <li data-de="Zielgruppenspezifisches Targeting" data-fr="Ciblage spécifique" data-en="Audience-specific targeting">Zielgruppenspezifisches Targeting</li>
+          <li data-de="Video- &amp; Bild-Kampagnen" data-fr="Campagnes vidéo &amp; image" data-en="Video &amp; image campaigns">Video- &amp; Bild-Kampagnen</li>
+          <li data-de="Wochentliche Performance-Reports" data-fr="Rapports hebdomadaires" data-en="Weekly performance reports">Wöchentliche Performance-Reports</li>
         </ul>
       </div>
-      <div class="platform-card">
-        <div class="platform-logo tiktok">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.44a8.16 8.16 0 004.77 1.53V7.5a4.85 4.85 0 01-1-.81z"/></svg>
-        </div>
-        <h3>TikTok</h3>
-        <p>Authentische Kurzvideos, die viral gehen – ideal für junge Fachkräfte und Gen Z.</p>
-        <ul class="platform-features">
-          <li>Short-Form Video Ads</li>
-          <li>In-Feed Ads</li>
-          <li>TopView Formate</li>
+      <div class="angebot-card">
+        <div class="angebot-icon">&#127942;</div>
+        <h3 data-de="Employer Branding" data-fr="Employer Branding" data-en="Employer Branding">Employer Branding</h3>
+        <p data-de="Baue eine starke Arbeitgebermarke auf und positioniere Dich als attraktiver Arbeitgeber. Mit kreativen Inhalten und strategischem Storytelling ziehst Du genau die Talente an, die zu Deiner Unternehmenskultur passen." data-fr="Construisez une marque employeur forte et positionnez-vous comme un employeur attractif avec un storytelling créatif." data-en="Build a strong employer brand and position yourself as an attractive employer with creative storytelling.">Baue eine starke Arbeitgebermarke auf und positioniere Dich als attraktiver Arbeitgeber. Mit kreativen Inhalten und strategischem Storytelling ziehst Du genau die Talente an, die zu Deiner Unternehmenskultur passen.</p>
+        <ul class="angebot-features">
+          <li data-de="Brand Identity &amp; Positionierung" data-fr="Identité de marque" data-en="Brand identity &amp; positioning">Brand Identity &amp; Positionierung</li>
+          <li data-de="Authentischer Content" data-fr="Contenu authentique" data-en="Authentic content">Authentischer Content</li>
+          <li data-de="Kultur sichtbar machen" data-fr="Rendre la culture visible" data-en="Make culture visible">Kultur sichtbar machen</li>
         </ul>
       </div>
-      <div class="platform-card">
-        <div class="platform-logo facebook">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </div>
-        <h3>Facebook</h3>
-        <p>Grösste Reichweite in der Schweiz – präzises Targeting nach Beruf, Region und Demographie.</p>
-        <ul class="platform-features">
-          <li>Carousel &amp; Video Ads</li>
-          <li>Lead Gen Formulare</li>
-          <li>Retargeting</li>
+      <div class="angebot-card">
+        <div class="angebot-icon">&#128140;</div>
+        <h3 data-de="Karriereseite" data-fr="Page Carrière" data-en="Career Page">Karriereseite</h3>
+        <p data-de="Eine optimierte Karriereseite ist der Schlüssel für erfolgreiche Bewerbungen. Wir gestalten eine ansprechende und benutzerfreundliche Plattform, die potenzielle Kandidaten überzeugt." data-fr="Une page carrière optimisée est la clé pour des candidatures réussies. Nous créons une plateforme conviviale qui convainc les candidats." data-en="An optimized career page is the key to successful applications. We create a user-friendly platform that convinces candidates.">Eine optimierte Karriereseite ist der Schlüssel für erfolgreiche Bewerbungen. Wir gestalten eine ansprechende und benutzerfreundliche Plattform, die potenzielle Kandidaten überzeugt.</p>
+        <ul class="angebot-features">
+          <li data-de="Bewerberprozess optimieren" data-fr="Optimiser le processus" data-en="Optimize application process">Bewerberprozess optimieren</li>
+          <li data-de="Mobile-optimiert" data-fr="Optimisé mobile" data-en="Mobile-optimized">Mobile-optimiert</li>
+          <li data-de="ATS-Integration" data-fr="Intégration ATS" data-en="ATS integration">ATS-Integration</li>
         </ul>
       </div>
-      <div class="platform-card">
-        <div class="platform-logo linkedin">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </div>
-        <h3>LinkedIn</h3>
-        <p>Das Netzwerk für Fach- und Führungskräfte – ideal für spezialisierte Profile.</p>
-        <ul class="platform-features">
-          <li>Sponsored Content</li>
-          <li>InMail Kampagnen</li>
-          <li>Job Ads</li>
+      <div class="angebot-card">
+        <div class="angebot-icon">&#128187;</div>
+        <h3 data-de="Webdesign" data-fr="Webdesign" data-en="Web Design">Webdesign</h3>
+        <p data-de="Wir erstellen moderne, professionelle Webseiten für Unternehmen – schnell, mobil-optimiert und auf Ihre Marke zugeschnitten. Von der Landing Page bis zur vollständigen Unternehmenswebsite." data-fr="Nous créons des sites web modernes et professionnels pour les entreprises – rapides, optimisés pour mobile et adaptés à votre marque." data-en="We create modern, professional websites for companies – fast, mobile-optimized and tailored to your brand.">Wir erstellen moderne, professionelle Webseiten für Unternehmen – schnell, mobil-optimiert und auf Ihre Marke zugeschnitten. Von der Landing Page bis zur vollständigen Unternehmenswebsite.</p>
+        <ul class="angebot-features">
+          <li data-de="Custom Design &amp; Development" data-fr="Design &amp; développement sur mesure" data-en="Custom design &amp; development">Custom Design &amp; Development</li>
+          <li data-de="SEO-Grundoptimierung" data-fr="Optimisation SEO de base" data-en="Basic SEO optimization">SEO-Grundoptimierung</li>
+          <li data-de="Schnelle Lieferzeit" data-fr="Délai de livraison rapide" data-en="Fast delivery time">Schnelle Lieferzeit</li>
         </ul>
       </div>
     </div>
@@ -168,136 +172,159 @@
 
   <!-- PROZESS -->
   <section id="prozess" class="section prozess-section">
-    <div class="section-label">Unser Prozess</div>
-    <h2>In 4 Schritten zu<br><em>Ihren Wunschkandidaten</em></h2>
-    <p>Klar strukturiert, transparent und effizient – so sieht unsere Zusammenarbeit aus.</p>
+    <div class="section-label" data-de="Unser Prozess" data-fr="Notre Processus" data-en="Our Process">Unser Prozess</div>
+    <h2 data-de="In 4 Schritten zu&lt;br&gt;&lt;em&gt;Ihren Wunschkandidaten&lt;/em&gt;" data-fr="En 4 étapes vers&lt;br&gt;&lt;em&gt;vos candidats idéaux&lt;/em&gt;" data-en="In 4 steps to&lt;br&gt;&lt;em&gt;your ideal candidates&lt;/em&gt;">In 4 Schritten zu<br><em>Ihren Wunschkandidaten</em></h2>
+    <p data-de="Klar strukturiert, transparent und effizient – so sieht unsere Zusammenarbeit aus." data-fr="Clair, transparent et efficace – voilà à quoi ressemble notre collaboration." data-en="Clear, transparent and efficient – this is how our collaboration works.">Klar strukturiert, transparent und effizient – so sieht unsere Zusammenarbeit aus.</p>
     <div class="prozess-steps">
       <div class="prozess-step">
         <div class="step-number">01</div>
         <div class="step-content">
-          <h3>Erstgespräch</h3>
-          <p>Wir lernen Ihr Unternehmen kennen: Kultur, offene Stellen, Zielgruppe und bisherige Erfahrungen im Recruiting. Kostenlos und unverbindlich.</p>
+          <h3 data-de="Erstgespräch" data-fr="Entretien initial" data-en="Discovery Call">Erstgespräch</h3>
+          <p data-de="Wir lernen Ihr Unternehmen kennen: Kultur, offene Stellen, Zielgruppe. Kostenlos und unverbindlich." data-fr="Nous apprenons à connaître votre entreprise: culture, postes ouverts, groupe cible. Gratuit et sans engagement." data-en="We get to know your company: culture, open positions, target group. Free and non-binding.">Wir lernen Ihr Unternehmen kennen: Kultur, offene Stellen, Zielgruppe. Kostenlos und unverbindlich.</p>
         </div>
         <div class="step-arrow">→</div>
       </div>
       <div class="prozess-step">
         <div class="step-number">02</div>
         <div class="step-content">
-          <h3>Strategie</h3>
-          <p>Wir entwickeln eine massgeschneiderte Social-Media-Strategie: Plattformwahl, Zielgruppendefinition, Budget und Messaging.</p>
+          <h3 data-de="Strategie" data-fr="Stratégie" data-en="Strategy">Strategie</h3>
+          <p data-de="Wir entwickeln eine massgeschneiderte Social-Media-Strategie: Plattformwahl, Zielgruppendefinition, Budget und Messaging." data-fr="Nous développons une stratégie Social Media sur mesure: choix de plateforme, définition du groupe cible, budget." data-en="We develop a tailored social media strategy: platform selection, target group definition, budget and messaging.">Wir entwickeln eine massgeschneiderte Social-Media-Strategie: Plattformwahl, Zielgruppendefinition, Budget und Messaging.</p>
         </div>
         <div class="step-arrow">→</div>
       </div>
       <div class="prozess-step">
         <div class="step-number">03</div>
         <div class="step-content">
-          <h3>Produktion</h3>
-          <p>Unser Team produziert professionellen Content – Videos, Bilder, Texte – und schaltet die Kampagnen auf den definierten Plattformen.</p>
+          <h3 data-de="Produktion" data-fr="Production" data-en="Production">Produktion</h3>
+          <p data-de="Unser Team produziert professionellen Content – Videos, Bilder, Texte – und schaltet die Kampagnen auf den definierten Plattformen." data-fr="Notre équipe produit du contenu professionnel – vidéos, images, textes – et lance les campagnes." data-en="Our team produces professional content – videos, images, copy – and launches campaigns on the defined platforms.">Unser Team produziert professionellen Content – Videos, Bilder, Texte – und schaltet die Kampagnen auf den definierten Plattformen.</p>
         </div>
         <div class="step-arrow">→</div>
       </div>
       <div class="prozess-step last">
         <div class="step-number">04</div>
         <div class="step-content">
-          <h3>Resultate</h3>
-          <p>Sie erhalten qualifizierte Bewerbungen. Wir liefern wöchentliche Reports und optimieren die Kampagnen kontinuierlich.</p>
+          <h3 data-de="Resultate" data-fr="Résultats" data-en="Results">Resultate</h3>
+          <p data-de="Sie erhalten qualifizierte Bewerbungen. Wir liefern wöchentliche Reports und optimieren die Kampagnen kontinuierlich." data-fr="Vous recevez des candidatures qualifiées. Nous fournissons des rapports hebdomadaires et optimisons continuellement." data-en="You receive qualified applications. We deliver weekly reports and continuously optimize the campaigns.">Sie erhalten qualifizierte Bewerbungen. Wir liefern wöchentliche Reports und optimieren die Kampagnen kontinuierlich.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="section team-section">
+    <div class="section-label" data-de="Unser Team" data-fr="Notre Équipe" data-en="Our Team">Unser Team</div>
+    <h2 data-de="Menschen hinter&lt;br&gt;&lt;em&gt;iscu.ch&lt;/em&gt;" data-fr="Les personnes derrière&lt;br&gt;&lt;em&gt;iscu.ch&lt;/em&gt;" data-en="The people behind&lt;br&gt;&lt;em&gt;iscu.ch&lt;/em&gt;">Menschen hinter<br><em>iscu.ch</em></h2>
+    <p data-de="Wir denken Recruiting neu – für mehr Reichweite, starke Arbeitgebermarken und nachhaltiges Wachstum für Schweizer KMU." data-fr="Nous repensons le recrutement – pour plus de portée, des marques employeurs fortes et une croissance durable pour les PME suisses." data-en="We reimagine recruiting – for more reach, strong employer brands and sustainable growth for Swiss SMEs.">Wir denken Recruiting neu – für mehr Reichweite, starke Arbeitgebermarken und nachhaltiges Wachstum für Schweizer KMU.</p>
+    <div class="team-grid reveal">
+      <div class="team-card">
+        <div class="team-photo placeholder-photo">T</div>
+        <h3>Térence</h3>
+        <p class="team-role" data-de="Gründer &amp; CEO" data-fr="Fondateur &amp; CEO" data-en="Founder &amp; CEO">Gründer &amp; CEO</p>
+        <a href="mailto:terence@iscu.ch" class="team-email">terence@iscu.ch</a>
+      </div>
+      <div class="team-card team-card--cat">
+        <div class="team-photo cat-photo">
+          <img src="assets/img/team-cat.jpeg" alt="Chief Happiness Officer">
+        </div>
+        <h3>&#128049; Coby</h3>
+        <p class="team-role" data-de="Chief Happiness Officer" data-fr="Chief Happiness Officer" data-en="Chief Happiness Officer">Chief Happiness Officer</p>
+        <p class="team-fun" data-de="Bewerbungen werden erst nach Zustimmung freigegeben." data-fr="Les candidatures ne sont approuvées qu’après accord." data-en="Applications only approved after consent.">Bewerbungen werden erst nach Zustimmung freigegeben.</p>
       </div>
     </div>
   </section>
 
   <!-- VERGLEICH -->
   <section id="vergleich" class="section vergleich-section reveal">
-    <div class="section-label">Vergleich</div>
-    <h2>iscu.ch vs.<br><em>klassische Agenturen</em></h2>
-    <p>Was unterscheidet Social Recruiting von traditionellen Methoden? Alles.</p>
+    <div class="section-label" data-de="Vergleich" data-fr="Comparaison" data-en="Comparison">Vergleich</div>
+    <h2 data-de="iscu.ch vs.&lt;br&gt;&lt;em&gt;klassische Agenturen&lt;/em&gt;" data-fr="iscu.ch vs.&lt;br&gt;&lt;em&gt;agences classiques&lt;/em&gt;" data-en="iscu.ch vs.&lt;br&gt;&lt;em&gt;traditional agencies&lt;/em&gt;">iscu.ch vs.<br><em>klassische Agenturen</em></h2>
+    <p data-de="Was unterscheidet Social Recruiting von traditionellen Methoden? Alles." data-fr="Qu’est-ce qui différencie le Social Recruiting des méthodes traditionnelles ? Tout." data-en="What distinguishes Social Recruiting from traditional methods? Everything.">Was unterscheidet Social Recruiting von traditionellen Methoden? Alles.</p>
     <div class="vergleich-table">
       <div class="vergleich-header">
         <div class="col-label"></div>
         <div class="col-iscu">iscu.ch</div>
-        <div class="col-klassisch">Klassische Agentur</div>
+        <div class="col-klassisch" data-de="Klassische Agentur" data-fr="Agence classique" data-en="Traditional Agency">Klassische Agentur</div>
       </div>
       <div class="vergleich-row">
-        <div class="col-label">Plattformen</div>
+        <div class="col-label" data-de="Plattformen" data-fr="Plateformes" data-en="Platforms">Plattformen</div>
         <div class="col-iscu good">Instagram, TikTok, Facebook, LinkedIn</div>
-        <div class="col-klassisch bad">Jobportale (Indeed, Jobs.ch)</div>
+        <div class="col-klassisch bad" data-de="Jobportale (Indeed, Jobs.ch)" data-fr="Portails d’emploi (Indeed, Jobs.ch)" data-en="Job portals (Indeed, Jobs.ch)">Jobportale (Indeed, Jobs.ch)</div>
       </div>
       <div class="vergleich-row">
-        <div class="col-label">Zielgruppe</div>
-        <div class="col-iscu good">Aktiv &amp; passiv Suchende (100 %)</div>
-        <div class="col-klassisch bad">Nur aktiv Suchende (~20 %)</div>
+        <div class="col-label" data-de="Zielgruppe" data-fr="Groupe cible" data-en="Target group">Zielgruppe</div>
+        <div class="col-iscu good" data-de="Aktiv &amp; passiv Suchende (100 %)" data-fr="Chercheurs actifs &amp; passifs (100 %)" data-en="Active &amp; passive seekers (100 %)">Aktiv &amp; passiv Suchende (100 %)</div>
+        <div class="col-klassisch bad" data-de="Nur aktiv Suchende (~20 %)" data-fr="Seulement actifs (~20 %)" data-en="Active seekers only (~20 %)">Nur aktiv Suchende (~20 %)</div>
       </div>
       <div class="vergleich-row">
-        <div class="col-label">Content</div>
-        <div class="col-iscu good">Videos, Reels, Stories &amp; Ads</div>
-        <div class="col-klassisch bad">Textinserate</div>
+        <div class="col-label" data-de="Content" data-fr="Contenu" data-en="Content">Content</div>
+        <div class="col-iscu good" data-de="Videos, Reels, Stories &amp; Ads" data-fr="Vidéos, Reels, Stories &amp; Ads" data-en="Videos, Reels, Stories &amp; Ads">Videos, Reels, Stories &amp; Ads</div>
+        <div class="col-klassisch bad" data-de="Textinserate" data-fr="Annonces textuelles" data-en="Text adverts">Textinserate</div>
       </div>
       <div class="vergleich-row">
-        <div class="col-label">Transparenz</div>
-        <div class="col-iscu good">Echtzeit-Dashboard &amp; Reports</div>
-        <div class="col-klassisch bad">Monatlicher Kurzbericht</div>
+        <div class="col-label" data-de="Transparenz" data-fr="Transparence" data-en="Transparency">Transparenz</div>
+        <div class="col-iscu good" data-de="Echtzeit-Dashboard &amp; Reports" data-fr="Tableau de bord temps réel" data-en="Real-time dashboard &amp; reports">Echtzeit-Dashboard &amp; Reports</div>
+        <div class="col-klassisch bad" data-de="Monatlicher Kurzbericht" data-fr="Rapport mensuel bref" data-en="Monthly brief report">Monatlicher Kurzbericht</div>
       </div>
       <div class="vergleich-row">
-        <div class="col-label">Kosten</div>
-        <div class="col-iscu good">Transparentes Pauschalmodell</div>
-        <div class="col-klassisch bad">15–25 % vom Jahressalär</div>
+        <div class="col-label" data-de="Kosten" data-fr="Coûts" data-en="Costs">Kosten</div>
+        <div class="col-iscu good" data-de="Transparentes Pauschalmodell" data-fr="Modèle forfaitaire transparent" data-en="Transparent flat-rate model">Transparentes Pauschalmodell</div>
+        <div class="col-klassisch bad" data-de="15–25 % vom Jahressalär" data-fr="15–25 % du salaire annuel" data-en="15–25 % of annual salary">15–25 % vom Jahressalär</div>
       </div>
       <div class="vergleich-row">
-        <div class="col-label">Erste Resultate</div>
-        <div class="col-iscu good">2–4 Wochen</div>
-        <div class="col-klassisch bad">2–5 Monate</div>
+        <div class="col-label" data-de="Erste Resultate" data-fr="Premiers résultats" data-en="First results">Erste Resultate</div>
+        <div class="col-iscu good" data-de="2–4 Wochen" data-fr="2–4 semaines" data-en="2–4 weeks">2–4 Wochen</div>
+        <div class="col-klassisch bad" data-de="2–5 Monate" data-fr="2–5 mois" data-en="2–5 months">2–5 Monate</div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
   <section id="faq" class="section faq-section">
-    <div class="section-label">FAQ</div>
-    <h2>Häufige <em>Fragen</em></h2>
-    <p>Alles Wichtige auf einen Blick – und wenn Sie weitere Fragen haben, sprechen wir gerne persönlich.</p>
+    <div class="section-label" data-de="FAQ" data-fr="FAQ" data-en="FAQ">FAQ</div>
+    <h2 data-de="Häufige &lt;em&gt;Fragen&lt;/em&gt;" data-fr="Questions &lt;em&gt;fréquentes&lt;/em&gt;" data-en="Frequently &lt;em&gt;asked questions&lt;/em&gt;">Häufige <em>Fragen</em></h2>
+    <p data-de="Alles Wichtige auf einen Blick – und wenn Sie weitere Fragen haben, sprechen wir gerne persönlich." data-fr="Tout l’essentiel en un coup d’œil – et si vous avez d’autres questions, nous nous ferons un plaisir de vous parler." data-en="Everything important at a glance – and if you have further questions, we’d love to speak with you.">Alles Wichtige auf einen Blick – und wenn Sie weitere Fragen haben, sprechen wir gerne persönlich.</p>
     <div class="faq-list reveal">
       <div class="faq-item">
         <button class="faq-question">Was ist Social Recruiting?<span class="faq-icon">+</span></button>
-        <div class="faq-answer"><p>Social Recruiting bezeichnet die gezielte Suche und Ansprache von Kandidaten über soziale Netzwerke wie Instagram, TikTok, Facebook und LinkedIn. Im Gegensatz zu klassischen Jobportalen erreicht man so auch Fachkräfte, die nicht aktiv suchen – die grösste und oft ungenutzte Talentgruppe.</p></div>
+        <div class="faq-answer"><p>Social Recruiting bezeichnet die gezielte Suche und Ansprache von Kandidaten über soziale Netzwerke wie Instagram, TikTok, Facebook und LinkedIn. Im Gegensatz zu klassischen Jobportalen erreicht man so auch Fachkräfte, die nicht aktiv suchen.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-question">Für welche Branchen eignet sich Social Recruiting?<span class="faq-icon">+</span></button>
-        <div class="faq-answer"><p>Social Recruiting funktioniert branchenübergreifend: Handwerk, Pflege, IT, Gastronomie, Industrie, Detailhandel und viele mehr. Wir passen Plattform und Ansprache an die Zielgruppe der jeweiligen Stelle an – ob Polymechaniker in Zürich oder Pflegefachperson in Genf.</p></div>
+        <div class="faq-answer"><p>Social Recruiting funktioniert branchenübergreifend: Handwerk, Pflege, IT, Gastronomie, Industrie, Detailhandel und viele mehr. Wir passen Plattform und Ansprache an die Zielgruppe der jeweiligen Stelle an.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-question">Wie schnell sehe ich erste Resultate?<span class="faq-icon">+</span></button>
-        <div class="faq-answer"><p>Bereits nach 2–3 Wochen erhalten die meisten Kunden erste qualifizierte Bewerbungen. Die Kampagne wird in den ersten Wochen aktiv optimiert, sodass die Performance kontinuierlich steigt. Wir teilen mit Ihnen wöchentliche Reports zu Reichweite, Klicks und Bewerbungseingängen.</p></div>
+        <div class="faq-answer"><p>Bereits nach 2–3 Wochen erhalten die meisten Kunden erste qualifizierte Bewerbungen. Die Kampagne wird in den ersten Wochen aktiv optimiert, sodass die Performance kontinuierlich steigt.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-question">Was kostet eine Kampagne bei iscu.ch?<span class="faq-icon">+</span></button>
-        <div class="faq-answer"><p>Wir arbeiten mit transparenten Pauschalmodellen – keine versteckten Kosten, keine Erfolgsprovision auf Jahressalär. Die genauen Kosten hängen von Anzahl Stellen, Plattformen und Laufzeit ab. Im kostenlosen Erstgespräch erstellen wir Ihnen ein individuelles Angebot.</p></div>
+        <div class="faq-answer"><p>Wir arbeiten mit transparenten Pauschalmodellen – keine versteckten Kosten. Die genauen Kosten hängen von Anzahl Stellen, Plattformen und Laufzeit ab. Im kostenlosen Erstgespräch erstellen wir Ihnen ein individuelles Angebot.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">Muss ich selbst Content produzieren oder Werbung kennen?<span class="faq-icon">+</span></button>
-        <div class="faq-answer"><p>Nein. Wir übernehmen alles: Strategie, Content-Produktion, Kampagnenmanagement und Reporting. Ihr Aufwand beschränkt sich auf das Erstgespräch und die Freigabe des Contents. Sie konzentrieren sich auf Ihr Kerngeschäft – wir kümmern uns um die Bewerbungen.</p></div>
+        <button class="faq-question">Muss ich selbst Content produzieren?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Nein. Wir übernehmen alles: Strategie, Content-Produktion, Kampagnenmanagement und Reporting. Ihr Aufwand beschränkt sich auf das Erstgespräch und die Freigabe des Contents.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">Arbeitet iscu.ch auch mit KMU?<span class="faq-icon">+</span></button>
-        <div class="faq-answer"><p>Absolut. Ein Grossteil unserer Kunden sind KMU aus der ganzen Schweiz. Wir skalieren unsere Leistungen entsprechend Ihrem Budget und Ihren Bedürfnissen – Social Recruiting ist kein Privileg grosser Konzerne.</p></div>
+        <button class="faq-question">Erstellt iscu.ch auch Webseiten?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Ja! Neben Social Recruiting erstellen wir auch moderne, professionelle Webseiten für Unternehmen – von der einfachen Landing Page bis zur vollständigen Unternehmenswebsite. Sprechen Sie uns an.</p></div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT / BOOKING -->
   <section id="contact" class="contact reveal">
-    <div class="section-label light">Gratis Erstgespräch</div>
-    <h2>Bereit, mehr Bewerbungen<br><em>zu erhalten?</em></h2>
-    <p class="contact-intro">30 Minuten. Kostenlos. Unverbindlich.<br>Wir zeigen Ihnen, was Social Recruiting für Ihr Unternehmen möglich macht.</p>
+    <div class="section-label light" data-de="Gratis Erstgespräch" data-fr="Entretien gratuit" data-en="Free Discovery Call">Gratis Erstgespräch</div>
+    <h2 data-de="Bereit, mehr Bewerbungen&lt;br&gt;&lt;em&gt;zu erhalten?&lt;/em&gt;" data-fr="Prêt à recevoir plus&lt;br&gt;&lt;em&gt;de candidatures ?&lt;/em&gt;" data-en="Ready to receive more&lt;br&gt;&lt;em&gt;applications?&lt;/em&gt;">Bereit, mehr Bewerbungen<br><em>zu erhalten?</em></h2>
+    <p class="contact-intro" data-de="30 Minuten. Kostenlos. Unverbindlich." data-fr="30 minutes. Gratuit. Sans engagement." data-en="30 minutes. Free. Non-binding.">30 Minuten. Kostenlos. Unverbindlich.<br>Wir zeigen Ihnen, was Social Recruiting für Ihr Unternehmen möglich macht.</p>
     <div class="contact-options">
       <div class="booking-card">
-        <div class="booking-icon">📅</div>
-        <h3>Termin online buchen</h3>
-        <p>Wählen Sie direkt einen freien Termin in unserem Kalender – unkompliziert und ohne Wartezeit.</p>
-        <a href="https://calendly.com/iscu" target="_blank" rel="noopener" class="cta booking-cta">Jetzt Termin buchen →</a>
+        <div class="booking-icon">&#128197;</div>
+        <h3 data-de="Termin online buchen" data-fr="Réserver en ligne" data-en="Book online">Termin online buchen</h3>
+        <p data-de="Wählen Sie direkt einen freien Termin in unserem Kalender." data-fr="Choisissez directement un créneau dans notre calendrier." data-en="Choose a free slot directly in our calendar.">Wählen Sie direkt einen freien Termin in unserem Kalender – unkompliziert und ohne Wartezeit.</p>
+        <a href="https://calendly.com/iscu" target="_blank" rel="noopener" class="cta booking-cta" data-de="Jetzt Termin buchen →" data-fr="Réserver maintenant →" data-en="Book now →">Jetzt Termin buchen →</a>
       </div>
-      <div class="or-divider"><span>oder</span></div>
+      <div class="or-divider"><span data-de="oder" data-fr="ou" data-en="or">oder</span></div>
       <div class="contact-form-card">
-        <h3>Nachricht senden</h3>
+        <h3 data-de="Nachricht senden" data-fr="Envoyer un message" data-en="Send a message">Nachricht senden</h3>
         <form class="form" id="contactForm">
           <div class="form-row">
             <input type="text" name="name" placeholder="Name" required>
@@ -305,7 +332,7 @@
           </div>
           <input type="email" name="email" placeholder="E-Mail" required style="width:100%">
           <textarea name="message" placeholder="Was suchen Sie? Wir melden uns innerhalb von 24h." required></textarea>
-          <button type="submit" id="submitBtn">Nachricht senden</button>
+          <button type="submit" id="submitBtn" data-de="Nachricht senden" data-fr="Envoyer le message" data-en="Send message">Nachricht senden</button>
           <p class="form-success" id="formSuccess">✓ Nachricht gesendet – wir melden uns bald!</p>
         </form>
       </div>
@@ -314,22 +341,24 @@
 
   <footer>
     <div class="footer-inner">
-      <div class="brand footer-brand">iscu<span>.ch</span></div>
-      <p class="footer-tagline">Social Recruiting · Made in Switzerland</p>
+      <img src="assets/img/ISCU logo.jpeg" alt="iscu.ch" class="brand-logo footer-logo">
+      <p class="footer-tagline" data-de="Social Recruiting · Made in Switzerland" data-fr="Social Recruiting · Made in Switzerland" data-en="Social Recruiting · Made in Switzerland">Social Recruiting · Made in Switzerland</p>
       <div class="footer-links">
-        <a href="#about">Über uns</a>
-        <a href="#leistungen">Leistungen</a>
-        <a href="#prozess">Prozess</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Kontakt</a>
+        <a href="#about" data-de="Über uns" data-fr="À propos" data-en="About">Über uns</a>
+        <a href="#angebot" data-de="Angebot" data-fr="Offre" data-en="Services">Angebot</a>
+        <a href="#prozess" data-de="Prozess" data-fr="Processus" data-en="Process">Prozess</a>
+        <a href="#team" data-de="Team" data-fr="Equipe" data-en="Team">Team</a>
+        <a href="#faq" data-de="FAQ" data-fr="FAQ" data-en="FAQ">FAQ</a>
+        <a href="karriere.html" data-de="Karriere" data-fr="Carrière" data-en="Careers">Karriere</a>
+        <a href="#contact" data-de="Kontakt" data-fr="Contact" data-en="Contact">Kontakt</a>
       </div>
       <div class="footer-socials">
-        <a href="https://www.instagram.com/iscu.ch?igsh=NnRhNHYzNWF0b3Mx&utm_source=qr" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        <a href="https://www.instagram.com/iscu.ch?igsh=NnRhNHYzNWF0b3Mx&utm_source=qr" target="_blank" rel="noopener" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
           Instagram
         </a>
-        <a href="https://www.tiktok.com/@iscu.ch" target="_blank" rel="noopener" class="social-link" aria-label="TikTok">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.44a8.16 8.16 0 004.77 1.53V7.5a4.85 4.85 0 01-1-.81z"/></svg>
+        <a href="https://www.tiktok.com/@iscu.ch" target="_blank" rel="noopener" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.44a8.16 8.16 0 004.77 1.53V7.5a4.85 4.85 0 01-1-.81z"/></svg>
           TikTok
         </a>
       </div>
@@ -353,15 +382,9 @@ function animateFollower() {
   requestAnimationFrame(animateFollower);
 }
 animateFollower();
-document.querySelectorAll('a, button, .platform-card, .pillar, .faq-item').forEach(el => {
+document.querySelectorAll('a, button, .angebot-card, .team-card, .faq-item').forEach(el => {
   el.addEventListener('mouseenter', () => { cursor.classList.add('hover'); follower.classList.add('hover'); });
   el.addEventListener('mouseleave', () => { cursor.classList.remove('hover'); follower.classList.remove('hover'); });
-});
-
-// ── SMOOTH SCROLL CTA ─────────────────────────────
-document.getElementById('ctaBtn').addEventListener('click', e => {
-  e.preventDefault();
-  document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
 });
 
 // ── SCROLL REVEAL ─────────────────────────────────
@@ -403,7 +426,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     });
     if (!isOpen) {
       item.classList.add('open');
-      btn.querySelector('.faq-icon').textContent = '×';
+      btn.querySelector('.faq-icon').textContent = '\u00d7';
     }
   });
 });
@@ -426,11 +449,11 @@ if (ps) prozessObserver.observe(ps);
 document.getElementById('contactForm').addEventListener('submit', async e => {
   e.preventDefault();
   const btn = document.getElementById('submitBtn');
-  btn.textContent = '…'; btn.disabled = true;
+  btn.textContent = '\u2026'; btn.disabled = true;
   const data = Object.fromEntries(new FormData(e.target));
   try { await fetch('api/save_contact.php', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) }); } catch(_) {}
   document.getElementById('formSuccess').style.display = 'block';
-  e.target.reset(); btn.textContent = 'Gesendet ✓';
+  e.target.reset(); btn.textContent = 'Gesendet \u2713';
 });
 
 // ── HAMBURGER ─────────────────────────────────────
@@ -442,6 +465,34 @@ function closeMobile() {
   document.getElementById('mobileMenu').classList.remove('open');
   document.getElementById('hamburger').classList.remove('open');
 }
+
+// ── LANGUAGE SWITCHER ─────────────────────────────
+function setLang(lang) {
+  document.documentElement.setAttribute('data-lang', lang);
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+  document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.placeholder = val;
+    } else if (el.tagName === 'BUTTON' || el.tagName === 'A' || el.tagName === 'SPAN' || el.tagName === 'P' || el.tagName === 'DIV') {
+      if (!el.querySelector('svg') && !el.querySelector('img')) {
+        el.innerHTML = val;
+      }
+    } else {
+      el.innerHTML = val;
+    }
+  });
+  // Update html lang attr
+  document.documentElement.lang = lang;
+  // Save preference
+  localStorage.setItem('iscu-lang', lang);
+}
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => setLang(btn.dataset.lang));
+});
+// Init from saved preference
+const savedLang = localStorage.getItem('iscu-lang');
+if (savedLang && savedLang !== 'de') setLang(savedLang);
 </script>
 </body>
 </html>
