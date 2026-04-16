@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karriere bei iscu.ch – Werde Teil des Teams</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .karriere-hero { min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 100px 20px 60px; }
+    .karriere-hero h1 { font-family: 'Fraunces', serif; font-size: clamp(2.4rem,5vw,4.2rem); font-weight: 600; letter-spacing:-1.5px; line-height:1.1; margin-bottom:1.2rem; }
+    .karriere-hero h1 em { font-style:italic; font-weight:300; color:var(--highlight); }
+    .karriere-hero p { color:var(--muted); font-size:1.05rem; font-weight:300; max-width:560px; line-height:1.75; margin-bottom:2.5rem; }
+    .open-positions { max-width: 760px; margin: 0 auto; padding: 80px 20px; }
+    .open-positions h2 { font-family:'Fraunces',serif; font-size:2rem; font-weight:600; letter-spacing:-0.5px; margin-bottom:40px; text-align:center; }
+    .position-card { background:white; border-radius:16px; padding:32px 36px; border:1px solid var(--accent); box-shadow:0 2px 20px rgba(0,0,0,.04); margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; gap:20px; transition:transform .3s, box-shadow .3s; }
+    .position-card:hover { transform:translateY(-3px); box-shadow:0 10px 32px rgba(0,0,0,.08); }
+    .position-info h3 { font-family:'Fraunces',serif; font-size:1.2rem; font-weight:600; margin-bottom:6px; }
+    .position-info p { color:var(--muted); font-size:.88rem; font-weight:300; }
+    .position-tags { display:flex; gap:8px; margin-top:10px; flex-wrap:wrap; }
+    .position-tag { font-size:.75rem; font-weight:500; letter-spacing:.06em; text-transform:uppercase; background:var(--warm); color:var(--text); padding:4px 12px; border-radius:3px; }
+    .apply-btn { background:var(--text); color:var(--bg); padding:12px 24px; border-radius:4px; text-decoration:none; font-size:.88rem; font-weight:500; white-space:nowrap; transition:background .3s, transform .2s; flex-shrink:0; }
+    .apply-btn:hover { background:var(--highlight); transform:translateY(-2px); }
+    .spontan-section { background:var(--text); color:var(--bg); padding:100px 20px; text-align:center; }
+    .spontan-section h2 { font-family:'Fraunces',serif; font-size:clamp(1.8rem,3.5vw,2.8rem); font-weight:600; letter-spacing:-1px; line-height:1.15; margin-bottom:1rem; }
+    .spontan-section h2 em { font-style:italic; font-weight:300; color:var(--highlight); }
+    .spontan-section p { color:rgba(242,248,252,.6); font-size:1rem; font-weight:300; max-width:500px; margin:0 auto 2.5rem; line-height:1.75; }
+    .spontan-form { max-width:480px; margin:0 auto; display:flex; flex-direction:column; gap:12px; }
+    .spontan-form input, .spontan-form textarea, .spontan-form select {
+      border:1px solid rgba(255,255,255,.12); border-radius:8px; padding:13px 16px;
+      font-size:.93rem; font-family:'DM Sans',sans-serif;
+      background:rgba(255,255,255,.06); color:var(--bg); width:100%;
+      transition:border-color .2s;
+    }
+    .spontan-form input::placeholder, .spontan-form textarea::placeholder { color:rgba(242,248,252,.3); }
+    .spontan-form input:focus, .spontan-form textarea:focus, .spontan-form select:focus { outline:none; border-color:var(--highlight); }
+    .spontan-form select option { background:#0D2535; }
+    .spontan-form textarea { resize:vertical; min-height:100px; }
+    .spontan-form button { background:var(--bg); color:var(--text); border:none; border-radius:4px; padding:14px; font-size:.9rem; font-weight:500; font-family:'DM Sans',sans-serif; cursor:none; transition:background .3s, transform .2s; }
+    .spontan-form button:hover { background:var(--highlight); transform:translateY(-2px); }
+    @media (max-width:600px) {
+      .position-card { flex-direction:column; align-items:flex-start; }
+      .apply-btn { width:100%; text-align:center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="brand-link">
+      <img src="assets/img/ISCU logo.jpeg" alt="iscu.ch" class="brand-logo">
+    </a>
+    <div class="nav-links">
+      <a href="index.html#angebot">Angebot</a>
+      <a href="index.html#prozess">Prozess</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="karriere.html" style="color:var(--highlight)">Karriere</a>
+      <a href="index.html#contact">Kontakt</a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html#contact" class="nav-cta">Gratis Erstgespräch</a>
+    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#angebot">Angebot</a>
+    <a href="index.html#prozess">Prozess</a>
+    <a href="index.html#team">Team</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="index.html#contact">Kontakt</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="karriere-hero reveal">
+    <span class="hero-label">Werde Teil von iscu.ch</span>
+    <h1>Wir wachsen –<br>wächst du <em>mit uns?</em></h1>
+    <p>Wir sind ein junges, ambitioniertes Team aus der Schweiz. Wenn du Lust hast, Social Recruiting und Webdesign neu zu denken, bist du bei uns richtig.</p>
+    <a href="#offene-stellen" class="cta">Offene Stellen ansehen</a>
+  </section>
+
+  <!-- OFFENE STELLEN -->
+  <section class="open-positions" id="offene-stellen">
+    <h2>Offene <em>Stellen</em></h2>
+
+    <div class="position-card reveal">
+      <div class="position-info">
+        <h3>Social Media Manager (m/w/d)</h3>
+        <p>Du planst, erstellst und optimierst Social-Recruiting-Kampagnen für unsere Kunden.</p>
+        <div class="position-tags">
+          <span class="position-tag">Remote</span>
+          <span class="position-tag">Teilzeit/Vollzeit</span>
+          <span class="position-tag">Schweiz</span>
+        </div>
+      </div>
+      <a href="#bewerbung" class="apply-btn">Jetzt bewerben</a>
+    </div>
+
+    <div class="position-card reveal">
+      <div class="position-info">
+        <h3>Content Creator / Videograf (m/w/d)</h3>
+        <p>Du produzierst Videos, Reels und Bilder für Recruiting-Kampagnen auf Social Media.</p>
+        <div class="position-tags">
+          <span class="position-tag">Freelance</span>
+          <span class="position-tag">Projektbasis</span>
+          <span class="position-tag">Schweiz</span>
+        </div>
+      </div>
+      <a href="#bewerbung" class="apply-btn">Jetzt bewerben</a>
+    </div>
+
+    <div class="position-card reveal">
+      <div class="position-info">
+        <h3>Webdesigner / Developer (m/w/d)</h3>
+        <p>Du gestaltest und entwickelst moderne Webseiten für unsere Unternehmenskunden.</p>
+        <div class="position-tags">
+          <span class="position-tag">Remote</span>
+          <span class="position-tag">Teilzeit</span>
+          <span class="position-tag">Schweiz</span>
+        </div>
+      </div>
+      <a href="#bewerbung" class="apply-btn">Jetzt bewerben</a>
+    </div>
+
+    <div class="position-card reveal">
+      <div class="position-info">
+        <h3>Vertriebsmitarbeiter (m/w/d) – Provisionsbasis</h3>
+        <p>Du akquirierst selbstständig Neukunden im Bereich IT-Outsourcing & Support und überzeugst Schweizer KMU von modernen IT-Lösungen – komplett remote und mit freier Zeiteinteilung.</p>
+        <div class="position-tags">
+          <span class="position-tag">Remote</span>
+          <span class="position-tag">Freelance</span>
+          <span class="position-tag">Provisionsbasis</span>
+          <span class="position-tag">Schweiz</span>
+        </div>
+      </div>
+      <a href="https://join.com/companies/portner-systemsch/15945878-vertriebsmitarbeiter-m-w-auf-provisionsbasis-remote" target="_blank" class="apply-btn">Jetzt bewerben ↗</a>
+    </div>
+  </section>
+
+  <!-- SPONTANBEWERBUNG -->
+  <section class="spontan-section" id="bewerbung">
+    <div class="section-label light">Bewerbung</div>
+    <h2>Nichts Passendes dabei?<br><em>Meld dich trotzdem.</em></h2>
+    <p>Wir freuen uns über Spontanbewerbungen – wenn die Chemie stimmt, finden wir einen Weg.</p>
+    <form class="spontan-form" id="karriereForm">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Dein Name" required>
+        <input type="email" name="email" placeholder="E-Mail" required>
+      </div>
+      <select name="position">
+        <option value="" disabled selected>Interessensbereich wählen</option>
+        <option>Social Media Recruiting</option>
+        <option>Content Creation / Video</option>
+        <option>Webdesign / Development</option>
+        <option>Sales / Business Development</option>
+        <option>Spontanbewerbung</option>
+      </select>
+      <textarea name="message" placeholder="Erzähl uns kurz von dir – wer du bist, was dich antreibt und warum iscu.ch." required></textarea>
+      <button type="submit" id="karriereSubmit">Bewerbung senden</button>
+      <p class="form-success" id="karriereSuccess" style="display:none">✓ Bewerbung erhalten – wir melden uns!</p>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <img src="assets/img/ISCU logo.jpeg" alt="iscu.ch" class="brand-logo footer-logo">
+      <p class="footer-tagline">Social Recruiting · Made in Switzerland</p>
+      <div class="footer-links">
+        <a href="index.html">Startseite</a>
+        <a href="index.html#angebot">Angebot</a>
+        <a href="index.html#contact">Kontakt</a>
+        <a href="karriere.html">Karriere</a>
+      </div>
+      <p class="footer-copy">© 2025 iscu.ch – Social Recruiting neu gedacht</p>
+    </div>
+  </footer>
+
+<script>
+const cursor = document.querySelector('.cursor');
+const follower = document.querySelector('.cursor-follower');
+let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX; mouseY = e.clientY;
+  cursor.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+});
+function animateFollower() {
+  followerX += (mouseX - followerX) * 0.12;
+  followerY += (mouseY - followerY) * 0.12;
+  follower.style.transform = `translate(${followerX}px, ${followerY}px)`;
+  requestAnimationFrame(animateFollower);
+}
+animateFollower();
+
+const obs = new IntersectionObserver(e => e.forEach(en => { if(en.isIntersecting){en.target.classList.add('visible');obs.unobserve(en.target);}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('mobileMenu').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('open');
+});
+
+document.getElementById('karriereForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const btn = document.getElementById('karriereSubmit');
+  btn.textContent = '…'; btn.disabled = true;
+  const data = Object.fromEntries(new FormData(e.target));
+  try { await fetch('api/save_contact.php', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({...data, type:'karriere'}) }); } catch(_){}
+  document.getElementById('karriereSuccess').style.display = 'block';
+  e.target.reset(); btn.textContent = 'Gesendet ✓';
+});
+</script>
+</body>
+</html>
