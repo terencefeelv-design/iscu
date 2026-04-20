@@ -22,7 +22,7 @@
   <!-- NAVBAR -->
   <nav class="nav">
     <a href="index.html" class="brand-link">
-      <img src="assets/img/logo-v3.svg" alt="iscu.ch" class="brand-logo">
+      <img src="assets/img/logo-v3-transparent.png" alt="iscu.ch" class="brand-logo">
     </a>
     <div class="nav-links">
       <a href="#angebot" data-de="Angebot" data-fr="Offre" data-en="Services">Angebot</a>
@@ -98,8 +98,21 @@
     </div>
   </section>
 
+  <!-- TAB BAR -->
+  <div class="page-tabs" id="pageTabs">
+    <div class="page-tabs-inner">
+      <button class="page-tab" data-tab="about"     data-de="Über uns"  data-fr="À propos"    data-en="About">Über uns</button>
+      <button class="page-tab active" data-tab="angebot"  data-de="Angebot"   data-fr="Offre"       data-en="Services">Angebot</button>
+      <button class="page-tab" data-tab="prozess"   data-de="Prozess"   data-fr="Processus"   data-en="Process">Prozess</button>
+      <button class="page-tab" data-tab="vergleich" data-de="Vergleich" data-fr="Comparaison" data-en="Comparison">Vergleich</button>
+      <button class="page-tab" data-tab="team"      data-de="Team"      data-fr="Équipe"      data-en="Team">Team</button>
+      <button class="page-tab" data-tab="faq"       data-de="FAQ"       data-fr="FAQ"         data-en="FAQ">FAQ</button>
+      <button class="page-tab" data-tab="contact"   data-de="Kontakt"   data-fr="Contact"     data-en="Contact">Kontakt</button>
+    </div>
+  </div>
+
   <!-- WARUM GIBT ES UNS -->
-  <section id="about" class="section about-section reveal">
+  <section id="about" class="section about-section reveal tabbed-section">
     <div class="section-label" data-de="Über iscu.ch" data-fr="À propos d’iscu.ch" data-en="About iscu.ch">Über iscu.ch</div>
     <h2 data-de="Warum gibt es uns?" data-fr="Pourquoi existons-nous ?" data-en="Why do we exist?">Warum gibt es uns?</h2>
     <div class="about-text">
@@ -122,7 +135,7 @@
   </section>
 
   <!-- UNSER ANGEBOT -->
-  <section id="angebot" class="section angebot-section">
+  <section id="angebot" class="section angebot-section tabbed-section">
     <div class="section-label" data-de="Unser Angebot" data-fr="Notre Offre" data-en="Our Services">Unser Angebot</div>
     <h2 data-de="Wir optimieren Ihr Recruiting&lt;br&gt;&lt;em&gt;mit zielgerichteten Strategien&lt;/em&gt;" data-fr="Nous optimisons votre recrutement&lt;br&gt;&lt;em&gt;avec des stratégies ciblées&lt;/em&gt;" data-en="We optimize your recruiting&lt;br&gt;&lt;em&gt;with targeted strategies&lt;/em&gt;">Wir optimieren Ihr Recruiting<br><em>mit zielgerichteten Strategien</em></h2>
     <p data-de="Mehr Reichweite, bessere Bewerber, starke Arbeitgebermarke – mit vier Leistungen, die ineinandergreifen." data-fr="Plus de portée, de meilleurs candidats, une marque employeur forte – avec quatre services complémentaires." data-en="More reach, better applicants, strong employer brand – with four interlocking services.">Mehr Reichweite, bessere Bewerber, starke Arbeitgebermarke – mit vier Leistungen, die ineinandergreifen.</p>
@@ -171,7 +184,7 @@
   </section>
 
   <!-- PROZESS -->
-  <section id="prozess" class="section prozess-section">
+  <section id="prozess" class="section prozess-section tabbed-section">
     <div class="section-label" data-de="Unser Prozess" data-fr="Notre Processus" data-en="Our Process">Unser Prozess</div>
     <h2 data-de="In 4 Schritten zu&lt;br&gt;&lt;em&gt;Ihren Wunschkandidaten&lt;/em&gt;" data-fr="En 4 étapes vers&lt;br&gt;&lt;em&gt;vos candidats idéaux&lt;/em&gt;" data-en="In 4 steps to&lt;br&gt;&lt;em&gt;your ideal candidates&lt;/em&gt;">In 4 Schritten zu<br><em>Ihren Wunschkandidaten</em></h2>
     <p data-de="Klar strukturiert, transparent und effizient – so sieht unsere Zusammenarbeit aus." data-fr="Clair, transparent et efficace – voilà à quoi ressemble notre collaboration." data-en="Clear, transparent and efficient – this is how our collaboration works.">Klar strukturiert, transparent und effizient – so sieht unsere Zusammenarbeit aus.</p>
@@ -211,7 +224,7 @@
   </section>
 
   <!-- TEAM -->
-  <section id="team" class="section team-section">
+  <section id="team" class="section team-section tabbed-section">
     <div class="section-label" data-de="Unser Team" data-fr="Notre Équipe" data-en="Our Team">Unser Team</div>
     <h2 data-de="Menschen hinter&lt;br&gt;&lt;em&gt;iscu.ch&lt;/em&gt;" data-fr="Les personnes derrière&lt;br&gt;&lt;em&gt;iscu.ch&lt;/em&gt;" data-en="The people behind&lt;br&gt;&lt;em&gt;iscu.ch&lt;/em&gt;">Menschen hinter<br><em>iscu.ch</em></h2>
     <p data-de="Wir denken Recruiting neu – für mehr Reichweite, starke Arbeitgebermarken und nachhaltiges Wachstum für Schweizer KMU." data-fr="Nous repensons le recrutement – pour plus de portée, des marques employeurs fortes et une croissance durable pour les PME suisses." data-en="We reimagine recruiting – for more reach, strong employer brands and sustainable growth for Swiss SMEs.">Wir denken Recruiting neu – für mehr Reichweite, starke Arbeitgebermarken und nachhaltiges Wachstum für Schweizer KMU.</p>
@@ -221,6 +234,11 @@
         <h3>Abdullahi Hassan</h3>
         <p class="team-role" data-de="Gründer &amp; CEO" data-fr="Fondateur &amp; CEO" data-en="Founder &amp; CEO">Gründer &amp; CEO</p>
         <a href="mailto:info@iscu.ch" class="team-email">info@iscu.ch</a>
+      </div>
+      <div class="team-card">
+        <div class="team-photo placeholder-photo">T</div>
+        <h3>Térence Michel Bidima</h3>
+        <p class="team-role" data-de="Webentwickler" data-fr="Développeur Web" data-en="Web Developer">Webentwickler</p>
       </div>
       <div class="team-card team-card--cat">
         <div class="team-photo cat-photo">
@@ -234,7 +252,7 @@
   </section>
 
   <!-- VERGLEICH -->
-  <section id="vergleich" class="section vergleich-section reveal">
+  <section id="vergleich" class="section vergleich-section reveal tabbed-section">
     <div class="section-label" data-de="Vergleich" data-fr="Comparaison" data-en="Comparison">Vergleich</div>
     <h2 data-de="iscu.ch vs.&lt;br&gt;&lt;em&gt;klassische Agenturen&lt;/em&gt;" data-fr="iscu.ch vs.&lt;br&gt;&lt;em&gt;agences classiques&lt;/em&gt;" data-en="iscu.ch vs.&lt;br&gt;&lt;em&gt;traditional agencies&lt;/em&gt;">iscu.ch vs.<br><em>klassische Agenturen</em></h2>
     <p data-de="Was unterscheidet Social Recruiting von traditionellen Methoden? Alles." data-fr="Qu’est-ce qui différencie le Social Recruiting des méthodes traditionnelles ? Tout." data-en="What distinguishes Social Recruiting from traditional methods? Everything.">Was unterscheidet Social Recruiting von traditionellen Methoden? Alles.</p>
@@ -278,7 +296,7 @@
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="section faq-section">
+  <section id="faq" class="section faq-section tabbed-section">
     <div class="section-label" data-de="FAQ" data-fr="FAQ" data-en="FAQ">FAQ</div>
     <h2 data-de="Häufige &lt;em&gt;Fragen&lt;/em&gt;" data-fr="Questions &lt;em&gt;fréquentes&lt;/em&gt;" data-en="Frequently &lt;em&gt;asked questions&lt;/em&gt;">Häufige <em>Fragen</em></h2>
     <p data-de="Alles Wichtige auf einen Blick – und wenn Sie weitere Fragen haben, sprechen wir gerne persönlich." data-fr="Tout l’essentiel en un coup d’œil – et si vous avez d’autres questions, nous nous ferons un plaisir de vous parler." data-en="Everything important at a glance – and if you have further questions, we’d love to speak with you.">Alles Wichtige auf einen Blick – und wenn Sie weitere Fragen haben, sprechen wir gerne persönlich.</p>
@@ -311,7 +329,7 @@
   </section>
 
   <!-- CONTACT / BOOKING -->
-  <section id="contact" class="contact reveal">
+  <section id="contact" class="contact reveal tabbed-section">
     <div class="section-label light" data-de="Gratis Erstgespräch" data-fr="Entretien gratuit" data-en="Free Discovery Call">Gratis Erstgespräch</div>
     <h2 data-de="Bereit, mehr Bewerbungen&lt;br&gt;&lt;em&gt;zu erhalten?&lt;/em&gt;" data-fr="Prêt à recevoir plus&lt;br&gt;&lt;em&gt;de candidatures ?&lt;/em&gt;" data-en="Ready to receive more&lt;br&gt;&lt;em&gt;applications?&lt;/em&gt;">Bereit, mehr Bewerbungen<br><em>zu erhalten?</em></h2>
     <p class="contact-intro" data-de="30 Minuten. Kostenlos. Unverbindlich." data-fr="30 minutes. Gratuit. Sans engagement." data-en="30 minutes. Free. Non-binding.">30 Minuten. Kostenlos. Unverbindlich.<br>Wir zeigen Ihnen, was Social Recruiting für Ihr Unternehmen möglich macht.</p>
@@ -341,7 +359,7 @@
 
   <footer>
     <div class="footer-inner">
-      <img src="assets/img/logo-v3.svg" alt="iscu.ch" class="brand-logo footer-logo">
+      <img src="assets/img/logo-v3-transparent.png" alt="iscu.ch" class="brand-logo footer-logo">
       <p class="footer-tagline" data-de="Social Recruiting · Made in Switzerland" data-fr="Social Recruiting · Made in Switzerland" data-en="Social Recruiting · Made in Switzerland">Social Recruiting · Made in Switzerland</p>
       <div class="footer-links">
         <a href="#about" data-de="Über uns" data-fr="À propos" data-en="About">Über uns</a>
@@ -493,6 +511,65 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 // Init from saved preference
 const savedLang = localStorage.getItem('iscu-lang');
 if (savedLang && savedLang !== 'de') setLang(savedLang);
+
+// ── TAB NAVIGATION ────────────────────────
+const TAB_IDS = ['about','angebot','prozess','vergleich','team','faq','contact'];
+
+function activateTab(id) {
+  TAB_IDS.forEach(sid => {
+    const sec = document.getElementById(sid);
+    const btn = document.querySelector(`.page-tab[data-tab="${sid}"]`);
+    if (sec) sec.classList.toggle('tab-active', sid === id);
+    if (btn) btn.classList.toggle('active', sid === id);
+  });
+  // trigger reveal animations inside newly shown section
+  document.querySelectorAll('#' + id + ' .reveal').forEach(el => {
+    if (!el.classList.contains('visible')) el.classList.add('visible');
+  });
+  // scroll to tab bar
+  const tabBar = document.getElementById('pageTabs');
+  if (tabBar) {
+    const offset = tabBar.getBoundingClientRect().top + window.scrollY - 10;
+    window.scrollTo({ top: offset, behavior: 'smooth' });
+  }
+}
+
+// Show "angebot" by default
+activateTab('angebot');
+
+// Tab bar clicks
+document.querySelectorAll('.page-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    activateTab(btn.dataset.tab);
+    if (typeof setLang === 'function') {
+      const lang = document.documentElement.getAttribute('data-lang') || 'de';
+      btn.textContent = btn.getAttribute('data-' + lang) || btn.textContent;
+    }
+  });
+});
+
+// Nav link clicks → activate corresponding tab
+document.querySelectorAll('.nav-links a[href^="#"], .mobile-menu a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const hash = a.getAttribute('href').slice(1);
+    if (TAB_IDS.includes(hash)) {
+      e.preventDefault();
+      activateTab(hash);
+      closeMobile && closeMobile();
+    }
+  });
+});
+
+// Hero CTA buttons
+document.querySelectorAll('a[href="#contact"], a[href="#prozess"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const hash = a.getAttribute('href').slice(1);
+    if (TAB_IDS.includes(hash)) {
+      e.preventDefault();
+      activateTab(hash);
+    }
+  });
+});
 </script>
 </body>
 </html>
