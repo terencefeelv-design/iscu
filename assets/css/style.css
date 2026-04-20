@@ -693,3 +693,65 @@ a.platform-badge:hover {
   .angebot-grid { grid-template-columns: repeat(2,1fr); }
   .mission-vision { grid-template-columns: 1fr 1fr; }
 }
+
+/* ─────────────────────────────────────────
+   TAB NAVIGATION
+───────────────────────────────────────── */
+.page-tabs {
+  position: sticky;
+  top: 68px;
+  z-index: 90;
+  background: var(--bg);
+  border-bottom: 1px solid var(--accent);
+  padding: 10px 20px;
+}
+.page-tabs-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.page-tabs-inner::-webkit-scrollbar { display: none; }
+.page-tab {
+  flex-shrink: 0;
+  padding: 8px 22px;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: .85rem;
+  font-weight: 500;
+  color: var(--muted);
+  transition: all .2s;
+  white-space: nowrap;
+}
+.page-tab:hover:not(.active) {
+  background: var(--warm);
+  color: var(--text);
+}
+.page-tab.active {
+  background: var(--text);
+  color: var(--bg);
+  border-radius: 6px;
+}
+
+/* Sections hidden by default, shown when tab-active */
+.tabbed-section {
+  display: none;
+}
+.tabbed-section.tab-active {
+  display: block;
+  animation: tabFadeIn .35s ease;
+}
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .page-tabs { top: 60px; padding: 8px 12px; }
+  .page-tab  { padding: 7px 14px; font-size: .8rem; }
+}

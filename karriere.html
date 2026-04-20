@@ -44,6 +44,43 @@
       .position-card { flex-direction:column; align-items:flex-start; }
       .apply-btn { width:100%; text-align:center; }
     }
+
+    /* ── Internal Application Form ── */
+    .apply-section { background:var(--text); color:var(--bg); padding:80px 20px; }
+    .apply-inner { max-width:560px; margin:0 auto; }
+    .apply-close { background:rgba(255,255,255,.12); border:none; color:var(--bg); padding:8px 18px; border-radius:4px; font-size:.85rem; font-family:'DM Sans',sans-serif; cursor:pointer; margin-bottom:32px; transition:background .2s; }
+    .apply-close:hover { background:rgba(255,255,255,.22); }
+    .apply-section h2 { font-family:'Fraunces',serif; font-size:clamp(1.6rem,3vw,2.4rem); font-weight:600; letter-spacing:-0.5px; line-height:1.15; margin-bottom:1rem; }
+    .apply-section h2 em { font-style:italic; font-weight:300; color:var(--highlight); }
+    .apply-intro { color:rgba(242,248,252,.65); font-size:.95rem; font-weight:300; margin-bottom:2rem; line-height:1.7; }
+    .apply-form { display:flex; flex-direction:column; gap:12px; }
+    .apply-form input, .apply-form textarea {
+      border:1px solid rgba(255,255,255,.12); border-radius:8px; padding:13px 16px;
+      font-size:.93rem; font-family:'DM Sans',sans-serif;
+      background:rgba(255,255,255,.06); color:var(--bg); width:100%;
+      transition:border-color .2s; box-sizing:border-box;
+    }
+    .apply-form input::placeholder, .apply-form textarea::placeholder { color:rgba(242,248,252,.3); }
+    .apply-form input:focus, .apply-form textarea:focus { outline:none; border-color:var(--highlight); }
+    .apply-form textarea { resize:vertical; }
+    .upload-group { display:flex; flex-direction:column; gap:10px; margin-top:4px; }
+    .upload-label {
+      display:flex; align-items:center; gap:12px;
+      border:1.5px dashed rgba(255,255,255,.2); border-radius:10px;
+      padding:14px 18px; cursor:pointer; transition:border-color .2s;
+    }
+    .upload-label:hover { border-color:var(--highlight); }
+    .upload-icon { font-size:1.3rem; flex-shrink:0; }
+    .upload-text { font-size:.88rem; font-weight:400; color:rgba(242,248,252,.8); }
+    .upload-text em { font-style:normal; color:rgba(242,248,252,.45); font-size:.8rem; display:block; margin-top:2px; }
+    .upload-label input[type="file"] { display:none; }
+    .upload-label.has-file { border-color:var(--highlight); }
+    .apply-form button[type="submit"] {
+      background:var(--bg); color:var(--text); border:none; border-radius:4px;
+      padding:14px; font-size:.9rem; font-weight:500; font-family:'DM Sans',sans-serif;
+      cursor:pointer; transition:background .3s, transform .2s; margin-top:4px;
+    }
+    .apply-form button[type="submit"]:hover { background:var(--highlight); transform:translateY(-2px); }
   </style>
 </head>
 <body>
@@ -52,7 +89,7 @@
 
   <nav class="nav">
     <a href="index.html" class="brand-link">
-      <img src="assets/img/logo-v3.svg" alt="iscu.ch" class="brand-logo">
+      <img src="assets/img/logo-v3-transparent.png" alt="iscu.ch" class="brand-logo">
     </a>
     <div class="nav-links">
       <a href="index.html#angebot">Angebot</a>
@@ -138,7 +175,45 @@
           <span class="position-tag">Schweiz</span>
         </div>
       </div>
-      <a href="https://join.com/companies/portner-systemsch/15945878-vertriebsmitarbeiter-m-w-auf-provisionsbasis-remote" target="_blank" class="apply-btn">Jetzt bewerben ↗</a>
+      <a href="#apply-vertrieb" class="apply-btn" onclick="openApply('Vertriebsmitarbeiter (m/w/d) – Provisionsbasis')">Jetzt bewerben</a>
+    </div>
+  </section>
+
+  <!-- BEWERBUNGSFORMULAR (Intern) -->
+  <section id="apply-vertrieb" class="apply-section reveal" style="display:none;">
+    <div class="apply-inner">
+      <button class="apply-close" onclick="closeApply()">✕ Schliessen</button>
+      <div class="section-label light">Bewerbung</div>
+      <h2>Bewerbung für:<br><em id="applyTitle">Vertriebsmitarbeiter</em></h2>
+      <p class="apply-intro">Füll das Formular aus und lade deine Unterlagen direkt hoch – wir melden uns innerhalb von 48 Stunden.</p>
+      <form class="apply-form" id="applyForm">
+        <div class="form-row">
+          <input type="text" name="vorname" placeholder="Vorname" required>
+          <input type="text" name="nachname" placeholder="Nachname" required>
+        </div>
+        <div class="form-row">
+          <input type="email" name="email" placeholder="E-Mail" required>
+          <input type="tel" name="phone" placeholder="Telefon">
+        </div>
+        <input type="hidden" name="position" id="applyPosition" value="Vertriebsmitarbeiter (m/w/d)">
+        <textarea name="motivation" placeholder="Kurzes Motivationsschreiben – warum passt du zu uns?" rows="4" required></textarea>
+
+        <div class="upload-group">
+          <label class="upload-label">
+            <span class="upload-icon">📄</span>
+            <span class="upload-text">Lebenslauf hochladen <em>(PDF, max. 5 MB)</em></span>
+            <input type="file" name="cv" accept=".pdf,.doc,.docx" required>
+          </label>
+          <label class="upload-label">
+            <span class="upload-icon">📎</span>
+            <span class="upload-text">Zeugnisse / Referenzen <em>(optional, PDF)</em></span>
+            <input type="file" name="zeugnisse" accept=".pdf,.doc,.docx" multiple>
+          </label>
+        </div>
+
+        <button type="submit" id="applySubmit">Bewerbung senden</button>
+        <p class="form-success" id="applySuccess" style="display:none">✓ Bewerbung eingegangen – wir melden uns bald!</p>
+      </form>
     </div>
   </section>
 
@@ -168,7 +243,7 @@
 
   <footer>
     <div class="footer-inner">
-      <img src="assets/img/logo-v3.svg" alt="iscu.ch" class="brand-logo footer-logo">
+      <img src="assets/img/logo-v3-transparent.png" alt="iscu.ch" class="brand-logo footer-logo">
       <p class="footer-tagline">Social Recruiting · Made in Switzerland</p>
       <div class="footer-links">
         <a href="index.html">Startseite</a>
@@ -204,6 +279,44 @@ document.getElementById('hamburger').addEventListener('click', () => {
   document.getElementById('hamburger').classList.toggle('open');
 });
 
+// ── Apply form toggle ──────────────────────
+function openApply(position) {
+  const sec = document.getElementById('apply-vertrieb');
+  document.getElementById('applyTitle').textContent = position;
+  document.getElementById('applyPosition').value = position;
+  sec.style.display = 'block';
+  setTimeout(() => sec.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+}
+function closeApply() {
+  const sec = document.getElementById('apply-vertrieb');
+  sec.style.display = 'none';
+  sec.scrollIntoView({ behavior: 'smooth', block: 'end' });
+}
+
+// File input visual feedback
+document.querySelectorAll('.upload-label input[type="file"]').forEach(input => {
+  input.addEventListener('change', () => {
+    input.closest('.upload-label').classList.toggle('has-file', input.files.length > 0);
+    const span = input.closest('.upload-label').querySelector('.upload-text');
+    if (input.files.length > 0) {
+      const names = Array.from(input.files).map(f => f.name).join(', ');
+      span.querySelector('em') && (span.querySelector('em').textContent = names);
+    }
+  });
+});
+
+// Apply form submit
+document.getElementById('applyForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const btn = document.getElementById('applySubmit');
+  btn.textContent = '…'; btn.disabled = true;
+  const formData = new FormData(e.target);
+  try { await fetch('api/save_contact.php', { method: 'POST', body: formData }); } catch(_) {}
+  document.getElementById('applySuccess').style.display = 'block';
+  btn.textContent = 'Gesendet ✓';
+});
+
+// ── Karriere spontan form ───────────────
 document.getElementById('karriereForm').addEventListener('submit', async e => {
   e.preventDefault();
   const btn = document.getElementById('karriereSubmit');
