@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de" data-lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Impressum – iscu.ch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('iscu-theme') === 'dark' ? 'dark' : 'light');</script>
+  <style>
+    .legal-hero { padding: 120px 24px 60px; text-align: center; }
+    .legal-hero h1 { font-family: 'Fraunces', serif; font-size: clamp(2rem,4vw,3.2rem); font-weight: 600; letter-spacing: -1px; margin-bottom: .75rem; }
+    .legal-hero p { color: var(--muted); font-size: 1rem; font-weight: 300; }
+    .legal-body { max-width: 720px; margin: 0 auto; padding: 0 24px 100px; }
+    .legal-body h2 { font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 600; margin: 2.4rem 0 .75rem; color: var(--text); }
+    .legal-body p, .legal-body li { font-size: .97rem; line-height: 1.8; color: var(--text); font-weight: 300; margin-bottom: .5rem; }
+    .legal-body a { color: var(--highlight); text-decoration: none; }
+    .legal-body a:hover { text-decoration: underline; }
+    .legal-divider { border: none; border-top: 1px solid var(--accent); margin: 2rem 0; }
+    .legal-note { background: var(--warm); border-left: 3px solid var(--highlight); padding: 14px 18px; border-radius: 0 6px 6px 0; font-size: .9rem; color: var(--muted); margin: 1.5rem 0; }
+  </style>
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="brand-link">
+      <img src="assets/img/logo-v3-transparent.png" alt="iscu.ch" class="brand-logo">
+    </a>
+    <div class="nav-right">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="de">DE</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Mode sombre">
+          <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+      <a href="index.html" class="nav-cta" data-de="← Zurück" data-fr="← Retour" data-en="← Back">← Zurück</a>
+    </div>
+  </nav>
+
+  <div class="legal-hero">
+    <h1 data-de="Impressum" data-fr="Mentions légales" data-en="Legal Notice">Impressum</h1>
+    <p data-de="Angaben gemäss Schweizer Recht" data-fr="Informations conformément au droit suisse" data-en="Information pursuant to Swiss law">Angaben gemäss Schweizer Recht</p>
+  </div>
+
+  <div class="legal-body">
+
+    <h2 data-de="Verantwortliche Person" data-fr="Personne responsable" data-en="Responsible Person">Verantwortliche Person</h2>
+    <p><strong>iscu.ch</strong><br>
+      Abdullahi Hassan<br>
+      <span data-de="[Strasse und Hausnummer]" data-fr="[Rue et numéro]" data-en="[Street and number]">[Strasse und Hausnummer]</span><br>
+      <span data-de="[PLZ Ort], Schweiz" data-fr="[NPA Localité], Suisse" data-en="[Postal Code City], Switzerland">[PLZ Ort], Schweiz</span>
+    </p>
+    <p>
+      E-Mail: <a href="mailto:info@iscu.ch">info@iscu.ch</a><br>
+      Web: <a href="https://www.iscu.ch">www.iscu.ch</a>
+    </p>
+
+    <hr class="legal-divider">
+
+    <h2 data-de="Handelsregistereintrag" data-fr="Inscription au registre du commerce" data-en="Commercial Register">Handelsregistereintrag</h2>
+    <p data-de="UID: [CHE-XXX.XXX.XXX] (sofern eingetragen)" data-fr="IDE: [CHE-XXX.XXX.XXX] (si inscrite)" data-en="UID: [CHE-XXX.XXX.XXX] (if registered)">UID: [CHE-XXX.XXX.XXX] (sofern eingetragen)</p>
+
+    <hr class="legal-divider">
+
+    <h2 data-de="Haftungsausschluss" data-fr="Clause de non-responsabilité" data-en="Disclaimer">Haftungsausschluss</h2>
+    <p data-de="Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen. Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen entstanden sind, werden ausgeschlossen." data-fr="L'auteur ne garantit pas l'exactitude, la précision, l'actualité, la fiabilité et l'exhaustivité des informations. Toute responsabilité pour des dommages matériels ou immatériels résultant de l'accès ou de l'utilisation des informations publiées est exclue." data-en="The author assumes no liability for the accuracy, correctness, timeliness, reliability or completeness of the information. Any liability for material or immaterial damage resulting from access to or use of the published information is excluded.">
+      Der Autor übernimmt keinerlei Gewähr hinsichtlich der inhaltlichen Richtigkeit, Genauigkeit, Aktualität, Zuverlässigkeit und Vollständigkeit der Informationen. Haftungsansprüche gegen den Autor wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen entstanden sind, werden ausgeschlossen.
+    </p>
+
+    <h2 data-de="Links zu Drittseiten" data-fr="Liens vers des tiers" data-en="Links to Third Parties">Links zu Drittseiten</h2>
+    <p data-de="Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene Gefahr des Nutzers." data-fr="Les renvois et liens vers des sites web de tiers échappent à notre responsabilité. Toute responsabilité pour de tels sites web est déclinée. L'accès à ces sites et leur utilisation se font aux risques et périls de l'utilisateur." data-en="References and links to third-party websites are outside our area of responsibility. Any responsibility for such websites is disclaimed. Access to and use of such websites is at the user's own risk.">
+      Verweise und Links auf Webseiten Dritter liegen ausserhalb unseres Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt. Der Zugriff und die Nutzung solcher Webseiten erfolgen auf eigene Gefahr des Nutzers.
+    </p>
+
+    <h2 data-de="Urheberrecht" data-fr="Droit d'auteur" data-en="Copyright">Urheberrecht</h2>
+    <p data-de="Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf der Website gehören ausschliesslich iscu.ch oder den namentlich genannten Rechtsinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung der Urheberrechtsträger im Voraus einzuholen." data-fr="Les droits d'auteur et tous les autres droits sur les contenus, images, photos ou autres fichiers du site appartiennent exclusivement à iscu.ch ou aux ayants droit nommément désignés. La reproduction de tout élément nécessite l'accord écrit préalable des titulaires des droits." data-en="Copyright and all other rights to content, images, photos or other files on the website belong exclusively to iscu.ch or the named rights holders. Written consent from the copyright holders must be obtained in advance for the reproduction of any elements.">
+      Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf der Website gehören ausschliesslich iscu.ch oder den namentlich genannten Rechtsinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung der Urheberrechtsträger im Voraus einzuholen.
+    </p>
+
+    <div class="legal-note" data-de="⚠ Bitte ersetze die Platzhalter [Strasse], [PLZ Ort] und [CHE-UID] mit deinen realen Angaben, bevor du diese Seite veröffentlichst." data-fr="⚠ Veuillez remplacer les espaces réservés [Rue], [NPA Localité] et [CHE-UID] par vos informations réelles avant de publier cette page." data-en="⚠ Please replace the placeholders [Street], [Postal Code City] and [CHE-UID] with your actual information before publishing this page.">
+      ⚠ Bitte ersetze die Platzhalter [Strasse], [PLZ Ort] und [CHE-UID] mit deinen realen Angaben, bevor du diese Seite veröffentlichst.
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <img src="assets/img/logo-v3-transparent.png" alt="iscu.ch" class="brand-logo footer-logo">
+      <p class="footer-tagline">Social Recruiting · Made in Switzerland</p>
+      <div class="footer-links">
+        <a href="index.html" data-de="Startseite" data-fr="Accueil" data-en="Home">Startseite</a>
+        <a href="impressum.html" data-de="Impressum" data-fr="Mentions légales" data-en="Legal Notice">Impressum</a>
+        <a href="datenschutz.html" data-de="Datenschutz" data-fr="Confidentialité" data-en="Privacy">Datenschutz</a>
+        <a href="nutzungsbedingungen.html" data-de="Nutzungsbedingungen" data-fr="CGU" data-en="Terms">Nutzungsbedingungen</a>
+      </div>
+      <p class="footer-copy">© 2025 iscu.ch – Social Recruiting neu gedacht</p>
+    </div>
+  </footer>
+
+<script>
+const cursor = document.querySelector('.cursor');
+const follower = document.querySelector('.cursor-follower');
+let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
+document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; cursor.style.transform = `translate(${mouseX}px,${mouseY}px)`; });
+function animateFollower() { followerX += (mouseX - followerX) * 0.12; followerY += (mouseY - followerY) * 0.12; follower.style.transform = `translate(${followerX}px,${followerY}px)`; requestAnimationFrame(animateFollower); }
+animateFollower();
+
+// Language switcher
+function setLang(lang) {
+  document.documentElement.setAttribute('data-lang', lang);
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+  document.querySelectorAll('[data-' + lang + ']').forEach(el => { el.textContent = el.getAttribute('data-' + lang); });
+  localStorage.setItem('iscu-lang', lang);
+}
+document.querySelectorAll('.lang-btn').forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
+const savedLang = localStorage.getItem('iscu-lang');
+if (savedLang && savedLang !== 'de') setLang(savedLang);
+
+// Theme toggle
+const themeBtn = document.getElementById('themeToggle');
+const iconMoon = document.getElementById('iconMoon');
+const iconSun  = document.getElementById('iconSun');
+function setTheme(dark) {
+  document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  iconMoon.style.display = dark ? 'none' : 'block';
+  iconSun.style.display  = dark ? 'block' : 'none';
+  localStorage.setItem('iscu-theme', dark ? 'dark' : 'light');
+}
+themeBtn.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') !== 'dark'));
+setTheme(localStorage.getItem('iscu-theme') === 'dark');
+</script>
+</body>
+</html>
