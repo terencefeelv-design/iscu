@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="light dark">
   <title>iscu.ch – Social Recruiting Agentur Schweiz</title>
   <meta name="description" content="iscu.ch – Die Schweizer Social Recruiting Agentur. Wir gewinnen Kandidaten via Instagram, TikTok, Facebook und LinkedIn für Ihr Unternehmen.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Applique le thème AVANT le rendu pour éviter le flash -->
+  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('iscu-theme') === 'dark' ? 'dark' : 'light');</script>
 </head>
 <body>
 
@@ -62,6 +63,20 @@
     <a href="karriere.html" onclick="closeMobile()" data-de="Karriere" data-fr="Carrière" data-en="Careers">Karriere</a>
     <a href="#contact" onclick="closeMobile()" data-de="Kontakt" data-fr="Contact" data-en="Contact">Kontakt</a>
     <a href="#contact" onclick="closeMobile()" class="mobile-cta" data-de="Gratis Erstgespräch →" data-fr="Entretien gratuit →" data-en="Free Discovery Call →">Gratis Erstgespräch →</a>
+    <div class="mobile-menu-bottom">
+      <div class="mobile-lang">
+        <button class="lang-btn active" data-lang="de">DE</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="mobile-theme-btn" id="mobileThemeToggle" aria-label="Toggle dark mode">
+        <svg id="mIconMoon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="mIconSun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <span id="mThemeLabel" data-de="Dunkel" data-fr="Sombre" data-en="Dark">Dunkel</span>
+      </button>
+    </div>
   </div>
 
   <!-- HERO -->
@@ -244,7 +259,9 @@
       <div class="team-card">
         <div class="team-photo placeholder-photo">T</div>
         <h3>Térence Michel Bidima</h3>
-        <p class="team-role" data-de="Webentwickler" data-fr="Développeur Web" data-en="Web Developer">Webentwickler</p>
+        <p class="team-role">Dessinateur-Constructeur en Microtechnique / Technicien ES Syst. Ind.</p>
+        <p class="team-fun" style="font-size:.78rem; margin-top:4px;">Formation ES* en pause</p>
+        <a href="mailto:bidima.tm@protonmail.com" class="team-email">bidima.tm@protonmail.com</a>
       </div>
       <div class="team-card team-card--cat">
         <div class="team-photo cat-photo">
@@ -518,22 +535,6 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 const savedLang = localStorage.getItem('iscu-lang');
 if (savedLang && savedLang !== 'de') setLang(savedLang);
 
-// ── THEME TOGGLE ───────────────────────────
-const themeBtn = document.getElementById('themeToggle');
-const iconMoon = document.getElementById('iconMoon');
-const iconSun  = document.getElementById('iconSun');
-function setTheme(dark) {
-  document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
-  iconMoon.style.display = dark ? 'none' : 'block';
-  iconSun.style.display  = dark ? 'block' : 'none';
-  localStorage.setItem('iscu-theme', dark ? 'dark' : 'light');
-}
-themeBtn.addEventListener('click', () => {
-  setTheme(document.documentElement.getAttribute('data-theme') !== 'dark');
-});
-const savedTheme = localStorage.getItem('iscu-theme');
-setTheme(savedTheme === 'dark');
-
 // ── TAB NAVIGATION ────────────────────────
 const TAB_IDS = ['about','angebot','prozess','vergleich','team','faq','contact'];
 
@@ -592,6 +593,30 @@ document.querySelectorAll('a[href="#contact"], a[href="#prozess"]').forEach(a =>
     }
   });
 });
+
+// ── THEME TOGGLE ───────────────────────────
+const themeBtn  = document.getElementById('themeToggle');
+const iconMoon  = document.getElementById('iconMoon');
+const iconSun   = document.getElementById('iconSun');
+const mThemeBtn = document.getElementById('mobileThemeToggle');
+const mIconMoon = document.getElementById('mIconMoon');
+const mIconSun  = document.getElementById('mIconSun');
+const mLabel    = document.getElementById('mThemeLabel');
+
+function setTheme(dark) {
+  document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  if (iconMoon) iconMoon.style.display  = dark ? 'none'  : 'block';
+  if (iconSun)  iconSun.style.display   = dark ? 'block' : 'none';
+  if (mIconMoon) mIconMoon.style.display = dark ? 'none'  : 'block';
+  if (mIconSun)  mIconSun.style.display  = dark ? 'block' : 'none';
+  if (mLabel) mLabel.textContent = dark ? 'Hell' : 'Dunkel';
+  localStorage.setItem('iscu-theme', dark ? 'dark' : 'light');
+}
+
+if (themeBtn)  themeBtn.addEventListener('click',  () => setTheme(document.documentElement.getAttribute('data-theme') !== 'dark'));
+if (mThemeBtn) mThemeBtn.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') !== 'dark'));
+
+setTheme(localStorage.getItem('iscu-theme') === 'dark');
 </script>
 </body>
 </html>
