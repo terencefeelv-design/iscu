@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Applique le thème AVANT le rendu pour éviter le flash -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('iscu-theme') === 'dark' ? 'dark' : 'light');</script>
 </head>
 <body>
@@ -355,7 +357,7 @@
         <div class="booking-icon">&#128197;</div>
         <h3 data-de="Termin online buchen" data-fr="Réserver en ligne" data-en="Book online">Termin online buchen</h3>
         <p data-de="Wählen Sie direkt einen freien Termin in unserem Kalender." data-fr="Choisissez directement un créneau dans notre calendrier." data-en="Choose a free slot directly in our calendar.">Wählen Sie direkt einen freien Termin in unserem Kalender – unkompliziert und ohne Wartezeit.</p>
-        <a href="https://calendly.com/iscu" target="_blank" rel="noopener" class="cta booking-cta" data-de="Jetzt Termin buchen →" data-fr="Réserver maintenant →" data-en="Book now →">Jetzt Termin buchen →</a>
+        <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/iscu-info'});return false;" class="cta booking-cta" data-de="Jetzt Termin buchen →" data-fr="Réserver maintenant →" data-en="Book now →">Jetzt Termin buchen →</a>
       </div>
       <div class="or-divider"><span data-de="oder" data-fr="ou" data-en="or">oder</span></div>
       <div class="contact-form-card">
