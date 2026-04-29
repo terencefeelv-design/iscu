@@ -368,7 +368,8 @@ body {
   border: 1px solid rgba(255,255,255,.1); padding: 40px 36px;
   text-align: left;
 }
-.booking-card { display: flex; flex-direction: column; gap: 16px; }
+.booking-card { display: flex; flex-direction: column; gap: 16px; padding: 0 !important; background: none !important; border: none !important; }
+.booking-card .calendly-inline-widget { width: 100%; }
 .booking-icon { font-size: 2.4rem; }
 .booking-card h3, .contact-form-card h3 {
   font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 600; color: var(--bg);
@@ -502,7 +503,8 @@ footer { background: var(--footer-bg); border-top: 1px solid rgba(255,255,255,.0
   .contact-options { grid-template-columns: 1fr; gap: 20px; }
   .or-divider { padding: 0; }
   .or-divider span { writing-mode: horizontal-tb; border-left: none; border-top: 1px solid rgba(255,255,255,.1); padding-left: 0; padding-top: 8px; }
-  .booking-card, .contact-form-card { padding: 28px 20px; }
+  .contact-form-card { padding: 28px 20px; }
+  .booking-card .calendly-inline-widget { height: 580px !important; }
   .form-row { grid-template-columns: 1fr; }
   .contact { padding: 64px 16px; }
   .questionnaire { padding: 40px 24px; }
