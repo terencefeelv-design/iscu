@@ -224,17 +224,17 @@
           <label class="upload-label">
             <span class="upload-icon">📄</span>
             <span class="upload-text">Lebenslauf hochladen <em>(PDF, max. 5 MB)</em></span>
-            <input type="file" name="cv" accept=".pdf,.doc,.docx" required>
+            <input type="file" name="documents" accept=".pdf,application/pdf" required>
           </label>
           <label class="upload-label">
             <span class="upload-icon">📎</span>
             <span class="upload-text">Zeugnisse / Referenzen <em>(optional, PDF)</em></span>
-            <input type="file" name="zeugnisse" accept=".pdf,.doc,.docx" multiple>
+            <input type="file" name="documents" accept=".pdf,application/pdf" multiple>
           </label>
           <label class="upload-label">
             <span class="upload-icon">＋</span>
             <span class="upload-text">Weitere Dokumente hochladen <em>(optional, PDF, max. 5 MB pro Datei)</em></span>
-            <input type="file" name="documents[]" accept=".pdf,application/pdf" multiple>
+            <input type="file" name="documents" accept=".pdf,application/pdf" multiple>
           </label>
         </div>
 
@@ -267,7 +267,7 @@
         <label class="upload-label">
           <span class="upload-icon">＋</span>
           <span class="upload-text">Zusätzliche Dokumente <em>(optional, PDF, max. 5 MB pro Datei)</em></span>
-          <input type="file" name="documents[]" accept=".pdf,application/pdf" multiple>
+          <input type="file" name="documents" accept=".pdf,application/pdf" multiple>
         </label>
       </div>
       <button type="submit" id="karriereSubmit">Bewerbung senden</button>
@@ -360,19 +360,15 @@ function resetUploadLabels(form) {
 // Apply form submit
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mbdqveaz';
 
-function removeUploadsForFormspree(form, formData) {
+function summarizeSelectedUploads(form, formData) {
   const selectedFiles = [];
   form.querySelectorAll('input[type="file"]').forEach(input => {
     Array.from(input.files || []).forEach(file => selectedFiles.push(file.name));
   });
 
-  formData.delete('cv');
-  formData.delete('zeugnisse');
-  formData.delete('documents[]');
-
   if (selectedFiles.length > 0) {
     formData.set('documents_selected', selectedFiles.join(', '));
-    return `\n\nAusgewählte Dokumente: ${selectedFiles.join(', ')}\nHinweis: Anhänge wurden nicht übertragen, da File Uploads in Formspree aktuell nicht freigeschaltet sind.`;
+    return `\n\nAusgewählte Dokumente: ${selectedFiles.join(', ')}`;
   }
 
   return '';
@@ -384,7 +380,7 @@ document.getElementById('applyForm').addEventListener('submit', async e => {
   btn.textContent = '…'; btn.disabled = true;
   const formData = new FormData(e.target);
   const fullName = `${formData.get('vorname') || ''} ${formData.get('nachname') || ''}`.trim();
-  const uploadNote = removeUploadsForFormspree(e.target, formData);
+  const uploadNote = summarizeSelectedUploads(e.target, formData);
   formData.set('name', fullName);
   formData.set('message', `${formData.get('motivation') || ''}${uploadNote}`);
   formData.set('type', 'Bewerbung');
@@ -411,7 +407,7 @@ document.getElementById('karriereForm').addEventListener('submit', async e => {
   const btn = document.getElementById('karriereSubmit');
   btn.textContent = '…'; btn.disabled = true;
   const formData = new FormData(e.target);
-  const uploadNote = removeUploadsForFormspree(e.target, formData);
+  const uploadNote = summarizeSelectedUploads(e.target, formData);
   formData.set('message', `${formData.get('message') || ''}${uploadNote}`);
   formData.set('type', 'Spontanbewerbung');
   formData.set('_subject', `Neue Spontanbewerbung: ${formData.get('position') || 'Karriere'}`);
