@@ -358,14 +358,43 @@ function resetUploadLabels(form) {
 }
 
 // Apply form submit
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mbdqveaz';
+
+function removeUploadsForFormspree(form, formData) {
+  const selectedFiles = [];
+  form.querySelectorAll('input[type="file"]').forEach(input => {
+    Array.from(input.files || []).forEach(file => selectedFiles.push(file.name));
+  });
+
+  formData.delete('cv');
+  formData.delete('zeugnisse');
+  formData.delete('documents[]');
+
+  if (selectedFiles.length > 0) {
+    formData.set('documents_selected', selectedFiles.join(', '));
+    return `\n\nAusgewählte Dokumente: ${selectedFiles.join(', ')}\nHinweis: Anhänge wurden nicht übertragen, da File Uploads in Formspree aktuell nicht freigeschaltet sind.`;
+  }
+
+  return '';
+}
+
 document.getElementById('applyForm').addEventListener('submit', async e => {
   e.preventDefault();
   const btn = document.getElementById('applySubmit');
   btn.textContent = '…'; btn.disabled = true;
   const formData = new FormData(e.target);
-  formData.append('type', 'bewerbung');
+  const fullName = `${formData.get('vorname') || ''} ${formData.get('nachname') || ''}`.trim();
+  const uploadNote = removeUploadsForFormspree(e.target, formData);
+  formData.set('name', fullName);
+  formData.set('message', `${formData.get('motivation') || ''}${uploadNote}`);
+  formData.set('type', 'Bewerbung');
+  formData.set('_subject', `Neue Bewerbung: ${formData.get('position') || 'Karriere'}`);
   try {
-    const res = await fetch('api/save_contact.php', { method: 'POST', body: formData });
+    const res = await fetch(FORMSPREE_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: formData
+    });
     if (!res.ok) throw new Error('Upload failed');
   } catch(_) {
     btn.textContent = 'Fehler – bitte erneut versuchen';
@@ -382,9 +411,16 @@ document.getElementById('karriereForm').addEventListener('submit', async e => {
   const btn = document.getElementById('karriereSubmit');
   btn.textContent = '…'; btn.disabled = true;
   const formData = new FormData(e.target);
-  formData.append('type', 'karriere');
+  const uploadNote = removeUploadsForFormspree(e.target, formData);
+  formData.set('message', `${formData.get('message') || ''}${uploadNote}`);
+  formData.set('type', 'Spontanbewerbung');
+  formData.set('_subject', `Neue Spontanbewerbung: ${formData.get('position') || 'Karriere'}`);
   try {
-    const res = await fetch('api/save_contact.php', { method:'POST', body: formData });
+    const res = await fetch(FORMSPREE_ENDPOINT, {
+      method:'POST',
+      headers: { 'Accept': 'application/json' },
+      body: formData
+    });
     if (!res.ok) throw new Error('Upload failed');
   } catch(_) {
     btn.textContent = 'Fehler – bitte erneut versuchen';
