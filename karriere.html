@@ -218,6 +218,11 @@
             <span class="upload-text">Zeugnisse / Referenzen <em>(optional, PDF)</em></span>
             <input type="file" name="zeugnisse" accept=".pdf,.doc,.docx" multiple>
           </label>
+          <label class="upload-label">
+            <span class="upload-icon">＋</span>
+            <span class="upload-text">Weitere Dokumente hochladen <em>(optional, PDF, max. 5 MB pro Datei)</em></span>
+            <input type="file" name="documents[]" accept=".pdf,application/pdf" multiple>
+          </label>
         </div>
 
         <button type="submit" id="applySubmit">Bewerbung senden</button>
@@ -245,6 +250,13 @@
         <option>Spontanbewerbung</option>
       </select>
       <textarea name="message" placeholder="Erzähl uns kurz von dir – wer du bist, was dich antreibt und warum iscu.ch." required></textarea>
+      <div class="upload-group">
+        <label class="upload-label">
+          <span class="upload-icon">＋</span>
+          <span class="upload-text">Zusätzliche Dokumente <em>(optional, PDF, max. 5 MB pro Datei)</em></span>
+          <input type="file" name="documents[]" accept=".pdf,application/pdf" multiple>
+        </label>
+      </div>
       <button type="submit" id="karriereSubmit">Bewerbung senden</button>
       <p class="form-success" id="karriereSuccess" style="display:none">✓ Bewerbung erhalten – wir melden uns!</p>
     </form>
@@ -309,15 +321,28 @@ function closeApply() {
 
 // File input visual feedback
 document.querySelectorAll('.upload-label input[type="file"]').forEach(input => {
+  const label = input.closest('.upload-label');
+  const em = label.querySelector('.upload-text em');
+  if (em) em.dataset.defaultText = em.textContent;
   input.addEventListener('change', () => {
-    input.closest('.upload-label').classList.toggle('has-file', input.files.length > 0);
-    const span = input.closest('.upload-label').querySelector('.upload-text');
+    label.classList.toggle('has-file', input.files.length > 0);
+    const span = label.querySelector('.upload-text');
     if (input.files.length > 0) {
       const names = Array.from(input.files).map(f => f.name).join(', ');
       span.querySelector('em') && (span.querySelector('em').textContent = names);
+    } else if (em && em.dataset.defaultText) {
+      em.textContent = em.dataset.defaultText;
     }
   });
 });
+
+function resetUploadLabels(form) {
+  form.querySelectorAll('.upload-label').forEach(label => {
+    label.classList.remove('has-file');
+    const em = label.querySelector('.upload-text em');
+    if (em && em.dataset.defaultText) em.textContent = em.dataset.defaultText;
+  });
+}
 
 // Apply form submit
 document.getElementById('applyForm').addEventListener('submit', async e => {
@@ -325,9 +350,17 @@ document.getElementById('applyForm').addEventListener('submit', async e => {
   const btn = document.getElementById('applySubmit');
   btn.textContent = '…'; btn.disabled = true;
   const formData = new FormData(e.target);
-  try { await fetch('api/save_contact.php', { method: 'POST', body: formData }); } catch(_) {}
+  formData.append('type', 'bewerbung');
+  try {
+    const res = await fetch('api/save_contact.php', { method: 'POST', body: formData });
+    if (!res.ok) throw new Error('Upload failed');
+  } catch(_) {
+    btn.textContent = 'Fehler – bitte erneut versuchen';
+    btn.disabled = false;
+    return;
+  }
   document.getElementById('applySuccess').style.display = 'block';
-  btn.textContent = 'Gesendet ✓';
+  e.target.reset(); resetUploadLabels(e.target); btn.textContent = 'Gesendet ✓';
 });
 
 // ── Karriere spontan form ───────────────
@@ -335,10 +368,18 @@ document.getElementById('karriereForm').addEventListener('submit', async e => {
   e.preventDefault();
   const btn = document.getElementById('karriereSubmit');
   btn.textContent = '…'; btn.disabled = true;
-  const data = Object.fromEntries(new FormData(e.target));
-  try { await fetch('api/save_contact.php', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({...data, type:'karriere'}) }); } catch(_){}
+  const formData = new FormData(e.target);
+  formData.append('type', 'karriere');
+  try {
+    const res = await fetch('api/save_contact.php', { method:'POST', body: formData });
+    if (!res.ok) throw new Error('Upload failed');
+  } catch(_) {
+    btn.textContent = 'Fehler – bitte erneut versuchen';
+    btn.disabled = false;
+    return;
+  }
   document.getElementById('karriereSuccess').style.display = 'block';
-  e.target.reset(); btn.textContent = 'Gesendet ✓';
+  e.target.reset(); resetUploadLabels(e.target); btn.textContent = 'Gesendet ✓';
 });
 </script>
 </body>
