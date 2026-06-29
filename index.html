@@ -66,6 +66,21 @@
       <a href="#faq" data-de="FAQ" data-fr="FAQ" data-en="FAQ">FAQ</a>
       <a href="karriere.html" data-de="Karriere" data-fr="Carrière" data-en="Careers">Karriere</a>
       <a href="#contact" data-de="Kontakt" data-fr="Contact" data-en="Contact">Kontakt</a>
+      <details class="nav-dropdown" id="sectionDropdown">
+        <summary>
+          <span data-de="Mehr" data-fr="Plus" data-en="More">Mehr</span>
+          <span class="nav-dropdown-icon" aria-hidden="true">⌄</span>
+        </summary>
+        <div class="nav-dropdown-menu">
+          <button class="page-tab" data-tab="about" data-de="Über uns" data-fr="À propos" data-en="About">Über uns</button>
+          <button class="page-tab active" data-tab="angebot" data-de="Angebot" data-fr="Offre" data-en="Services">Angebot</button>
+          <button class="page-tab" data-tab="prozess" data-de="Prozess" data-fr="Processus" data-en="Process">Prozess</button>
+          <button class="page-tab" data-tab="vergleich" data-de="Vergleich" data-fr="Comparaison" data-en="Comparison">Vergleich</button>
+          <button class="page-tab" data-tab="team" data-de="Team" data-fr="Équipe" data-en="Team">Team</button>
+          <button class="page-tab" data-tab="faq" data-de="FAQ" data-fr="FAQ" data-en="FAQ">FAQ</button>
+          <button class="page-tab" data-tab="contact" data-de="Kontakt" data-fr="Contact" data-en="Contact">Kontakt</button>
+        </div>
+      </details>
     </div>
     <div class="nav-right">
       <div class="lang-switcher">
@@ -130,19 +145,6 @@
     </div>
   </section>
 
-
-  <!-- TAB BAR -->
-  <div class="page-tabs" id="pageTabs">
-    <div class="page-tabs-inner">
-      <button class="page-tab" data-tab="about"     data-de="Über uns"  data-fr="À propos"    data-en="About">Über uns</button>
-      <button class="page-tab active" data-tab="angebot"  data-de="Angebot"   data-fr="Offre"       data-en="Services">Angebot</button>
-      <button class="page-tab" data-tab="prozess"   data-de="Prozess"   data-fr="Processus"   data-en="Process">Prozess</button>
-      <button class="page-tab" data-tab="vergleich" data-de="Vergleich" data-fr="Comparaison" data-en="Comparison">Vergleich</button>
-      <button class="page-tab" data-tab="team"      data-de="Team"      data-fr="Équipe"      data-en="Team">Team</button>
-      <button class="page-tab" data-tab="faq"       data-de="FAQ"       data-fr="FAQ"         data-en="FAQ">FAQ</button>
-      <button class="page-tab" data-tab="contact"   data-de="Kontakt"   data-fr="Contact"     data-en="Contact">Kontakt</button>
-    </div>
-  </div>
 
   <!-- WARUM GIBT ES UNS -->
   <section id="about" class="section about-section reveal tabbed-section">
@@ -544,7 +546,7 @@ if (savedLang && savedLang !== 'de') setLang(savedLang);
 // ── TAB NAVIGATION ────────────────────────
 const TAB_IDS = ['about','angebot','prozess','vergleich','team','faq','contact'];
 
-function activateTab(id) {
+function activateTab(id, shouldScroll = true) {
   TAB_IDS.forEach(sid => {
     const sec = document.getElementById(sid);
     const btn = document.querySelector(`.page-tab[data-tab="${sid}"]`);
@@ -555,16 +557,21 @@ function activateTab(id) {
   document.querySelectorAll('#' + id + ' .reveal').forEach(el => {
     if (!el.classList.contains('visible')) el.classList.add('visible');
   });
-  // scroll to tab bar
-  const tabBar = document.getElementById('pageTabs');
-  if (tabBar) {
-    const offset = tabBar.getBoundingClientRect().top + window.scrollY - 10;
-    window.scrollTo({ top: offset, behavior: 'smooth' });
+  const sectionDropdown = document.getElementById('sectionDropdown');
+  if (sectionDropdown) sectionDropdown.removeAttribute('open');
+  if (shouldScroll) {
+    const sec = document.getElementById(id);
+    const nav = document.querySelector('.nav');
+    const navOffset = nav ? nav.offsetHeight + 16 : 16;
+    if (sec) {
+      const offset = sec.getBoundingClientRect().top + window.scrollY - navOffset;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
+    }
   }
 }
 
 // Show "angebot" by default
-activateTab('angebot');
+activateTab('angebot', false);
 
 // Tab bar clicks
 document.querySelectorAll('.page-tab').forEach(btn => {
@@ -575,6 +582,13 @@ document.querySelectorAll('.page-tab').forEach(btn => {
       btn.textContent = btn.getAttribute('data-' + lang) || btn.textContent;
     }
   });
+});
+
+document.addEventListener('click', e => {
+  const sectionDropdown = document.getElementById('sectionDropdown');
+  if (sectionDropdown && sectionDropdown.open && !sectionDropdown.contains(e.target)) {
+    sectionDropdown.removeAttribute('open');
+  }
 });
 
 // Nav link clicks → activate corresponding tab
