@@ -208,7 +208,7 @@
       <div class="section-label light">Bewerbung</div>
       <h2>Bewerbung für:<br><em id="applyTitle">Vertriebsmitarbeiter</em></h2>
       <p class="apply-intro">Füll das Formular aus und lade deine Unterlagen direkt hoch – wir melden uns innerhalb von 48 Stunden.</p>
-      <form class="apply-form" id="applyForm">
+      <form class="apply-form" id="applyForm" action="https://formspree.io/f/mbdqveaz" method="POST" enctype="multipart/form-data">
         <div class="form-row">
           <input type="text" name="vorname" placeholder="Vorname" required>
           <input type="text" name="nachname" placeholder="Nachname" required>
@@ -249,7 +249,7 @@
     <div class="section-label light">Bewerbung</div>
     <h2>Nichts Passendes dabei?<br><em>Meld dich trotzdem.</em></h2>
     <p>Wir freuen uns über Spontanbewerbungen – wenn die Chemie stimmt, finden wir einen Weg.</p>
-    <form class="spontan-form" id="karriereForm">
+    <form class="spontan-form" id="karriereForm" action="https://formspree.io/f/mbdqveaz" method="POST" enctype="multipart/form-data">
       <div class="form-row">
         <input type="text" name="name" placeholder="Dein Name" required>
         <input type="email" name="email" placeholder="E-Mail" required>
@@ -357,21 +357,12 @@ function resetUploadLabels(form) {
   });
 }
 
-// Apply form submit
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mbdqveaz';
-
-function summarizeSelectedUploads(form, formData) {
+function getSelectedUploadNames(form) {
   const selectedFiles = [];
   form.querySelectorAll('input[type="file"]').forEach(input => {
     Array.from(input.files || []).forEach(file => selectedFiles.push(file.name));
   });
-
-  if (selectedFiles.length > 0) {
-    formData.set('documents_selected', selectedFiles.join(', '));
-    return `\n\nAusgewählte Dokumente: ${selectedFiles.join(', ')}`;
-  }
-
-  return '';
+  return selectedFiles;
 }
 
 function validateUploads(form) {
@@ -388,22 +379,19 @@ function validateUploads(form) {
   return '';
 }
 
-async function getFormspreeError(res) {
-  try {
-    const data = await res.clone().json();
-    if (data.error) return data.error;
-    if (Array.isArray(data.errors) && data.errors[0]?.message) return data.errors[0].message;
-  } catch (_) {}
-
-  try {
-    const text = await res.text();
-    if (text) return text.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 120);
-  } catch (_) {}
-
-  return 'Fehler – bitte erneut versuchen';
+function setHiddenField(form, name, value) {
+  let input = form.querySelector(`input[type="hidden"][name="${name}"]`);
+  if (!input) {
+    input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = name;
+    form.appendChild(input);
+  }
+  input.value = value;
 }
 
-document.getElementById('applyForm').addEventListener('submit', async e => {
+// Apply form submit
+document.getElementById('applyForm').addEventListener('submit', e => {
   e.preventDefault();
   const btn = document.getElementById('applySubmit');
   btn.textContent = '…'; btn.disabled = true;
@@ -413,31 +401,21 @@ document.getElementById('applyForm').addEventListener('submit', async e => {
     btn.disabled = false;
     return;
   }
-  const formData = new FormData(e.target);
-  const fullName = `${formData.get('vorname') || ''} ${formData.get('nachname') || ''}`.trim();
-  const uploadNote = summarizeSelectedUploads(e.target, formData);
-  formData.set('name', fullName);
-  formData.set('message', `${formData.get('motivation') || ''}${uploadNote}`);
-  formData.set('type', 'Bewerbung');
-  formData.set('_subject', `Neue Bewerbung: ${formData.get('position') || 'Karriere'}`);
-  try {
-    const res = await fetch(FORMSPREE_ENDPOINT, {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: formData
-    });
-    if (!res.ok) throw new Error(await getFormspreeError(res));
-  } catch(err) {
-    btn.textContent = err.message || 'Fehler – bitte erneut versuchen';
-    btn.disabled = false;
-    return;
-  }
-  document.getElementById('applySuccess').style.display = 'block';
-  e.target.reset(); resetUploadLabels(e.target); btn.textContent = 'Gesendet ✓';
+
+  const form = e.target;
+  const fullName = `${form.elements.vorname.value || ''} ${form.elements.nachname.value || ''}`.trim();
+  const selectedFiles = getSelectedUploadNames(form);
+  const uploadNote = selectedFiles.length ? `\n\nAusgewählte Dokumente: ${selectedFiles.join(', ')}` : '';
+  setHiddenField(form, 'name', fullName);
+  setHiddenField(form, 'message', `${form.elements.motivation.value || ''}${uploadNote}`);
+  setHiddenField(form, 'type', 'Bewerbung');
+  setHiddenField(form, '_subject', `Neue Bewerbung: ${form.elements.position.value || 'Karriere'}`);
+  if (selectedFiles.length) setHiddenField(form, 'documents_selected', selectedFiles.join(', '));
+  form.submit();
 });
 
 // ── Karriere spontan form ───────────────
-document.getElementById('karriereForm').addEventListener('submit', async e => {
+document.getElementById('karriereForm').addEventListener('submit', e => {
   e.preventDefault();
   const btn = document.getElementById('karriereSubmit');
   btn.textContent = '…'; btn.disabled = true;
@@ -447,25 +425,13 @@ document.getElementById('karriereForm').addEventListener('submit', async e => {
     btn.disabled = false;
     return;
   }
-  const formData = new FormData(e.target);
-  const uploadNote = summarizeSelectedUploads(e.target, formData);
-  formData.set('message', `${formData.get('message') || ''}${uploadNote}`);
-  formData.set('type', 'Spontanbewerbung');
-  formData.set('_subject', `Neue Spontanbewerbung: ${formData.get('position') || 'Karriere'}`);
-  try {
-    const res = await fetch(FORMSPREE_ENDPOINT, {
-      method:'POST',
-      headers: { 'Accept': 'application/json' },
-      body: formData
-    });
-    if (!res.ok) throw new Error(await getFormspreeError(res));
-  } catch(err) {
-    btn.textContent = err.message || 'Fehler – bitte erneut versuchen';
-    btn.disabled = false;
-    return;
-  }
-  document.getElementById('karriereSuccess').style.display = 'block';
-  e.target.reset(); resetUploadLabels(e.target); btn.textContent = 'Gesendet ✓';
+
+  const form = e.target;
+  const selectedFiles = getSelectedUploadNames(form);
+  setHiddenField(form, 'type', 'Spontanbewerbung');
+  setHiddenField(form, '_subject', `Neue Spontanbewerbung: ${form.elements.position.value || 'Karriere'}`);
+  if (selectedFiles.length) setHiddenField(form, 'documents_selected', selectedFiles.join(', '));
+  form.submit();
 });
 </script>
 </body>
