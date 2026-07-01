@@ -374,10 +374,45 @@ function summarizeSelectedUploads(form, formData) {
   return '';
 }
 
+function validateUploads(form) {
+  const maxBytes = 5 * 1024 * 1024;
+  const files = Array.from(form.querySelectorAll('input[type="file"]'))
+    .flatMap(input => Array.from(input.files || []));
+
+  for (const file of files) {
+    const isPdf = file.type === 'application/pdf' || file.name.toLowerCase().endsWith('.pdf');
+    if (!isPdf) return 'Nur PDF-Dateien sind erlaubt';
+    if (file.size > maxBytes) return `PDF zu gross: ${file.name} max. 5 MB`;
+  }
+
+  return '';
+}
+
+async function getFormspreeError(res) {
+  try {
+    const data = await res.clone().json();
+    if (data.error) return data.error;
+    if (Array.isArray(data.errors) && data.errors[0]?.message) return data.errors[0].message;
+  } catch (_) {}
+
+  try {
+    const text = await res.text();
+    if (text) return text.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 120);
+  } catch (_) {}
+
+  return 'Fehler – bitte erneut versuchen';
+}
+
 document.getElementById('applyForm').addEventListener('submit', async e => {
   e.preventDefault();
   const btn = document.getElementById('applySubmit');
   btn.textContent = '…'; btn.disabled = true;
+  const uploadError = validateUploads(e.target);
+  if (uploadError) {
+    btn.textContent = uploadError;
+    btn.disabled = false;
+    return;
+  }
   const formData = new FormData(e.target);
   const fullName = `${formData.get('vorname') || ''} ${formData.get('nachname') || ''}`.trim();
   const uploadNote = summarizeSelectedUploads(e.target, formData);
@@ -391,9 +426,9 @@ document.getElementById('applyForm').addEventListener('submit', async e => {
       headers: { 'Accept': 'application/json' },
       body: formData
     });
-    if (!res.ok) throw new Error('Upload failed');
-  } catch(_) {
-    btn.textContent = 'Fehler – bitte erneut versuchen';
+    if (!res.ok) throw new Error(await getFormspreeError(res));
+  } catch(err) {
+    btn.textContent = err.message || 'Fehler – bitte erneut versuchen';
     btn.disabled = false;
     return;
   }
@@ -406,6 +441,12 @@ document.getElementById('karriereForm').addEventListener('submit', async e => {
   e.preventDefault();
   const btn = document.getElementById('karriereSubmit');
   btn.textContent = '…'; btn.disabled = true;
+  const uploadError = validateUploads(e.target);
+  if (uploadError) {
+    btn.textContent = uploadError;
+    btn.disabled = false;
+    return;
+  }
   const formData = new FormData(e.target);
   const uploadNote = summarizeSelectedUploads(e.target, formData);
   formData.set('message', `${formData.get('message') || ''}${uploadNote}`);
@@ -417,9 +458,9 @@ document.getElementById('karriereForm').addEventListener('submit', async e => {
       headers: { 'Accept': 'application/json' },
       body: formData
     });
-    if (!res.ok) throw new Error('Upload failed');
-  } catch(_) {
-    btn.textContent = 'Fehler – bitte erneut versuchen';
+    if (!res.ok) throw new Error(await getFormspreeError(res));
+  } catch(err) {
+    btn.textContent = err.message || 'Fehler – bitte erneut versuchen';
     btn.disabled = false;
     return;
   }
