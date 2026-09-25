@@ -18,77 +18,243 @@
 <link rel="manifest" href="/site.webmanifest" />
 </head>
 <body>
+<!-- CUSTOM CURSOR -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
 
-  <!-- CUSTOM CURSOR -->
-  <div class="cursor"></div>
-  <div class="cursor-follower"></div>
 
-  <!-- NAVBAR -->
-  <nav class="nav">
-    <a href="index.html" class="brand-link">
-      <img src="assets/img/logo-v3-transparent.png" alt="iscu.ch" class="brand-logo">
-    </a>
-    <div class="nav-links">
-      <a href="index.html#angebot">Angebot</a>
-      <a href="index.html#prozess">Prozess</a>
-      <a href="karriere.html">Karriere</a>
-      <details class="nav-dropdown">
-        <summary>
-          <span>Mehr</span>
-          <span class="nav-dropdown-icon" aria-hidden="true">⌄</span>
-        </summary>
-        <div class="nav-dropdown-menu">
-          <a href="index.html#about">Über uns</a>
-          <a href="index.html#vergleich">Vergleich</a>
-          <a href="index.html#team">Team</a>
-          <a href="index.html#faq">FAQ</a>
-          <a href="index.html#contact">Kontakt</a>
-        </div>
-      </details>
-    </div>
-    <div class="nav-right">
-      <a href="index.html#contact" class="nav-cta">Gratis Erstgespräch</a>
-    </div>
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
-  </nav>
+<!-- NAVBAR -->
+<nav class="nav">
 
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html#angebot">Angebot</a>
-    <a href="index.html#prozess">Prozess</a>
-    <a href="karriere.html">Karriere</a>
-    <a href="index.html#about">Über uns</a>
-    <a href="index.html#vergleich">Vergleich</a>
-    <a href="index.html#team">Team</a>
-    <a href="index.html#faq">FAQ</a>
-    <a href="index.html#contact">Kontakt</a>
-    <a href="index.html#contact" class="mobile-cta">Gratis Erstgespräch →</a>
+  <a href="index.html" class="brand-link">
+    <img
+      src="assets/img/logo-v3-transparent.png"
+      alt="iscu.ch"
+      class="brand-logo"
+    >
+  </a>
+
+  <div class="nav-links">
+
+    <a
+      href="index.html#angebot"
+      data-de="Angebot"
+      data-fr="Offre"
+      data-en="Offer"
+    >Angebot</a>
+
+    <a
+      href="index.html#prozess"
+      data-de="Prozess"
+      data-fr="Processus"
+      data-en="Process"
+    >Prozess</a>
+
+    <a
+      href="karriere.html"
+      data-de="Karriere"
+      data-fr="Carrière"
+      data-en="Career"
+    >Karriere</a>
+
+    <details class="nav-dropdown">
+      <summary>
+        <span>Mehr</span>
+        <span
+          class="nav-dropdown-icon"
+          aria-hidden="true"
+        >⌄</span>
+      </summary>
+
+      <div class="nav-dropdown-menu">
+
+        <a
+          href="index.html#about"
+          data-de="Über uns"
+          data-fr="À propos"
+          data-en="About"
+        >Über uns</a>
+
+        <a
+          href="index.html#vergleich"
+          data-de="Vergleich"
+          data-fr="Comparaison"
+          data-en="Comparison"
+        >Vergleich</a>
+
+        <a
+          href="index.html#team"
+          data-de="Team"
+          data-fr="Équipe"
+          data-en="Team"
+        >Team</a>
+
+        <a
+          href="index.html#faq"
+          data-de="FAQ"
+          data-fr="FAQ"
+          data-en="FAQ"
+        >FAQ</a>
+
+        <a
+          href="index.html#contact"
+          data-de="Kontakt"
+          data-fr="Contact"
+          data-en="Contact"
+        >Kontakt</a>
+
+      </div>
+    </details>
+
   </div>
 
-  <!-- QUESTIONNAIRE -->
-  <main class="subscribe-wrapper">
-    <div class="questionnaire">
-      <div class="progress">
-        <span id="progress-step">Schritt 1 von 4</span>
-      </div>
-      <div class="progress-bar">
-        <div class="progress-bar-fill" id="progressFill" style="width: 25%"></div>
-      </div>
-      <div id="form-container"></div>
-      <div class="actions">
-        <button id="prev" disabled>Zurück</button>
-        <button id="next">Weiter</button>
-      </div>
-    </div>
-  </main>
+  <div class="nav-right">
+    <a
+      href="index.html#contact"
+      class="nav-cta"
+      data-de="Gratis Erstgespräch"
+      data-fr="Consultation gratuite"
+      data-en="Free consultation"
+    >Gratis Erstgespräch</a>
+  </div>
 
-  <footer>
-    <div class="footer-inner">
-      <div class="brand footer-brand">iscu<span>.ch</span></div>
-      <p class="footer-copy">© 2025 iscu.ch – Social Recruiting neu gedacht</p>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</nav>
+
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+
+  <a
+    href="index.html#angebot"
+    data-de="Angebot"
+    data-fr="Offre"
+    data-en="Offer"
+  >Angebot</a>
+
+  <a
+    href="index.html#prozess"
+    data-de="Prozess"
+    data-fr="Processus"
+    data-en="Process"
+  >Prozess</a>
+
+  <a
+    href="karriere.html"
+    data-de="Karriere"
+    data-fr="Carrière"
+    data-en="Career"
+  >Karriere</a>
+
+  <a
+    href="index.html#about"
+    data-de="Über uns"
+    data-fr="À propos"
+    data-en="About"
+  >Über uns</a>
+
+  <a
+    href="index.html#vergleich"
+    data-de="Vergleich"
+    data-fr="Comparaison"
+    data-en="Comparison"
+  >Vergleich</a>
+
+  <a
+    href="index.html#team"
+    data-de="Team"
+    data-fr="Équipe"
+    data-en="Team"
+  >Team</a>
+
+  <a
+    href="index.html#faq"
+    data-de="FAQ"
+    data-fr="FAQ"
+    data-en="FAQ"
+  >FAQ</a>
+
+  <a
+    href="index.html#contact"
+    data-de="Kontakt"
+    data-fr="Contact"
+    data-en="Contact"
+  >Kontakt</a>
+
+  <a
+    href="index.html#contact"
+    class="mobile-cta"
+    data-de="Gratis Erstgespräch"
+    data-fr="Consultation gratuite"
+    data-en="Free consultation"
+  >Gratis Erstgespräch →</a>
+
+</div>
+
+
+<!-- QUESTIONNAIRE -->
+<main class="subscribe-wrapper">
+
+  <div class="questionnaire">
+
+    <div class="progress">
+      <span id="progress-step">
+        Schritt 1 von 4
+      </span>
     </div>
-  </footer>
+
+    <div class="progress-bar">
+      <div
+        class="progress-bar-fill"
+        id="progressFill"
+        style="width: 25%"
+      ></div>
+    </div>
+
+    <!-- Wird dynamisch durch das JS befüllt -->
+    <div id="form-container"></div>
+
+    <div class="actions">
+      <button id="prev" disabled>
+        Zurück
+      </button>
+
+      <button id="next">
+        Weiter
+      </button>
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="brand footer-brand">
+      iscu<span>.ch</span>
+    </div>
+
+    <p class="footer-copy">
+      © 2025 iscu.ch – B2B Client Acquisition
+    </p>
+
+    <!--
+    ALTER FOOTER – BEI BEDARF REAKTIVIEREN
+
+    <p class="footer-copy">
+      © 2025 iscu.ch – Social Recruiting neu gedacht
+    </p>
+    -->
+
+  </div>
+</footer>
 
   <script>
     const cursor = document.querySelector('.cursor');
