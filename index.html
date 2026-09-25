@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="de" data-lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iscu.ch – Ausser Dienst / Wartungsarbeiten</title>
-  <meta name="description" content="iscu.ch überarbeitet aktuell das Angebot. Wir sind in Kürze wieder für Sie da.">
+  <title>iscu.ch – Social Recruiting Agentur Schweiz | Kandidaten via Social Media gewinnen</title>
+  <meta name="description"
+    content="iscu.ch ist die Schweizer Social Recruiting Agentur. Wir gewinnen qualifizierte Kandidaten über Social Media für Schweizer Unternehmen. Kostenloses Erstgespräch buchen.">
+  <meta name="keywords"
+    content="Social Recruiting Schweiz, Recruiting Agentur Schweiz, Kandidaten gewinnen, Stellenanzeigen Social Media, HR Schweiz">
   <meta name="author" content="iscu.ch">
   <link rel="canonical" href="https://iscu.ch/">
 
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://iscu.ch/">
+  <meta property="og:title" content="iscu.ch – Social Recruiting Agentur Schweiz">
+  <meta property="og:description"
+    content="Qualifizierte Kandidaten über Social Media gewinnen. Die Schweizer Social Recruiting Agentur – kostenloses Erstgespräch buchen.">
+  <meta property="og:image" content="https://iscu.ch/assets/img/logo-v3-transparent.png">
+  <meta property="og:locale" content="de_CH">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "iscu.ch",
+    "description": "Schweizer Social Recruiting Agentur – Kandidaten über Social Media gewinnen",
+    "url": "https://iscu.ch",
+    "email": "info@iscu.ch",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CH"
+    },
+    "areaServed": "CH",
+    "serviceType": "Social Recruiting",
+    "priceRange": "CHF"
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Applique le thème AVANT le rendu pour éviter le flash -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('iscu-theme') === 'dark' ? 'dark' : 'light');</script>
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -20,17 +57,43 @@
   <meta name="apple-mobile-web-app-title" content="ISCU" />
   <link rel="manifest" href="/site.webmanifest" />
 </head>
+
 <body>
 
   <!-- CUSTOM CURSOR -->
   <div class="cursor"></div>
   <div class="cursor-follower"></div>
 
+  <!-- PAGE TRANSITION -->
+  <div class="page-transition"></div>
+
   <!-- NAVBAR -->
   <nav class="nav">
     <a href="index.html" class="brand-link">
       <img src="assets/img/logo-v3-transparent.png" alt="iscu.ch" class="brand-logo">
     </a>
+    <div class="nav-links">
+      <a href="#angebot" data-de="Angebot" data-fr="Offre" data-en="Services">Angebot</a>
+      <a href="#angebot" data-de="Webdesign" data-fr="Webdesign" data-en="Web Design">Webdesign</a>
+      <a href="#prozess" data-de="Prozess" data-fr="Processus" data-en="Process">Prozess</a>
+      <a href="karriere.html" data-de="Karriere" data-fr="Carrière" data-en="Careers">Karriere</a>
+      <details class="nav-dropdown" id="sectionDropdown">
+        <summary>
+          <span data-de="Mehr" data-fr="Plus" data-en="More">Mehr</span>
+          <span class="nav-dropdown-icon" aria-hidden="true">⌄</span>
+        </summary>
+        <div class="nav-dropdown-menu">
+          <button class="page-tab" data-tab="about" data-de="Über uns" data-fr="À propos" data-en="About">Über
+            uns</button>
+          <button class="page-tab" data-tab="vergleich" data-de="Vergleich" data-fr="Comparaison"
+            data-en="Comparison">Vergleich</button>
+          <button class="page-tab" data-tab="team" data-de="Team" data-fr="Équipe" data-en="Team">Team</button>
+          <button class="page-tab" data-tab="faq" data-de="FAQ" data-fr="FAQ" data-en="FAQ">FAQ</button>
+          <button class="page-tab" data-tab="contact" data-de="Kontakt" data-fr="Contact"
+            data-en="Contact">Kontakt</button>
+        </div>
+      </details>
+    </div>
     <div class="nav-right">
       <div class="lang-switcher">
         <button class="lang-btn active" data-lang="de">DE</button>
@@ -40,62 +103,906 @@
         <button class="lang-btn" data-lang="en">EN</button>
         <span class="lang-sep">|</span>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Mode sombre">
-          <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
         </button>
       </div>
-      <a href="mailto:info@iscu.ch" class="nav-cta" data-de="Kontakt" data-fr="Contact" data-en="Contact">Kontakt</a>
+      <a href="#contact" class="nav-cta" data-de="Gratis Erstgespräch" data-fr="Entretien gratuit"
+        data-en="Free Discovery Call">Gratis Erstgespräch</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
     </div>
   </nav>
 
-  <!-- HERO / MAINTENANCE -->
-  <section class="hero" style="min-height: 85vh; display: flex; align-items: center; justify-content: center;">
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#angebot" onclick="closeMobile()" data-de="Angebot" data-fr="Offre" data-en="Services">Angebot</a>
+    <a href="#prozess" onclick="closeMobile()" data-de="Prozess" data-fr="Processus" data-en="Process">Prozess</a>
+    <a href="#team" onclick="closeMobile()" data-de="Team" data-fr="Equipe" data-en="Team">Team</a>
+    <a href="#faq" onclick="closeMobile()" data-de="FAQ" data-fr="FAQ" data-en="FAQ">FAQ</a>
+    <a href="karriere.html" onclick="closeMobile()" data-de="Karriere" data-fr="Carrière" data-en="Careers">Karriere</a>
+    <a href="#contact" onclick="closeMobile()" data-de="Kontakt" data-fr="Contact" data-en="Contact">Kontakt</a>
+    <a href="#contact" onclick="closeMobile()" class="mobile-cta" data-de="Gratis Erstgespräch →"
+      data-fr="Entretien gratuit →" data-en="Free Discovery Call →">Gratis Erstgespräch →</a>
+    <div class="mobile-menu-bottom">
+      <div class="mobile-lang">
+        <button class="lang-btn active" data-lang="de">DE</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="mobile-theme-btn" id="mobileThemeToggle" aria-label="Toggle dark mode">
+        <svg id="mIconMoon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+        <svg id="mIconSun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <span id="mThemeLabel" data-de="Dunkel" data-fr="Sombre" data-en="Dark">Dunkel</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
     <div class="hero-bg-text">ISCU</div>
-    <div class="hero-text reveal visible" style="max-width: 750px; text-align: center;">
-      <span class="hero-label" 
-            data-de="Wartungsarbeiten · Update im Gange" 
-            data-fr="Maintenance · Mise à jour en cours" 
-            data-en="Maintenance · Update in Progress">
-        Wartungsarbeiten · Update im Gange
+    <div class="hero-text reveal">
+      <span class="hero-label" data-de="B2B-Erstansprache & Neukundengewinnung · Schweiz"
+        data-fr="Prospection B2B & Acquisition de Clients · Suisse"
+        data-en="B2B Outreach & Client Acquisition · Switzerland">
+        B2B-Erstansprache & Neukundengewinnung · Schweiz
       </span>
 
-      <h1 data-de="Ausser Dienst&lt;br&gt;&lt;em&gt;Wir überarbeiten unser Angebot&lt;/em&gt;" 
-          data-fr="Site en maintenance&lt;br&gt;&lt;em&gt;Nous mettons à jour nos services&lt;/em&gt;" 
-          data-en="Under Maintenance&lt;br&gt;&lt;em&gt;Updating our services&lt;/em&gt;">
-        Ausser Dienst<br><em>Wir überarbeiten unser Angebot</em>
+      <h1 data-de="Planbare B2B-Termine&lt;br&gt;mit &lt;em&gt;Entscheidern&lt;/em&gt;"
+        data-fr="Rendez-vous B2B qualifiés&lt;br&gt;avec des &lt;em&gt;décideurs&lt;/em&gt;"
+        data-en="Predictable B2B Meetings&lt;br&gt;with &lt;em&gt;Decision-Makers&lt;/em&gt;">
+        Planbare B2B-Termine<br>mit <em>Entscheidern</em>
       </h1>
 
-      <p data-de="Unsere Website wird derzeit aktualisiert, um Ihnen in Kürze unsere optimierten B2B-Dienstleistungen und Neukundengewinnung zu präsentieren. Wir sind bald wieder für Sie da." 
-         data-fr="Notre site web est actuellement en cours de mise à jour afin de vous présenter très prochainement nos services optimisés de prospection et d'acquisition client B2B. Nous serons de retour très bientôt." 
-         data-en="Our website is currently being updated to present our optimized B2B client acquisition services. We will be back shortly.">
-        Unsere Website wird derzeit aktualisiert, um Ihnen in Kürze unsere optimierten B2B-Dienstleistungen und Neukundengewinnung zu präsentieren. Wir sind bald wieder für Sie da.
+      <p data-de="ISCU übernimmt Ihre Erstansprache im B2B und bucht qualifizierte 30-Minuten-Termine direkt in den Kalender Ihres Vertriebs."
+        data-fr="ISCU gère votre prospection B2B initiale et réserve des rendez-vous qualifiés de 30 minutes directement dans l'agenda de vos commerciaux."
+        data-en="ISCU handles your initial B2B outreach and books qualified 30-minute meetings directly into your sales team's calendar.">
+        ISCU übernimmt Ihre Erstansprache im B2B und bucht qualifizierte 30-Minuten-Termine direkt in den Kalender Ihres
+        Vertriebs.
       </p>
 
-<div class="hero-actions" style="justify-content: center; margin-top: 2rem;">
-  <a href="mailto:info@iscu.ch" class="cta" data-de="Per E-Mail kontaktieren: info@iscu.ch"
-    data-fr="Nous contacter par e-mail : info@iscu.ch" data-en="Contact us via email: info@iscu.ch">
-    Per E-Mail kontaktieren: info@iscu.ch
-  </a>
-</div>
+      <div class="hero-actions">
+        <a href="#contact" class="cta" id="ctaBtn" data-de="30-Min. Erstgespräch buchen"
+          data-fr="Réserver un échange de 30 min" data-en="Book a 30-min Discovery Call">
+          30-Min. Erstgespräch buchen
+        </a>
+        <a href="#prozess" class="cta alt" data-de="Wie es funktioniert" data-fr="Comment ça fonctionne"
+          data-en="How it works">
+          Wie es funktioniert
+        </a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+
+
+  <!-- WARUM GIBT ES UNS -->
+  <section id="about" class="section about-section reveal tabbed-section">
+    <div class="section-label" data-de="Über iscu.ch" data-fr="À propos d’iscu.ch" data-en="About iscu.ch">
+      Über iscu.ch
+    </div>
+
+    <h2 data-de="Warum gibt es uns?" data-fr="Pourquoi existons-nous ?" data-en="Why do we exist?">
+      Warum gibt es uns?
+    </h2>
+
+    <div class="about-text">
+
+      <p data-de="Bei iscu.ch sind wir überzeugt: Unternehmen sollten nicht darauf warten, dass potenzielle Kunden auf sie zukommen. Gerade im B2B-Bereich erfordert nachhaltiges Wachstum eine aktive und gezielte Ansprache der richtigen Ansprechpartner."
+        data-fr="Chez iscu.ch, nous sommes convaincus qu’une entreprise ne devrait pas attendre que ses clients potentiels viennent à elle. En B2B, une croissance durable nécessite une approche active et ciblée des bons interlocuteurs."
+        data-en="At iscu.ch, we believe companies should not wait for potential clients to come to them. In B2B, sustainable growth requires an active and targeted approach to the right decision-makers.">
+        Bei iscu.ch sind wir überzeugt: Unternehmen sollten nicht darauf warten, dass potenzielle Kunden auf sie
+        zukommen. Gerade im B2B-Bereich erfordert nachhaltiges Wachstum eine aktive und gezielte Ansprache der richtigen
+        Ansprechpartner.
+      </p>
+
+      <p data-de="Genau hier setzen wir an. Wir identifizieren relevante Unternehmen und Ansprechpartner, bauen strukturierte B2B-Kontaktdatenbanken auf und entwickeln individuelle Skripte für die direkte Ansprache. Unser Ziel: qualifizierte Gespräche mit potenziellen Kunden für Ihr Unternehmen."
+        data-fr="C’est exactement là que nous intervenons. Nous identifions les entreprises et interlocuteurs pertinents, constituons des bases de données B2B structurées et développons des scripts adaptés à la prospection directe. Notre objectif : générer des échanges qualifiés avec des clients potentiels pour votre entreprise."
+        data-en="That’s exactly where we come in. We identify relevant companies and decision-makers, build structured B2B contact databases and develop tailored scripts for direct outreach. Our goal: generate qualified conversations with potential clients for your business.">
+        Genau hier setzen wir an. Wir identifizieren relevante Unternehmen und Ansprechpartner, bauen strukturierte
+        B2B-Kontaktdatenbanken auf und entwickeln individuelle Skripte für die direkte Ansprache. Unser Ziel:
+        qualifizierte Gespräche mit potenziellen Kunden für Ihr Unternehmen.
+      </p>
+
+      <p class="about-tagline"
+        data-de="Wir sind mehr als eine Agentur – wir bauen die Brücke zwischen Ihrem Unternehmen und den richtigen Geschäftskontakten."
+        data-fr="Nous sommes plus qu’une agence – nous créons le lien entre votre entreprise et les bons contacts commerciaux."
+        data-en="We are more than an agency – we build the bridge between your business and the right commercial contacts.">
+        Wir sind mehr als eine Agentur – wir bauen die Brücke zwischen Ihrem Unternehmen und den richtigen
+        Geschäftskontakten.
+      </p>
+
+    </div>
+
+    <div class="mission-vision">
+
+      <div class="mv-card reveal">
+        <div class="mv-icon"></div>
+
+        <h3 data-de="Mission" data-fr="Mission" data-en="Mission">
+          Mission
+        </h3>
+
+        <p data-de="Unsere Mission ist es, Unternehmen mit den richtigen Geschäftskontakten zu verbinden. Wir kombinieren strukturierte B2B-Daten, gezielte Recherche, überzeugende Skripte und direkte Ansprache, um qualifizierte Termine mit potenziellen Kunden zu generieren."
+          data-fr="Notre mission est de connecter les entreprises aux bons interlocuteurs commerciaux. Nous combinons données B2B structurées, recherche ciblée, scripts efficaces et prospection directe afin de générer des rendez-vous qualifiés avec des clients potentiels."
+          data-en="Our mission is to connect businesses with the right commercial contacts. We combine structured B2B data, targeted research, effective scripts and direct outreach to generate qualified appointments with potential clients.">
+          Unsere Mission ist es, Unternehmen mit den richtigen Geschäftskontakten zu verbinden. Wir kombinieren
+          strukturierte B2B-Daten, gezielte Recherche, überzeugende Skripte und direkte Ansprache, um qualifizierte
+          Termine mit potenziellen Kunden zu generieren.
+        </p>
+      </div>
+
+      <div class="mv-card reveal">
+        <div class="mv-icon"></div>
+
+        <h3 data-de="Vision" data-fr="Vision" data-en="Vision">
+          Vision
+        </h3>
+
+        <p data-de="Wir glauben an eine B2B-Welt, in der Unternehmen ihre Geschäftsentwicklung nicht dem Zufall überlassen. Unsere Vision: planbare und messbare Kundenakquise durch gezielte Ansprache, klare Prozesse und kontinuierliche Optimierung."
+          data-fr="Nous croyons en un monde B2B où les entreprises ne laissent pas leur développement commercial au hasard. Notre vision : une acquisition client prévisible et mesurable grâce à une prospection ciblée, des processus clairs et une optimisation continue."
+          data-en="We believe in a B2B world where companies do not leave business development to chance. Our vision: predictable and measurable client acquisition through targeted outreach, clear processes and continuous optimization.">
+          Wir glauben an eine B2B-Welt, in der Unternehmen ihre Geschäftsentwicklung nicht dem Zufall überlassen. Unsere
+          Vision: planbare und messbare Kundenakquise durch gezielte Ansprache, klare Prozesse und kontinuierliche
+          Optimierung.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+<!-- UNSER ANGEBOT -->
+<section id="angebot" class="section angebot-section tabbed-section">
+  <div class="section-label"
+       data-de="Unser Angebot"
+       data-fr="Notre Offre"
+       data-en="Our Services">
+    Unser Angebot
+  </div>
+
+  <h2
+    data-de="Wir bringen qualifizierte Kunden<br><em>direkt in Ihren Kalender</em>"
+    data-fr="Nous amenons des clients qualifiés<br><em>directement dans votre agenda</em>"
+    data-en="We bring qualified clients<br><em>directly into your calendar</em>">
+    Wir bringen qualifizierte Kunden<br><em>direkt in Ihren Kalender</em>
+  </h2>
+
+  <p
+    data-de="Gezielte B2B-Prospektion, direkte Kundenansprache und qualifizierte Termine für Ihren Vertrieb."
+    data-fr="Prospection B2B ciblée, prise de contact directe et rendez-vous qualifiés pour votre équipe commerciale."
+    data-en="Targeted B2B prospecting, direct outreach and qualified appointments for your sales team.">
+    Gezielte B2B-Prospektion, direkte Kundenansprache und qualifizierte Termine für Ihren Vertrieb.
+  </p>
+
+  <div class="angebot-grid reveal">
+
+    <!-- CARD 1: B2B PROSPEKTION -->
+    <div class="angebot-card">
+
+      <h3
+        data-de="B2B-Prospektion"
+        data-fr="Prospection B2B"
+        data-en="B2B Prospecting">
+        B2B-Prospektion
+      </h3>
+
+      <p
+        data-de="Wir identifizieren relevante Unternehmen und Ansprechpartner, bauen strukturierte Kontaktdatenbanken auf und übernehmen die direkte Erstansprache."
+        data-fr="Nous identifions les entreprises et interlocuteurs pertinents, constituons des bases de données structurées et prenons en charge la prospection directe."
+        data-en="We identify relevant companies and decision-makers, build structured contact databases and handle direct outreach.">
+        Wir identifizieren relevante Unternehmen und Ansprechpartner, bauen strukturierte Kontaktdatenbanken auf und übernehmen die direkte Erstansprache.
+      </p>
+
+      <ul class="angebot-features">
+        <li
+          data-de="Präzise Zielgruppendefinition"
+          data-fr="Définition précise de la cible"
+          data-en="Precise target definition">
+          Präzise Zielgruppendefinition
+        </li>
+
+        <li
+          data-de="Aufbau qualifizierter B2B-Kontaktdatenbanken"
+          data-fr="Constitution de bases de données B2B qualifiées"
+          data-en="Qualified B2B contact databases">
+          Aufbau qualifizierter B2B-Kontaktdatenbanken
+        </li>
+
+        <li
+          data-de="Direkte Ansprache relevanter Entscheider"
+          data-fr="Prise de contact directe avec les décideurs"
+          data-en="Direct outreach to decision-makers">
+          Direkte Ansprache relevanter Entscheider
+        </li>
+      </ul>
+
+    </div>
+
+
+    <!-- CARD 2: OUTREACH & TERMINVEREINBARUNG -->
+    <div class="angebot-card">
+
+      <h3
+        data-de="Outreach & Terminvereinbarung"
+        data-fr="Prospection & Prise de Rendez-vous"
+        data-en="Outreach & Appointment Setting">
+        Outreach & Terminvereinbarung
+      </h3>
+
+      <p
+        data-de="Wir entwickeln passende Gesprächsskripte, sprechen potenzielle Kunden direkt an und vereinbaren qualifizierte Termine mit relevanten Ansprechpartnern."
+        data-fr="Nous développons des scripts adaptés, contactons directement les prospects et obtenons des rendez-vous qualifiés avec les bons interlocuteurs."
+        data-en="We develop tailored scripts, contact potential clients directly and secure qualified appointments with the right decision-makers.">
+        Wir entwickeln passende Gesprächsskripte, sprechen potenzielle Kunden direkt an und vereinbaren qualifizierte Termine mit relevanten Ansprechpartnern.
+      </p>
+
+      <ul class="angebot-features">
+        <li
+          data-de="Individuelle Outreach-Skripte"
+          data-fr="Scripts de prospection personnalisés"
+          data-en="Tailored outreach scripts">
+          Individuelle Outreach-Skripte
+        </li>
+
+        <li
+          data-de="Direkte B2B-Kundenansprache"
+          data-fr="Prospection B2B directe"
+          data-en="Direct B2B outreach">
+          Direkte B2B-Kundenansprache
+        </li>
+
+        <li
+          data-de="Qualifizierte Termine direkt im Kalender"
+          data-fr="Rendez-vous qualifiés directement dans l’agenda"
+          data-en="Qualified meetings directly in the calendar">
+          Qualifizierte Termine direkt im Kalender
+        </li>
+      </ul>
+
+    </div>
+
+
+    <!-- CARD 3: SOCIAL MEDIA LEAD GENERATION (ERGÄNZEND) -->
+    <div class="angebot-card">
+
+      <h3
+        data-de="Social Media Lead Generation (ergänzend)"
+        data-fr="Génération de Leads Social Media (complément)"
+        data-en="Social Media Lead Generation (supplementary)">
+        Social Media Lead Generation (ergänzend)
+      </h3>
+
+      <p
+        data-de="(Mit zielgerichteten Kampagnen auf LinkedIn, Facebook und Instagram können wir zusätzliche Sichtbarkeit schaffen und potenzielle Kunden auf Ihr Angebot aufmerksam machen.)"
+        data-fr="(Des campagnes ciblées sur LinkedIn, Facebook et Instagram peuvent compléter la prospection directe en augmentant la visibilité de votre offre auprès de prospects potentiels.)"
+        data-en="(Targeted campaigns on LinkedIn, Facebook and Instagram can complement direct outreach by increasing visibility among potential clients.)">
+        (Mit zielgerichteten Kampagnen auf LinkedIn, Facebook und Instagram können wir zusätzliche Sichtbarkeit schaffen und potenzielle Kunden auf Ihr Angebot aufmerksam machen.)
+      </p>
+
+      <ul class="angebot-features">
+        <li
+          data-de="(B2B-Positionierung & Kampagnen)"
+          data-fr="(Positionnement & campagnes B2B)"
+          data-en="(B2B positioning & campaigns)">
+          (B2B-Positionierung & Kampagnen)
+        </li>
+
+        <li
+          data-de="(Kreativer Content & Storytelling)"
+          data-fr="(Contenu créatif & storytelling)"
+          data-en="(Creative content & storytelling)">
+          (Kreativer Content & Storytelling)
+        </li>
+
+        <li
+          data-de="(Wöchentliche Performance-Reports)"
+          data-fr="(Rapports de performance hebdomadaires)"
+          data-en="(Weekly performance reports)">
+          (Wöchentliche Performance-Reports)
+        </li>
+      </ul>
+
+    </div>
+
+
+    <!-- CARD 4: LIVE-DEMO & QUALIFICATION -->
+    <div class="angebot-card">
+
+      <h3
+        data-de="Live-Demo & Qualifizierung"
+        data-fr="Démonstration Live & Qualification"
+        data-en="Live Demo & Qualification">
+        Live-Demo & Qualifizierung
+      </h3>
+
+      <p
+        data-de="Wir zeigen transparent, wie unsere Prospektion funktioniert, definieren gemeinsam Ihre Zielgruppe und legen fest, welche Kontakte als qualifizierte Termine gelten."
+        data-fr="Nous montrons concrètement comment fonctionne notre prospection, définissons votre cible et déterminons ensemble quels contacts correspondent à un rendez-vous qualifié."
+        data-en="We show exactly how our prospecting works, define your target audience and establish together what qualifies as a qualified appointment.">
+        Wir zeigen transparent, wie unsere Prospektion funktioniert, definieren gemeinsam Ihre Zielgruppe und legen fest, welche Kontakte als qualifizierte Termine gelten.
+      </p>
+
+      <ul class="angebot-features">
+        <li
+          data-de="Transparenter Einblick in den Prozess"
+          data-fr="Transparence sur le processus"
+          data-en="Transparent process overview">
+          Transparenter Einblick in den Prozess
+        </li>
+
+        <li
+          data-de="Vorselektion der Kontakte"
+          data-fr="Préqualification des contacts"
+          data-en="Contact pre-qualification">
+          Vorselektion der Kontakte
+        </li>
+
+        <li
+          data-de="Übergabe relevanter Informationen vor dem Termin"
+          data-fr="Transmission des informations pertinentes avant le rendez-vous"
+          data-en="Relevant information provided before the meeting">
+          Übergabe relevanter Informationen vor dem Termin
+        </li>
+      </ul>
+
+    </div>
+
+
+    <!-- CARD 5: WEBDESIGN (OPTIONAL / NICHT KERNANGEBOT)
+    <div class="angebot-card">
+
+      <h3
+        data-de="Webdesign & Landing Pages (ergänzend)"
+        data-fr="Webdesign & Landing Pages (complément)"
+        data-en="Web Design & Landing Pages (supplementary)">
+        Webdesign & Landing Pages (ergänzend)
+      </h3>
+
+      <p
+        data-de="(Wir erstellen moderne Websites und Landing Pages, die den digitalen Auftritt Ihres Unternehmens unterstützen und eingehende Interessenten in Anfragen umwandeln.)"
+        data-fr="(Nous créons des sites web et landing pages modernes afin de soutenir votre présence digitale et convertir les visiteurs en demandes commerciales.)"
+        data-en="(We create modern websites and landing pages that support your digital presence and convert visitors into business inquiries.)">
+        (Wir erstellen moderne Websites und Landing Pages, die den digitalen Auftritt Ihres Unternehmens unterstützen und eingehende Interessenten in Anfragen umwandeln.)
+      </p>
+
+      <ul class="angebot-features">
+        <li
+          data-de="(Custom Design & Development)"
+          data-fr="(Design & développement sur mesure)"
+          data-en="(Custom design & development)">
+          (Custom Design & Development)
+        </li>
+
+        <li
+          data-de="(Mobile- & konvertierungsoptimiert)"
+          data-fr="(Optimisé mobile & conversion)"
+          data-en="(Mobile & conversion optimized)">
+          (Mobile- & konvertierungsoptimiert)
+        </li>
+
+        <li
+          data-de="(SEO-Grundoptimierung)"
+          data-fr="(Optimisation SEO de base)"
+          data-en="(Basic SEO optimization)">
+          (SEO-Grundoptimierung)
+        </li>
+      </ul>
+
+    </div>
+    -->
+
+  </div>
+</section>
+
+  <!-- ZIELGRUPPE & ICP -->
+  <section id="icp" class="section icp-section reveal tabbed-section">
+    <div class="section-label" data-de="Zielgruppe &amp; ICP" data-fr="Cible &amp; ICP" data-en="Target &amp; ICP">
+      Zielgruppe &amp; ICP</div>
+
+    <h2 data-de="Für wen ist unser Service&lt;br&gt;&lt;em&gt;ideal geeignet?&lt;/em&gt;"
+      data-fr="Pour qui notre service est-il&lt;br&gt;&lt;em&gt;idéalement conçu ?&lt;/em&gt;"
+      data-en="Who is our service&lt;br&gt;&lt;em&gt;ideally for?&lt;/em&gt;">
+      Für wen ist unser Service<br><em>ideal geeignet?</em>
+    </h2>
+
+    <p data-de="Wir arbeiten mit B2B-Unternehmen zusammen, die ein klares Wachstumspotenzial haben und ihren Vertrieb mit verlässlichen Entscheider-Terminen unterstützen wollen."
+      data-fr="Nous collaborons avec des entreprises B2B qui disposent d'un fort potentiel de croissance et souhaitent soutenir leurs commerciaux avec des rendez-vous qualifiés."
+      data-en="We partner with B2B companies that have clear growth potential and want to support their sales team with reliable decision-maker meetings.">
+      Wir arbeiten mit B2B-Unternehmen zusammen, die ein klares Wachstumspotenzial haben und ihren Vertrieb mit
+      verlässlichen Entscheider-Terminen unterstützen wollen.
+    </p>
+
+    <div class="icp-grid"
+      style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2.5rem;">
+
+      <div class="icp-card"
+        style="padding: 2rem; border: 1px solid var(--border-color, rgba(255,255,255,0.1)); border-radius: 12px; background: rgba(255,255,255,0.02);">
+        <div class="icp-icon" style="font-size: 2rem; margin-bottom: 1rem;">&#127970;</div>
+        <h3 data-de="B2B Unternehmen" data-fr="Entreprises B2B" data-en="B2B Companies">B2B Unternehmen</h3>
+        <p data-de="Unternehmen mit erklärungsbedürftigen Angeboten und Dienstleistungen im B2B-Bereich."
+          data-fr="Entreprises proposant des produits ou services B2B complexes à expliquer."
+          data-en="Companies offering complex B2B products or services requiring explanation.">
+          Unternehmen mit erklärungsbedürftigen Angeboten und Dienstleistungen im B2B-Bereich.
+        </p>
+      </div>
+
+      <div class="icp-card"
+        style="padding: 2rem; border: 1px solid var(--border-color, rgba(255,255,255,0.1)); border-radius: 12px; background: rgba(255,255,255,0.02);">
+        <div class="icp-icon" style="font-size: 2rem; margin-bottom: 1rem;">&#128101;</div>
+        <h3 data-de="Unternehmensgrösse" data-fr="Taille d'entreprise" data-en="Company Size">Unternehmensgrösse</h3>
+        <p data-de="Ideal für etablierte Firmen von 10 bis 200 Mitarbeitenden mit klarer Wachstumsabsicht."
+          data-fr="Idéal pour les PME établies de 10 à 200 collaborateurs ayant des objectifs de croissance."
+          data-en="Ideal for established companies with 10 to 200 employees aiming for strategic growth.">
+          Ideal für etablierte Firmen von 10 bis 200 Mitarbeitenden mit klarer Wachstumsabsicht.
+        </p>
+      </div>
+
+      <div class="icp-card"
+        style="padding: 2rem; border: 1px solid var(--border-color, rgba(255,255,255,0.1)); border-radius: 12px; background: rgba(255,255,255,0.02);">
+        <div class="icp-icon" style="font-size: 2rem; margin-bottom: 1rem;">&#128188;</div>
+        <h3 data-de="Vertriebskapazität" data-fr="Équipe commerciale" data-en="Sales Capacity">Vertriebskapazität</h3>
+        <p data-de="Sie verfügen bereits über eigene Ressourcen oder einen Vertrieb, der die Verkaufsgespräche führt."
+          data-fr="Vous disposez déjà d'une équipe ou d'un commercial dédié pour mener les entretiens de vente."
+          data-en="You already have an internal sales team or representative ready to conduct closing calls.">
+          Sie verfügen bereits über eigene Ressourcen oder einen Vertrieb, der die Verkaufsgespräche führt.
+        </p>
+      </div>
+
+      <div class="icp-card"
+        style="padding: 2rem; border: 1px solid var(--border-color, rgba(255,255,255,0.1)); border-radius: 12px; background: rgba(255,255,255,0.02);">
+        <div class="icp-icon" style="font-size: 2rem; margin-bottom: 1rem;">&#128176;</div>
+        <h3 data-de="Auftragswert" data-fr="Panier moyen élevé" data-en="Contract Value">Auftragswert</h3>
+        <p data-de="Angebote mit ausreichend hohem Kundenwert, sodass sich professionelle Erstansprache nachhaltig lohnt."
+          data-fr="Des offres avec une valeur de contrat suffisante pour rentabiliser rapidement la prospection."
+          data-en="Offerings with sufficient deal value to ensure a strong and sustainable return on outreach investment.">
+          Angebote mit ausreichend hohem Kundenwert, sodass sich professionelle Erstansprache nachhaltig lohnt.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROZESS -->
+  <section id="prozess" class="section prozess-section tabbed-section">
+    <div class="section-label" data-de="Unser Prozess" data-fr="Notre Processus" data-en="Our Process">Unser Prozess
+    </div>
+    <h2 data-de="In 4 Schritten zu&lt;br&gt;&lt;em&gt;Ihren Wunschkandidaten&lt;/em&gt;"
+      data-fr="En 4 étapes vers&lt;br&gt;&lt;em&gt;vos candidats idéaux&lt;/em&gt;"
+      data-en="In 4 steps to&lt;br&gt;&lt;em&gt;your ideal candidates&lt;/em&gt;">In 4 Schritten zu<br><em>Ihren
+        Wunschkandidaten</em></h2>
+    <p data-de="Klar strukturiert, transparent und effizient – so sieht unsere Zusammenarbeit aus."
+      data-fr="Clair, transparent et efficace – voilà à quoi ressemble notre collaboration."
+      data-en="Clear, transparent and efficient – this is how our collaboration works.">Klar strukturiert, transparent
+      und effizient – so sieht unsere Zusammenarbeit aus.</p>
+    <div class="prozess-steps">
+      <div class="prozess-step">
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h3 data-de="Erstgespräch" data-fr="Entretien initial" data-en="Discovery Call">Erstgespräch</h3>
+          <p data-de="Wir lernen Ihr Unternehmen kennen: Kultur, offene Stellen, Zielgruppe. Kostenlos und unverbindlich."
+            data-fr="Nous apprenons à connaître votre entreprise: culture, postes ouverts, groupe cible. Gratuit et sans engagement."
+            data-en="We get to know your company: culture, open positions, target group. Free and non-binding.">Wir
+            lernen Ihr Unternehmen kennen: Kultur, offene Stellen, Zielgruppe. Kostenlos und unverbindlich.</p>
+        </div>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="prozess-step">
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h3 data-de="Strategie" data-fr="Stratégie" data-en="Strategy">Strategie</h3>
+          <p data-de="Wir definieren Ihre idealen Entscheider, entwickeln ein zielgerichtetes Messaging und übernehmen die direkte Erstansprache: Zielgruppendefinition, Budget und Messaging."
+            data-fr="Nous définissons vos décideurs cibles, élaborons un message percutant et assurons la prospection directe: définition du groupe cible, budget."
+            data-en="We identify your target decision-makers, craft compelling messaging, and handle direct outreach.">
+            Wir definieren Ihre idealen Entscheider, entwickeln ein zielgerichtetes Messaging und übernehmen die direkte
+            Erstansprache: Zielgruppendefinition, Budget
+            und Messaging.</p>
+        </div>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="prozess-step">
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h3 data-de="Kampagnenstart & Erstansprache" data-fr="Lancement & prise de contact "
+            data-en="Campaign launch & initial contact">Kampagnenstart & Erstansprache</h3>
+          <p data-de="Unser Schwerpunkt liegt auf dem Aufbau der B2B-Kontaktdatenbank, der Erstellung von Skripten und der direkten Kundenansprache."
+            data-fr="Nous nous concentrons sur la constitution d'une base de données de contacts B2B, la rédaction de scripts et la prospection directe."
+            data-en="We are focused on building the B2B contact database, scripting and direct outreach.">
+            Unser Schwerpunkt liegt auf dem Aufbau der B2B-Kontaktdatenbank, der Erstellung von Skripten und der
+            direkten Kundenansprache.
+          </p>
+        </div>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="prozess-step last">
+        <div class="step-number">04</div>
+        <div class="step-content">
+          <h3 data-de="Termine & Pipeline" data-fr="Rendez-vous & Pipeline" data-en="Deadlines & Pipeline">Termine &
+            Pipeline</h3>
+          <p data-de="Sie Erhalten qualifizierte B2B-Termine mit potenziellen Kunden für Ihr Unternehmen zu vereinbaren."
+            data-fr="Vous obtenez des rendez-vous B2B qualifiés avec des clients potentiels pour votre entreprise."
+            data-en="You obtain secure qualified B2B appointments with potential clients for your business.">
+            Sie Erhalten qualifizierte B2B-Termine mit potenziellen Kunden für Ihr Unternehmen zu vereinbaren.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="section team-section tabbed-section">
+    <div class="section-label" data-de="Unser Team" data-fr="Notre Équipe" data-en="Our Team">
+      Unser Team
+    </div>
+
+    <h2 data-de="Menschen hinter&lt;br&gt;&lt;em&gt;iscu.ch&lt;/em&gt;"
+      data-fr="Les personnes derrière&lt;br&gt;&lt;em&gt;iscu.ch&lt;/em&gt;"
+      data-en="The people behind&lt;br&gt;&lt;em&gt;iscu.ch&lt;/em&gt;">
+      Menschen hinter<br><em>iscu.ch</em>
+    </h2>
+
+    <p data-de="Wir denken Recruiting neu – für mehr Reichweite, starke Arbeitgebermarken und nachhaltiges Wachstum für Schweizer KMU."
+      data-fr="Nous repensons le recrutement – pour plus de portée, des marques employeurs fortes et une croissance durable pour les PME suisses."
+      data-en="We reimagine recruiting – for more reach, strong employer brands and sustainable growth for Swiss SMEs.">
+      Wir denken Recruiting neu – für mehr Reichweite, starke Arbeitgebermarken und nachhaltiges Wachstum für
+      Schweizer KMU.
+    </p>
+    <div class="team-grid reveal">
+      <div class="team-card">
+        <div class="team-photo placeholder-photo">A</div>
+        <h3>Abdullahi Hassan</h3>
+        <p class="team-role" data-de="Gründer &amp; CEO" data-fr="Fondateur &amp; CEO" data-en="Founder &amp; CEO">
+          Gründer &amp; CEO</p>
+        <a href="mailto:info@iscu.ch" class="team-email">info@iscu.ch</a>
+      </div>
+      <div class="team-card">
+        <div class="team-photo placeholder-photo">T</div>
+        <h3>Térence Bidima</h3>
+        <p class="team-role">Support Technique</p>
+        <p class="team-fun" style="font-size:.78rem; margin-top:4px;">Monitored</p>
+        <a href="mailto:bidima.tm@protonmail.com" class="team-email">bidima.tm@protonmail.com</a>
+      </div>
+      <div class="team-card">
+        <div class="team-photo">
+          <img src="assets/img/team-cat.jpeg" alt="Thomas Müller">
+        </div>
+        <h3>Thomas Müller</h3>
+        <p class="team-role" data-de="Sekretär" data-fr="Secrétaire" data-en="Secretary">
+          Sekretär
+        </p>
+        <p class="team-fun" data-de="Organisation, Koordination und administrative Unterstützung."
+          data-fr="Organisation, coordination et soutien administratif."
+          data-en="Organization, coordination and administrative support.">
+          Organisation, Koordination und administrative Unterstützung.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERGLEICH -->
+  <section id="vergleich" class="section vergleich-section reveal tabbed-section">
+    <div class="section-label" data-de="Vergleich" data-fr="Comparaison" data-en="Comparison">Vergleich</div>
+    <h2 data-de="Warum Unternehmen iscu.ch wählen" data-fr="Pourquoi les entreprises choisissent iscu.ch"
+      data-en="Why companies choose iscu.ch">Warum Unternehmen iscu.ch wählen</h2>
+    <p data-de="Social Recruiting erreicht nicht nur Bewerber, die aktiv suchen – sondern auch Talente, die heute noch nicht auf Jobportalen unterwegs sind."
+      data-fr="Le Social Recruiting ne touche pas seulement les candidats en recherche active, mais aussi les talents qui ne consultent pas encore les portails d’emploi."
+      data-en="Social recruiting reaches not only applicants who are actively searching, but also talent who are not yet browsing job portals.">
+      Social Recruiting erreicht nicht nur Bewerber, die aktiv suchen – sondern auch Talente, die heute noch nicht auf
+      Jobportalen unterwegs sind.</p>
+    <div class="vergleich-cards">
+      <article class="vergleich-card vergleich-card--traditional">
+        <h3 data-de="Andere Dienstleister" data-fr="Autres prestataires" data-en="Other providers">Andere Dienstleister
+        </h3>
+        <ul class="vergleich-list">
+          <li><span class="vergleich-icon" aria-hidden="true">✕</span><span data-de="Nur aktiv Suchende"
+              data-fr="Seulement les candidats actifs" data-en="Only active job seekers">Nur aktiv Suchende</span></li>
+          <li><span class="vergleich-icon" aria-hidden="true">✕</span><span
+              data-de="Jobportale wie Indeed &amp; Jobs.ch" data-fr="Portails d’emploi comme Indeed &amp; Jobs.ch"
+              data-en="Job portals like Indeed &amp; Jobs.ch">Jobportale wie Indeed &amp; Jobs.ch</span></li>
+          <li><span class="vergleich-icon" aria-hidden="true">✕</span><span data-de="Textanzeigen statt Social Content"
+              data-fr="Annonces texte au lieu de contenus sociaux"
+              data-en="Text ads instead of social content">Textanzeigen statt Social Content</span></li>
+          <li><span class="vergleich-icon" aria-hidden="true">✕</span><span
+              data-de="Wenig Sichtbarkeit bei jungen Talenten" data-fr="Peu de visibilité auprès des jeunes talents"
+              data-en="Limited visibility among young talent">Wenig Sichtbarkeit bei jungen Talenten</span></li>
+          <li><span class="vergleich-icon" aria-hidden="true">✕</span><span data-de="Monatliche Kurzberichte"
+              data-fr="Brefs rapports mensuels" data-en="Brief monthly reports">Monatliche Kurzberichte</span></li>
+          <li><span class="vergleich-icon" aria-hidden="true">✕</span><span data-de="Hohe Vermittlungsprovisionen"
+              data-fr="Commissions de placement élevées" data-en="High placement commissions">Hohe
+              Vermittlungsprovisionen</span></li>
+          <li><span class="vergleich-icon" aria-hidden="true">✕</span><span data-de="Resultate oft erst nach Monaten"
+              data-fr="Résultats souvent seulement après plusieurs mois"
+              data-en="Results often only after months">Resultate oft erst nach Monaten</span></li>
+        </ul>
+      </article>
+      <article class="vergleich-card vergleich-card--iscu">
+        <h3>iscu</h3>
+        <ul class="vergleich-list">
+          <li><span class="vergleich-icon" aria-hidden="true">✓</span><span
+              data-de="Aktiv &amp; passiv Suchende erreichen" data-fr="Atteindre les candidats actifs et passifs"
+              data-en="Reach active and passive job seekers">Aktiv &amp; passiv Suchende erreichen</span></li>
+          <li><span class="vergleich-icon" aria-hidden="true">✓</span><span
+              data-de="Instagram, TikTok, Facebook &amp; LinkedIn" data-fr="Instagram, TikTok, Facebook &amp; LinkedIn"
+              data-en="Instagram, TikTok, Facebook &amp; LinkedIn">Instagram, TikTok, Facebook &amp; LinkedIn</span>
+          </li>
+          <li><span class="vergleich-icon" aria-hidden="true">✓</span><span
+              data-de="Video-Ads, Reels, Stories &amp; Kampagnen" data-fr="Video ads, Reels, Stories &amp; campagnes"
+              data-en="Video ads, reels, stories &amp; campaigns">Video-Ads, Reels, Stories &amp; Kampagnen</span></li>
+          <li><span class="vergleich-icon" aria-hidden="true">✓</span><span
+              data-de="Sichtbarkeit dort, wo Talente täglich sind"
+              data-fr="Visibilité là où les talents passent du temps chaque jour"
+              data-en="Visibility where talent spends time every day">Sichtbarkeit dort, wo Talente täglich sind</span>
+          </li>
+          <li><span class="vergleich-icon" aria-hidden="true">✓</span><span
+              data-de="Transparente Reports &amp; klare Performance"
+              data-fr="Rapports transparents &amp; performance claire"
+              data-en="Transparent reports &amp; clear performance">Transparente Reports &amp; klare Performance</span>
+          </li>
+          <li><span class="vergleich-icon" aria-hidden="true">✓</span><span
+              data-de="Faire Pauschalmodelle ohne Überraschungen"
+              data-fr="Modèles forfaitaires équitables sans surprises"
+              data-en="Fair flat-rate models without surprises">Faire Pauschalmodelle ohne Überraschungen</span></li>
+          <li><span class="vergleich-icon" aria-hidden="true">✓</span><span
+              data-de="Erste Resultate oft nach 2–4 Wochen" data-fr="Premiers résultats souvent après 2 à 4 semaines"
+              data-en="First results often after 2-4 weeks">Erste Resultate oft nach 2–4 Wochen</span></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+<!-- FAQ -->
+<section id="faq" class="section faq-section tabbed-section">
+
+  <div class="section-label"
+       data-de="FAQ"
+       data-fr="FAQ"
+       data-en="FAQ">
+    FAQ
+  </div>
+
+  <h2
+    data-de="Häufige <em>Fragen</em>"
+    data-fr="Questions <em>fréquentes</em>"
+    data-en="Frequently <em>asked questions</em>">
+    Häufige <em>Fragen</em>
+  </h2>
+
+  <p
+    data-de="Alles Wichtige über unsere B2B-Prospektion auf einen Blick – und wenn Sie weitere Fragen haben, sprechen wir gerne persönlich."
+    data-fr="Tout l’essentiel sur notre prospection B2B en un coup d’œil – et si vous avez d’autres questions, nous serons ravis d’en discuter avec vous."
+    data-en="Everything you need to know about our B2B prospecting at a glance – and if you have further questions, we’d be happy to speak with you.">
+    Alles Wichtige über unsere B2B-Prospektion auf einen Blick – und wenn Sie weitere Fragen haben, sprechen wir gerne persönlich.
+  </p>
+
+  <div class="faq-list reveal">
+
+    <!-- FAQ 1 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        Was genau macht iscu.ch?
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Wir unterstützen Unternehmen bei der B2B-Kundenakquise. Wir identifizieren relevante Unternehmen und
+          Ansprechpartner, bauen qualifizierte Kontaktdatenbanken auf, übernehmen die direkte Ansprache und
+          vereinbaren qualifizierte Termine mit potenziellen Kunden.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- FAQ 2 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        Für welche Unternehmen eignet sich die B2B-Prospektion?
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Unsere Dienstleistung eignet sich insbesondere für B2B-Unternehmen mit erklärungsbedürftigen Produkten
+          oder Dienstleistungen und einem klar definierten Kundenprofil. Entscheidend ist, dass sich potenzielle
+          Kunden gezielt identifizieren und ansprechen lassen.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- FAQ 3 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        Wie schnell erhalte ich erste Termine?
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Die ersten Ergebnisse hängen von Zielgruppe, Markt, Angebot und Umfang der Kampagne ab. Nach der
+          Definition der Zielkunden und der Vorbereitung der Ansprache können wir mit der aktiven Prospektion
+          beginnen und die Ergebnisse laufend optimieren.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- FAQ 4 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        Was kostet die B2B-Prospektion?
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Die Kosten hängen vom Umfang der Prospektion, der Anzahl der Kontakte und dem gewünschten
+          Leistungsumfang ab. Nach einem Erstgespräch definieren wir Zielgruppe, Umfang und Qualifikationskriterien
+          und erstellen darauf basierend ein individuelles Angebot.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- FAQ 5 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        Muss ich selbst die potenziellen Kunden kontaktieren?
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Nein. Wir übernehmen die Vorbereitung und die direkte Erstansprache nach den gemeinsam definierten
+          Kriterien. Sobald ein Kontakt die vereinbarten Qualifikationskriterien erfüllt, wird der Termin an Ihr
+          Unternehmen übergeben.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- FAQ 6 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        Was gilt bei Ihnen als qualifizierter Termin?
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Ein Termin gilt als qualifiziert, wenn der Kontakt zur definierten Zielgruppe gehört, ein konkretes
+          geschäftliches Interesse besteht und die vereinbarten Voraussetzungen für ein Gespräch erfüllt sind.
+          Die Kriterien werden vor Beginn der Prospektion gemeinsam festgelegt.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- FAQ 7 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        (Bietet iscu.ch auch Social-Media-Kampagnen an?)
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          (Ja. Social-Media-Kampagnen können ergänzend eingesetzt werden, um die Sichtbarkeit eines Unternehmens
+          zu erhöhen und zusätzliche Leads zu generieren. Der Schwerpunkt von iscu.ch liegt jedoch auf der
+          direkten B2B-Prospektion und Terminvereinbarung.)
+        </p>
+      </div>
+    </div>
+
+
+    <!-- FAQ 8 -->
+    <div class="faq-item">
+      <button class="faq-question">
+        (Erstellt iscu.ch auch Webseiten?)
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          (Webdesign und Landing Pages können ergänzend angeboten werden. Sie gehören jedoch nicht zum Kern unserer
+          B2B-Prospektionsdienstleistung.)
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- CONTACT / BOOKING -->
+  <section id="contact" class="contact reveal tabbed-section">
+    <div class="section-label light" data-de="Gratis Erstgespräch" data-fr="Entretien gratuit"
+      data-en="Free Discovery Call">Gratis Erstgespräch</div>
+    <h2 data-de="Bereit, mehr Bewerbungen&lt;br&gt;&lt;em&gt;zu erhalten?&lt;/em&gt;"
+      data-fr="Prêt à recevoir plus&lt;br&gt;&lt;em&gt;de candidatures ?&lt;/em&gt;"
+      data-en="Ready to receive more&lt;br&gt;&lt;em&gt;applications?&lt;/em&gt;">Bereit, mehr Kunden<br><em>zu
+        erhalten?</em></h2>
+    <p class="contact-intro" data-de="30 Minuten. Kostenlos. Unverbindlich."
+      data-fr="30 minutes. Gratuit. Sans engagement." data-en="30 minutes. Free. Non-binding.">30 Minuten. Kostenlos.
+      Unverbindlich.<br>Wir zeigen Ihnen, was B2B-Angebot ist für Ihr Unternehmen möglich macht.</p>
+    <div class="contact-options">
+      <div class="booking-card">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/zusammenarbeit-lscu/15min?hide_gdpr_banner=1"
+          style="min-width:320px;height:760px;">
+        </div>
+
+        <div class="or-divider"><span data-de="oder" data-fr="ou" data-en="or">oder</span></div>
+        <div class="contact-form-card">
+          <h3 data-de="Nachricht senden" data-fr="Envoyer un message" data-en="Send a message">Nachricht senden</h3>
+          <form class="form" id="contactForm">
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="text" name="company" placeholder="Unternehmen">
+            </div>
+            <input type="email" name="email" placeholder="E-Mail" required style="width:100%">
+            <!-- <textarea name="message" placeholder="Was suchen Sie? Wir melden uns innerhalb von 24h." required></textarea> -->
+            <button type="submit" id="submitBtn" data-de="Nachricht senden" data-fr="Envoyer le message"
+              data-en="Send message">Nachricht senden</button>
+            <p class="form-success" id="formSuccess">✓ Nachricht gesendet – wir melden uns bald!</p>
+          </form>
+        </div>
+      </div>
+  </section>
+
   <footer>
     <div class="footer-inner">
       <img src="assets/img/logo-v3-transparent.png" alt="iscu.ch" class="brand-logo footer-logo">
-      <p class="footer-tagline">B2B Erstansprache &amp; Neukundengewinnung · Made in Switzerland</p>
+      <p class="footer-tagline" data-de="Social Recruiting · Made in Switzerland"
+        data-fr="Social Recruiting · Made in Switzerland" data-en="Social Recruiting · Made in Switzerland">Social
+        Recruiting · Made in Switzerland</p>
       <div class="footer-links">
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-        <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+        <a href="#about" data-de="Über uns" data-fr="À propos" data-en="About">Über uns</a>
+        <a href="#angebot" data-de="Angebot" data-fr="Offre" data-en="Services">Angebot</a>
+        <a href="#prozess" data-de="Prozess" data-fr="Processus" data-en="Process">Prozess</a>
+        <a href="#team" data-de="Team" data-fr="Equipe" data-en="Team">Team</a>
+        <a href="#faq" data-de="FAQ" data-fr="FAQ" data-en="FAQ">FAQ</a>
+        <a href="karriere.html" data-de="Karriere" data-fr="Carrière" data-en="Careers">Karriere</a>
+        <a href="#contact" data-de="Kontakt" data-fr="Contact" data-en="Contact">Kontakt</a>
       </div>
-      <p class="footer-copy">© 2026 iscu.ch – Alle Rechte vorbehalten</p>
+      <p class="footer-copy">© 2025 iscu.ch – Social Recruiting neu gedacht</p>
     </div>
   </footer>
 
   <script>
-    // Custom Cursor
+    // ── CUSTOM CURSOR ─────────────────────────────────
     const cursor = document.querySelector('.cursor');
     const follower = document.querySelector('.cursor-follower');
     let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
@@ -110,8 +1017,105 @@
       requestAnimationFrame(animateFollower);
     }
     animateFollower();
+    document.querySelectorAll('a, button, .angebot-card, .team-card, .faq-item').forEach(el => {
+      el.addEventListener('mouseenter', () => { cursor.classList.add('hover'); follower.classList.add('hover'); });
+      el.addEventListener('mouseleave', () => { cursor.classList.remove('hover'); follower.classList.remove('hover'); });
+    });
 
-    // Language Switcher
+    // ── SCROLL REVEAL ─────────────────────────────────
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // ── COUNTERS ──────────────────────────────────────
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = +el.dataset.target;
+          const suffix = el.dataset.suffix !== undefined ? el.dataset.suffix : '+';
+          let count = 0;
+          const step = Math.max(1, Math.ceil(target / 60));
+          const timer = setInterval(() => {
+            count = Math.min(count + step, target);
+            el.textContent = count + suffix;
+            if (count >= target) clearInterval(timer);
+          }, 25);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+    // ── FAQ ACCORDION ─────────────────────────────────
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-icon').textContent = '+';
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.querySelector('.faq-icon').textContent = '\u00d7';
+        }
+      });
+    });
+
+    // ── PROZESS STAGGERED REVEAL ──────────────────────
+    const prozessObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.prozess-step').forEach((step, i) => {
+            setTimeout(() => step.classList.add('visible'), i * 160);
+          });
+          prozessObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    const ps = document.querySelector('.prozess-steps');
+    if (ps) prozessObserver.observe(ps);
+
+    // ── CONTACT FORM ──────────────────────────────────
+    document.getElementById('contactForm').addEventListener('submit', async e => {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      btn.textContent = '…'; btn.disabled = true;
+      try {
+        const res = await fetch('https://formspree.io/f/mbdqveaz', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(e.target)
+        });
+        if (res.ok) {
+          document.getElementById('formSuccess').style.display = 'block';
+          e.target.reset();
+          btn.textContent = 'Gesendet ✓';
+        } else {
+          btn.textContent = 'Fehler – bitte erneut versuchen';
+          btn.disabled = false;
+        }
+      } catch (_) {
+        btn.textContent = 'Fehler – bitte erneut versuchen';
+        btn.disabled = false;
+      }
+    });
+
+    // ── HAMBURGER ─────────────────────────────────────
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('open');
+      document.getElementById('hamburger').classList.toggle('open');
+    });
+    function closeMobile() {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.getElementById('hamburger').classList.remove('open');
+    }
+
+    // ── LANGUAGE SWITCHER ─────────────────────────────
     function setLang(lang) {
       document.documentElement.setAttribute('data-lang', lang);
       document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
@@ -119,32 +1123,138 @@
         const val = el.getAttribute('data-' + lang);
         if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
           el.placeholder = val;
+        } else if (el.tagName === 'BUTTON' || el.tagName === 'A' || el.tagName === 'SPAN' || el.tagName === 'P' || el.tagName === 'DIV') {
+          if (!el.querySelector('svg') && !el.querySelector('img')) {
+            el.innerHTML = val;
+          }
         } else {
           el.innerHTML = val;
         }
       });
+      // Update html lang attr
       document.documentElement.lang = lang;
+      // Save preference
       localStorage.setItem('iscu-lang', lang);
     }
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.addEventListener('click', () => setLang(btn.dataset.lang));
     });
+    // Init from saved preference
     const savedLang = localStorage.getItem('iscu-lang');
     if (savedLang && savedLang !== 'de') setLang(savedLang);
 
-    // Theme Toggle
+    // ── TAB NAVIGATION ────────────────────────
+    const TAB_IDS = ['about', 'angebot', 'icp', 'prozess', 'vergleich', 'team', 'faq', 'contact'];
+
+    function activateTab(id, shouldScroll = true) {
+      TAB_IDS.forEach(sid => {
+        const sec = document.getElementById(sid);
+        const btn = document.querySelector(`.page-tab[data-tab="${sid}"]`);
+        if (sec) sec.classList.toggle('tab-active', sid === id);
+        if (btn) btn.classList.toggle('active', sid === id);
+      });
+      // trigger reveal animations inside newly shown section
+      document.querySelectorAll('#' + id + ' .reveal').forEach(el => {
+        if (!el.classList.contains('visible')) el.classList.add('visible');
+      });
+      const sectionDropdown = document.getElementById('sectionDropdown');
+      if (sectionDropdown) sectionDropdown.removeAttribute('open');
+      if (shouldScroll) {
+        const sec = document.getElementById(id);
+        const nav = document.querySelector('.nav');
+        const navOffset = nav ? nav.offsetHeight + 16 : 16;
+        if (sec) {
+          const offset = sec.getBoundingClientRect().top + window.scrollY - navOffset;
+          window.scrollTo({ top: offset, behavior: 'smooth' });
+        }
+      }
+    }
+
+    const TAB_ALIASES = {
+      services: 'angebot',
+      service: 'angebot',
+      offer: 'angebot',
+      offers: 'angebot'
+    };
+
+    function getTabId(hash) {
+      return TAB_ALIASES[hash] || (TAB_IDS.includes(hash) ? hash : null);
+    }
+
+    // Open the requested section when arriving through a direct link.
+    const initialHash = window.location.hash.slice(1);
+    const initialTab = getTabId(initialHash);
+    activateTab(initialTab || 'angebot', Boolean(initialTab));
+
+    // Tab bar clicks
+    document.querySelectorAll('.page-tab').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activateTab(btn.dataset.tab);
+        if (typeof setLang === 'function') {
+          const lang = document.documentElement.getAttribute('data-lang') || 'de';
+          btn.textContent = btn.getAttribute('data-' + lang) || btn.textContent;
+        }
+      });
+    });
+
+    document.addEventListener('click', e => {
+      const sectionDropdown = document.getElementById('sectionDropdown');
+      if (sectionDropdown && sectionDropdown.open && !sectionDropdown.contains(e.target)) {
+        sectionDropdown.removeAttribute('open');
+      }
+    });
+
+    // Every in-page link must activate its section before scrolling. This also
+    // covers footer and mobile links, whose target sections are otherwise hidden.
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const hash = a.getAttribute('href').slice(1);
+        const tabId = getTabId(hash);
+        if (tabId) {
+          e.preventDefault();
+          activateTab(tabId);
+          history.pushState(null, '', `#${hash}`);
+          if (typeof closeMobile === 'function') closeMobile();
+        } else if (hash === 'careers') {
+          e.preventDefault();
+          window.location.href = 'karriere.html';
+        }
+      });
+    });
+
+    // ── THEME TOGGLE ───────────────────────────
     const themeBtn = document.getElementById('themeToggle');
     const iconMoon = document.getElementById('iconMoon');
-    const iconSun  = document.getElementById('iconSun');
+    const iconSun = document.getElementById('iconSun');
+    const mThemeBtn = document.getElementById('mobileThemeToggle');
+    const mIconMoon = document.getElementById('mIconMoon');
+    const mIconSun = document.getElementById('mIconSun');
+    const mLabel = document.getElementById('mThemeLabel');
 
     function setTheme(dark) {
       document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
-      if (iconMoon) iconMoon.style.display = dark ? 'none'  : 'block';
-      if (iconSun)  iconSun.style.display  = dark ? 'block' : 'none';
+      if (iconMoon) iconMoon.style.display = dark ? 'none' : 'block';
+      if (iconSun) iconSun.style.display = dark ? 'block' : 'none';
+      if (mIconMoon) mIconMoon.style.display = dark ? 'none' : 'block';
+      if (mIconSun) mIconSun.style.display = dark ? 'block' : 'none';
+      if (mLabel) mLabel.textContent = dark ? 'Hell' : 'Dunkel';
       localStorage.setItem('iscu-theme', dark ? 'dark' : 'light');
     }
     if (themeBtn) themeBtn.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') !== 'dark'));
+    if (mThemeBtn) mThemeBtn.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') !== 'dark'));
+
     setTheme(localStorage.getItem('iscu-theme') === 'dark');
+
+    // Exemple de fonction pour changer la langue
+    // function changeLanguage(lang) {
+    //c onst elements = document.querySelectorAll('[data-' + lang + ']');
+  
+    // elements.forEach(el => {
+    // Utiliser innerHTML pour interpréter
+    
+
+
   </script>
 </body>
+
 </html>
