@@ -154,7 +154,7 @@
   <section class="open-positions" id="offene-stellen">
     <h2>Offene <em>Stellen</em></h2>
 
-    <div class="position-card reveal">
+    <!-- <div class="position-card reveal">
       <div class="position-info">
         <h3>Social Media Manager (m/w/d)</h3>
         <p>Du planst, erstellst und optimierst Social-Recruiting-Kampagnen für unsere Kunden.</p>
@@ -180,12 +180,13 @@
       <a href="#bewerbung" class="apply-btn">Jetzt bewerben</a>
     </div>
 
+
     <div class="position-card reveal">
       <div class="position-info">
         <h3>Webdesigner / Developer (m/w/d)</h3>
         <p>Du gestaltest und entwickelst moderne Webseiten für unsere Unternehmenskunden.</p>
         <div class="position-tags">
-          <span class="position-tag">Remote</span>
+          <span class="position-tag">Vor ort</span>
           <span class="position-tag">Teilzeit</span>
           <span class="position-tag">Schweiz</span>
         </div>
@@ -193,12 +194,14 @@
       <a href="#bewerbung" class="apply-btn">Jetzt bewerben</a>
     </div>
 
+  -->
+
     <div class="position-card reveal">
       <div class="position-info">
         <h3>Vertriebsmitarbeiter (m/w/d) – Provisionsbasis</h3>
-        <p>Du akquirierst selbstständig Neukunden im Bereich IT-Outsourcing & Support und überzeugst Schweizer KMU von modernen IT-Lösungen – komplett remote und mit freier Zeiteinteilung.</p>
+        <p>Du akquirierst selbstständig Neukunden im Bereich IT-Outsourcing & Support und überzeugst Schweizer KMU von modernen IT-Lösungen – komplett vor ort und mit freier Zeiteinteilung.</p>
         <div class="position-tags">
-          <span class="position-tag">Remote</span>
+          <span class="position-tag">Vor ort</span>
           <span class="position-tag">Freelance</span>
           <span class="position-tag">Provisionsbasis</span>
           <span class="position-tag">Schweiz</span>
@@ -208,98 +211,280 @@
     </div>
   </section>
 
-  <!-- BEWERBUNGSFORMULAR (Intern) -->
-  <section id="apply-vertrieb" class="apply-section reveal" style="display:none;">
-    <div class="apply-inner">
-      <button class="apply-close" onclick="closeApply()">✕ Schliessen</button>
-      <div class="section-label light">Bewerbung</div>
-      <h2>Bewerbung für:<br><em id="applyTitle">Vertriebsmitarbeiter</em></h2>
-      <p class="apply-intro">Füll das Formular aus und lade deine Unterlagen direkt hoch – wir melden uns innerhalb von 48 Stunden.</p>
-      <form class="apply-form" id="applyForm" action="https://formspree.io/f/mbdqveaz" method="POST" enctype="multipart/form-data">
-        <div class="form-row">
-          <input type="text" name="vorname" placeholder="Vorname" required>
-          <input type="text" name="nachname" placeholder="Nachname" required>
-        </div>
-        <div class="form-row">
-          <input type="email" name="email" placeholder="E-Mail" required>
-          <input type="tel" name="phone" placeholder="Telefon">
-        </div>
-        <input type="hidden" name="position" id="applyPosition" value="Vertriebsmitarbeiter (m/w/d)">
-        <textarea name="motivation" placeholder="Kurzes Motivationsschreiben – warum passt du zu uns?" rows="4" required></textarea>
+<!-- =========================================================
+     BEWERBUNGSFORMULAR (Intern)
+     IDs und Klassen beibehalten – werden vom JS verwendet.
+========================================================= -->
+<section id="apply-vertrieb" class="apply-section reveal" style="display:none;">
+  <div class="apply-inner">
 
-        <div class="upload-group">
-          <label class="upload-label">
-            <span class="upload-icon">📄</span>
-            <span class="upload-text">Lebenslauf hochladen <em>(PDF, max. 5 MB)</em></span>
-            <input type="file" name="documents" accept=".pdf,application/pdf" required>
-          </label>
-          <label class="upload-label">
-            <span class="upload-icon">📎</span>
-            <span class="upload-text">Zeugnisse / Referenzen <em>(optional, PDF)</em></span>
-            <input type="file" name="documents" accept=".pdf,application/pdf" multiple>
-          </label>
-          <label class="upload-label">
-            <span class="upload-icon">＋</span>
-            <span class="upload-text">Weitere Dokumente hochladen <em>(optional, PDF, max. 5 MB pro Datei)</em></span>
-            <input type="file" name="documents" accept=".pdf,application/pdf" multiple>
-          </label>
-        </div>
+    <button class="apply-close" onclick="closeApply()">✕ Schliessen</button>
 
-        <button type="submit" id="applySubmit">Bewerbung senden</button>
-        <p class="form-success" id="applySuccess" style="display:none">✓ Bewerbung eingegangen – wir melden uns bald!</p>
-      </form>
-    </div>
-  </section>
-
-  <!-- SPONTANBEWERBUNG -->
-  <section class="spontan-section" id="bewerbung">
     <div class="section-label light">Bewerbung</div>
-    <h2>Nichts Passendes dabei?<br><em>Meld dich trotzdem.</em></h2>
-    <p>Wir freuen uns über Spontanbewerbungen – wenn die Chemie stimmt, finden wir einen Weg.</p>
-    <form class="spontan-form" id="karriereForm" action="https://formspree.io/f/mbdqveaz" method="POST" enctype="multipart/form-data">
+
+    <h2>
+      Bewerbung für:<br>
+      <em id="applyTitle">Vertriebsmitarbeiter</em>
+    </h2>
+
+    <p class="apply-intro">
+      Füll das Formular aus und lade deine Unterlagen direkt hoch – wir melden uns innerhalb von 48 Stunden.
+    </p>
+
+    <form
+      class="apply-form"
+      id="applyForm"
+      action="https://formspree.io/f/mbdqveaz"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+
       <div class="form-row">
-        <input type="text" name="name" placeholder="Dein Name" required>
-        <input type="email" name="email" placeholder="E-Mail" required>
+        <input type="text" name="vorname" placeholder="Vorname" required>
+        <input type="text" name="nachname" placeholder="Nachname" required>
       </div>
-      <select name="position">
-        <option value="" disabled selected>Interessensbereich wählen</option>
-        <option>Social Media Recruiting</option>
-        <option>Content Creation / Video</option>
-        <option>Webdesign / Development</option>
-        <option>Sales / Business Development</option>
-        <option>Spontanbewerbung</option>
-      </select>
-      <textarea name="message" placeholder="Erzähl uns kurz von dir – wer du bist, was dich antreibt und warum iscu.ch." required></textarea>
+
+      <div class="form-row">
+        <input type="email" name="email" placeholder="E-Mail" required>
+        <input type="tel" name="phone" placeholder="Telefon">
+      </div>
+
+      <!-- Wird vom JS verwendet -->
+      <input
+        type="hidden"
+        name="position"
+        id="applyPosition"
+        value="Vertriebsmitarbeiter (m/w/d)"
+      >
+
+      <textarea
+        name="motivation"
+        placeholder="Kurzes Motivationsschreiben – warum passt du zu uns?"
+        rows="4"
+        required
+      ></textarea>
+
       <div class="upload-group">
+
+        <label class="upload-label">
+          <span class="upload-icon">📄</span>
+          <span class="upload-text">
+            Lebenslauf hochladen
+            <em>(PDF, max. 5 MB)</em>
+          </span>
+          <input
+            type="file"
+            name="documents"
+            accept=".pdf,application/pdf"
+            required
+          >
+        </label>
+
+        <label class="upload-label">
+          <span class="upload-icon">📎</span>
+          <span class="upload-text">
+            Zeugnisse / Referenzen
+            <em>(optional, PDF)</em>
+          </span>
+          <input
+            type="file"
+            name="documents"
+            accept=".pdf,application/pdf"
+            multiple
+          >
+        </label>
+
         <label class="upload-label">
           <span class="upload-icon">＋</span>
-          <span class="upload-text">Zusätzliche Dokumente <em>(optional, PDF, max. 5 MB pro Datei)</em></span>
-          <input type="file" name="documents" accept=".pdf,application/pdf" multiple>
+          <span class="upload-text">
+            Weitere Dokumente hochladen
+            <em>(optional, PDF, max. 5 MB pro Datei)</em>
+          </span>
+          <input
+            type="file"
+            name="documents"
+            accept=".pdf,application/pdf"
+            multiple
+          >
         </label>
-      </div>
-      <button type="submit" id="karriereSubmit">Bewerbung senden</button>
-      <p class="form-success" id="karriereSuccess" style="display:none">✓ Bewerbung erhalten – wir melden uns!</p>
-    </form>
-  </section>
 
-  <footer>
-    <div class="footer-inner">
-      <img src="assets/img/logo-v3-transparent.png" alt="iscu.ch" class="brand-logo footer-logo">
-      <p class="footer-tagline">Social Recruiting · Made in Switzerland</p>
-      <div class="footer-links">
-        <a href="index.html">Startseite</a>
-        <a href="index.html#angebot">Angebot</a>
-        <a href="index.html#contact">Kontakt</a>
-        <a href="karriere.html">Karriere</a>
       </div>
-      <div class="footer-links" style="margin-top:12px; opacity:.7; font-size:.8rem;">
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-        <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
-      </div>
-      <p class="footer-copy">© 2025 iscu.ch – Social Recruiting neu gedacht</p>
+
+      <button type="submit" id="applySubmit">
+        Bewerbung senden
+      </button>
+
+      <!-- ID vom JS beibehalten -->
+      <p
+        class="form-success"
+        id="applySuccess"
+        style="display:none"
+      >
+        ✓ Bewerbung eingegangen – wir melden uns bald!
+      </p>
+
+    </form>
+  </div>
+</section>
+
+
+<!-- =========================================================
+     SPONTANBEWERBUNG
+     IDs/Klassen beibehalten – werden vom JS verwendet.
+========================================================= -->
+<section class="spontan-section" id="bewerbung">
+
+  <div class="section-label light">Bewerbung</div>
+
+  <h2>
+    Nichts Passendes dabei?<br>
+    <em>Meld dich trotzdem.</em>
+  </h2>
+
+  <p>
+    Wir freuen uns über Spontanbewerbungen – wenn die Chemie stimmt, finden wir einen Weg.
+  </p>
+
+  <form
+    class="spontan-form"
+    id="karriereForm"
+    action="https://formspree.io/f/mbdqveaz"
+    method="POST"
+    enctype="multipart/form-data"
+  >
+
+    <div class="form-row">
+      <input
+        type="text"
+        name="name"
+        placeholder="Dein Name"
+        required
+      >
+
+      <input
+        type="email"
+        name="email"
+        placeholder="E-Mail"
+        required
+      >
     </div>
-  </footer>
+
+    <select name="position">
+      <option value="" disabled selected>
+        Interessensbereich wählen
+      </option>
+
+      <!--
+      ALTE BEREICHE – BEI BEDARF REAKTIVIEREN
+
+      <option>Social Media Recruiting</option>
+      <option>Content Creation / Video</option>
+      <option>Webdesign / Development</option>
+      -->
+
+      <option>Sales / Business Development</option>
+      <option>B2B-Kundenakquise</option>
+      <option>B2B-Prospecting / Lead Generation</option>
+      <option>Spontanbewerbung</option>
+    </select>
+
+    <textarea
+      name="message"
+      placeholder="Erzähl uns kurz von dir – wer du bist, was dich antreibt und warum iscu.ch."
+      required
+    ></textarea>
+
+    <div class="upload-group">
+
+      <label class="upload-label">
+        <span class="upload-icon">＋</span>
+        <span class="upload-text">
+          Zusätzliche Dokumente
+          <em>(optional, PDF, max. 5 MB pro Datei)</em>
+        </span>
+
+        <input
+          type="file"
+          name="documents"
+          accept=".pdf,application/pdf"
+          multiple
+        >
+      </label>
+
+    </div>
+
+    <!-- ID vom JS beibehalten -->
+    <button type="submit" id="karriereSubmit">
+      Bewerbung senden
+    </button>
+
+    <!-- ID vom JS beibehalten -->
+    <p
+      class="form-success"
+      id="karriereSuccess"
+      style="display:none"
+    >
+      ✓ Bewerbung erhalten – wir melden uns!
+    </p>
+
+  </form>
+</section>
+
+
+<footer>
+  <div class="footer-inner">
+
+    <img
+      src="assets/img/logo-v3-transparent.png"
+      alt="iscu.ch"
+      class="brand-logo footer-logo"
+    >
+
+    <p class="footer-tagline">
+      B2B Client Acquisition · Made in Switzerland
+    </p>
+
+    <!--
+    ALTER FOOTER – BEI BEDARF REAKTIVIEREN
+
+    <p class="footer-tagline">
+      Social Recruiting · Made in Switzerland
+    </p>
+    -->
+
+    <div class="footer-links">
+      <a href="index.html">Startseite</a>
+      <a href="index.html#angebot">Angebot</a>
+      <a href="index.html#contact">Kontakt</a>
+
+      <!-- Karriere bleibt aktiv, da die JS-Verknüpfungen
+           und die Karriereseite weiterhin bestehen. -->
+      <a href="karriere.html">Karriere</a>
+    </div>
+
+    <div
+      class="footer-links"
+      style="margin-top:12px; opacity:.7; font-size:.8rem;"
+    >
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+    </div>
+
+    <p class="footer-copy">
+      © 2025 iscu.ch – B2B Client Acquisition
+    </p>
+
+    <!--
+    ALTER COPYRIGHT – BEI BEDARF REAKTIVIEREN
+
+    <p class="footer-copy">
+      © 2025 iscu.ch – Social Recruiting neu gedacht
+    </p>
+    -->
+
+  </div>
+</footer>
 
 <script>
 const cursor = document.querySelector('.cursor');
@@ -443,3 +628,4 @@ document.getElementById('karriereForm').addEventListener('submit', e => {
 </script>
 </body>
 </html>
+
