@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team – iscu.ch</title>
+</head>
+
+<body>
+
+    <section id="team" class="section team-section tabbed-section">
+
+        <div
+            class="section-label"
+            data-de="Unser Team"
+            data-fr="Notre Équipe"
+            data-en="Our Team"
+        >
+            Unser Team
+        </div>
+
+        <h2
+            data-de="Die Menschen hinter<br><em>iscu.ch</em>"
+            data-fr="Les personnes derrière<br><em>iscu.ch</em>"
+            data-en="The people behind<br><em>iscu.ch</em>"
+        >
+            Die Menschen hinter<br><em>iscu.ch</em>
+        </h2>
+
+        <p
+            data-de="Wir unterstützen Schweizer Unternehmen dabei, gezielt neue Geschäftskunden zu erreichen, qualifizierte Kontakte aufzubauen und aus Erstkontakten konkrete Gespräche zu machen."
+            data-fr="Nous aidons les entreprises suisses à atteindre de manière ciblée de nouveaux clients professionnels, à construire des contacts qualifiés et à transformer les premiers échanges en rendez-vous concrets."
+            data-en="We help Swiss companies reach new business customers, build qualified contacts and turn initial outreach into concrete sales conversations."
+        >
+            Wir unterstützen Schweizer Unternehmen dabei, gezielt neue Geschäftskunden zu erreichen, qualifizierte Kontakte aufzubauen und aus Erstkontakten konkrete Gespräche zu machen.
+        </p>
+
+    </section>
+
+
+    <footer>
+        <div class="footer-inner">
+
+            <img
+                src="assets/img/logo-v3-transparent.png"
+                alt="iscu.ch"
+                class="brand-logo footer-logo"
+            >
+
+            <p
+                class="footer-tagline"
+                data-de="B2B Client Acquisition · Made in Switzerland"
+                data-fr="B2B Client Acquisition · Made in Switzerland"
+                data-en="B2B Client Acquisition · Made in Switzerland"
+            >
+                B2B Client Acquisition · Made in Switzerland
+            </p>
+
+            <!--
+            ANCIEN POSITIONNEMENT – BEI BEDARF REAKTIVIEREN
+
+            <p
+                class="footer-tagline"
+                data-de="Social Recruiting · Made in Switzerland"
+                data-fr="Social Recruiting · Made in Switzerland"
+                data-en="Social Recruiting · Made in Switzerland"
+            >
+                Social Recruiting · Made in Switzerland
+            </p>
+            -->
+
+            <div class="footer-links">
+                <a
+                    href="#team"
+                    data-de="Team"
+                    data-fr="Équipe"
+                    data-en="Team"
+                >
+                    Team
+                </a>
+            </div>
+
+            <p class="footer-copy">
+                © 2025 iscu.ch – B2B Client Acquisition
+            </p>
+
+            <!--
+            ANCIEN COPYRIGHT – BEI BEDARF REAKTIVIEREN
+
+            <p class="footer-copy">
+                © 2025 iscu.ch – Social Recruiting neu gedacht
+            </p>
+            -->
+
+        </div>
+    </footer>
+
+
+    <script>
+        animateFollower();
+
+        document.querySelectorAll(
+            'a, button, .angebot-card, .team-card, .faq-item'
+        ).forEach(el => {
+
+            el.addEventListener('mouseenter', () => {
+                cursor.classList.add('hover');
+                follower.classList.add('hover');
+            });
+
+            el.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover');
+                follower.classList.remove('hover');
+            });
+
+        });
+
+
+        // ── TAB NAVIGATION ────────────────────────
+        const TAB_IDS = [
+            'about',
+            'angebot',
+            'icp',
+            'prozess',
+            'vergleich',
+            'team',
+            'faq',
+            'contact'
+        ];
+    </script>
+
+</body>
+
+</html>
