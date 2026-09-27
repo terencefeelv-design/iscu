@@ -1333,29 +1333,46 @@
     if (ps) prozessObserver.observe(ps);
 
     // ── CONTACT FORM ──────────────────────────────────
-    document.getElementById('contactForm').addEventListener('submit', async e => {
-      e.preventDefault();
-      const btn = document.getElementById('submitBtn');
-      btn.textContent = '…'; btn.disabled = true;
-      try {
-        const res = await fetch('https://formspree.io/f/mbdqveaz', {
-          method: 'POST',
-          headers: { 'Accept': 'application/json' },
-          body: new FormData(e.target)
-        });
-        if (res.ok) {
-          document.getElementById('formSuccess').style.display = 'block';
-          e.target.reset();
-          btn.textContent = 'Gesendet ✓';
-        } else {
-          btn.textContent = 'Fehler – bitte erneut versuchen';
-          btn.disabled = false;
-        }
-      } catch (_) {
-        btn.textContent = 'Fehler – bitte erneut versuchen';
-        btn.disabled = false;
-      }
+document.getElementById('contactForm').addEventListener('submit', async e => {
+  e.preventDefault();
+
+  const btn = document.getElementById('submitBtn');
+  const form = e.target;
+
+  btn.textContent = '…';
+  btn.disabled = true;
+
+  try {
+    const res = await fetch('https://formspree.io/f/mbdqveaz', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json'
+      },
+      body: new FormData(form)
     });
+
+    const data = await res.json();
+
+    console.log('Formspree response:', data);
+
+    if (res.ok) {
+      document.getElementById('formSuccess').style.display = 'block';
+      form.reset();
+      btn.textContent = 'Gesendet ✓';
+    } else {
+      console.error('Formspree error:', data);
+
+      btn.textContent = 'Fehler – bitte erneut versuchen';
+      btn.disabled = false;
+    }
+
+  } catch (error) {
+    console.error('Network error:', error);
+
+    btn.textContent = 'Fehler – bitte erneut versuchen';
+    btn.disabled = false;
+  }
+});
 
     // ── HAMBURGER ─────────────────────────────────────
     document.getElementById('hamburger').addEventListener('click', () => {
