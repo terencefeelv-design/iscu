@@ -1148,7 +1148,9 @@
           <span data-de="oder" data-fr="ou" data-en="or">oder</span>
         </div>
 <!---->
+
 <div class="contact-form-card">
+
   <h3
     data-de="Nachricht senden"
     data-fr="Envoyer un message"
@@ -1157,39 +1159,36 @@
   </h3>
 
   <form class="form" id="contactForm">
+
     <div class="form-row">
-      <label for="name" aria-hidden="true">Name</label>
       <input
         type="text"
         name="name"
-        id="name"
         placeholder="Name"
         required>
-      
+
       <input
         type="text"
         name="company"
-        id="company"
         placeholder="Unternehmen">
     </div>
 
-    <label for="email" aria-hidden="true">E-Mail</label>
     <input
       type="email"
       name="email"
-      id="email"
       placeholder="E-Mail"
       required
       style="width:100%">
 
-    <label for="message" aria-hidden="true">Nachricht</label>
     <textarea
       name="message"
-      id="message"
+      data-de-placeholder="Worum geht es bei Ihrer Anfrage?"
+      data-fr-placeholder="Quel est l’objet de votre demande ?"
+      data-en-placeholder="What is your enquiry about?"
       placeholder="Worum geht es bei Ihrer Anfrage?"
       rows="5"
       required></textarea>
-    
+<!---->
     <button
       type="submit"
       id="submitBtn"
@@ -1199,12 +1198,22 @@
       Nachricht senden
     </button>
 
-    <p
-      class="form-success"
-      id="formSuccess"
-      style="display:none; margin-top:1rem;">
-      ✓ Nachricht gesendet – wir melden uns bald!
-    </p>
+<p
+  class="form-success"
+  id="formSuccess"
+  data-de="✓ Nachricht gesendet – wir melden uns bald!"
+  data-fr="✓ Message envoyé – nous vous répondrons bientôt!"
+  data-en="✓ Message sent – we will get back to you!">
+</p>
+
+<p
+  class="form-error"
+  id="formError"
+  role="alert"
+  style="display:none">
+  Das Senden konnte nicht bestätigt werden. Bitte versuchen Sie es erneut.
+</p>
+
   </form>
 </div>
       </div>
@@ -1257,6 +1266,8 @@
 </footer>
 
   <script>
+              document.getElementById('formSuccess').style.display = 'none';
+
     // ── CUSTOM CURSOR ─────────────────────────────────
     const cursor = document.querySelector('.cursor');
     const follower = document.querySelector('.cursor-follower');
@@ -1336,45 +1347,46 @@
     if (ps) prozessObserver.observe(ps);
 
     // ── CONTACT FORM ──────────────────────────────────
-    const contactForm = document.getElementById('contactForm');
-    const submitBtn = document.getElementById('submitBtn');
-    const formSuccess = document.getElementById('formSuccess');
+document.getElementById('contactForm').addEventListener('submit', async e => {
+  e.preventDefault();
 
-    if (contactForm && submitBtn && formSuccess) {
-      formSuccess.style.display = 'none';
+  const btn = document.getElementById('submitBtn');
+  const form = e.target;
 
-      contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        submitBtn.textContent = 'Senden...';
-        submitBtn.disabled = true;
+  btn.textContent = '…';
+  btn.disabled = true;
 
-        try {
-          const res = await fetch('https://formspree.io/f/mbdqveaz', {
-            method: 'POST',
-            headers: {
-              'Accept': 'application/json'
-            },
-            body: new FormData(contactForm)
-          });
+  try {
+    const res = await fetch('https://formspree.io/f/mbdqveaz', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json'
+      },
+      body: new FormData(form)
+    });
 
-          if (res.ok) {
-            formSuccess.style.display = 'block';
-            contactForm.reset();
-            submitBtn.textContent = 'Gesendet ✓';
-          } else {
-            console.error('Formspree error:', await res.json());
-            alert('Es ist ein Fehler aufgetreten. Bitte erneut versuchen.');
-            submitBtn.textContent = 'Nachricht senden';
-          }
-        } catch (error) {
-          console.error('Network error:', error);
-          alert('Verbindungsfehler. Prüfe deine Internetverbindung.');
-          submitBtn.textContent = 'Fehler – bitte erneut versuchen';
-        } finally {
-          submitBtn.disabled = false;
-        }
-      });
+    const data = await res.json();
+
+    console.log('Formspree response:', data);
+
+    if (res.ok) {
+      document.getElementById('formSuccess').style.display = 'block';
+      form.reset();
+      btn.textContent = 'Gesendet ✓';
+    } else {
+      console.error('Formspree error:', data);
+
+      btn.textContent = 'Fehler – bitte erneut versuchen';
+      btn.disabled = false;
     }
+
+  } catch (error) {
+    console.error('Network error:', error);
+
+    btn.textContent = 'Fehler – bitte erneut versuchen';
+    btn.disabled = false;
+  }
+});
 
     // ── HAMBURGER ─────────────────────────────────────
     document.getElementById('hamburger').addEventListener('click', () => {
