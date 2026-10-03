@@ -916,6 +916,8 @@
 
   </div>
 
+
+
   <!--
   ============================================================
   ALTER VERGLEICH – SOCIAL RECRUITING
@@ -1350,41 +1352,58 @@
 document.getElementById('contactForm').addEventListener('submit', async e => {
   e.preventDefault();
 
+  const form = e.currentTarget;
   const btn = document.getElementById('submitBtn');
-  const form = e.target;
+  const success = document.getElementById('formSuccess');
+  const originalLabel = btn.textContent;
 
-  btn.textContent = '…';
   btn.disabled = true;
+  btn.textContent = '…';
+  success.style.display = 'none';
 
   try {
     const res = await fetch('https://formspree.io/f/mbdqveaz', {
       method: 'POST',
-      headers: {
-        'Accept': 'application/json'
-      },
+      headers: { Accept: 'application/json' },
       body: new FormData(form)
     });
 
-    const data = await res.json();
-
-    console.log('Formspree response:', data);
-
-    if (res.ok) {
-      document.getElementById('formSuccess').style.display = 'block';
-      form.reset();
-      btn.textContent = 'Gesendet ✓';
-    } else {
-      console.error('Formspree error:', data);
-
-      btn.textContent = 'Fehler – bitte erneut versuchen';
-      btn.disabled = false;
+    const raw = await res.text();
+    let data;
+    try {
+      data = raw ? JSON.parse(raw) : {};
+    } catch {
+      data = { message: raw };
     }
 
-  } catch (error) {
-    console.error('Network error:', error);
+    if (!res.ok) {
+      const details = Array.isArray(data.errors)
+        ? data.errors.map(error => error.message).join(' ')
+        : data.message || `HTTP ${res.status}`;
 
+      console.error('Formspree submission failed:', {
+        status: res.status,
+        response: data
+      });
+
+      btn.textContent = 'Fehler – bitte erneut versuchen';
+      // Replace or supplement this alert with an inline error element if available.
+      alert(`Nachricht konnte nicht gesendet werden. ${details}`);
+      return;
+    }
+
+    form.reset();
+    success.style.display = 'block';
+    btn.textContent = 'Gesendet ✓';
+  } catch (error) {
+    console.error('Network error while submitting the contact form:', error);
     btn.textContent = 'Fehler – bitte erneut versuchen';
-    btn.disabled = false;
+    alert('Netzwerkfehler. Bitte prüfen Sie Ihre Verbindung und versuchen Sie es erneut.');
+  } finally {
+    if (btn.textContent !== 'Gesendet ✓') {
+      btn.disabled = false;
+      if (btn.textContent === '…') btn.textContent = originalLabel;
+    }
   }
 });
 
