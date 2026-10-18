@@ -1,251 +1,154 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iscu.ch – Registrierung</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <script defer src="assets/subscribe.js"></script>
 
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="ISCU" />
-<link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="ISCU" />
+  <link rel="manifest" href="/site.webmanifest" />
 </head>
+
 <body>
-<!-- CUSTOM CURSOR -->
-<div class="cursor"></div>
-<div class="cursor-follower"></div>
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
 
 
-<!-- NAVBAR -->
-<nav class="nav">
+  <!-- NAVBAR -->
+  <nav class="nav">
 
-  <a href="index.html" class="brand-link">
-    <img
-      src="assets/img/logo-v3-transparent.png"
-      alt="iscu.ch"
-      class="brand-logo"
-    >
-  </a>
+    <a href="index.html" class="brand-link">
+      <img src="assets/img/logo-v3-transparent.png" alt="iscu.ch" class="brand-logo">
+    </a>
 
-  <div class="nav-links">
+    <div class="nav-links">
 
-    <a
-      href="index.html#angebot"
-      data-de="Angebot"
-      data-fr="Offre"
-      data-en="Offer"
-    >Angebot</a>
+      <a href="index.html#angebot" data-de="Angebot" data-fr="Offre" data-en="Offer">Angebot</a>
 
-    <a
-      href="index.html#prozess"
-      data-de="Prozess"
-      data-fr="Processus"
-      data-en="Process"
-    >Prozess</a>
+      <a href="index.html#prozess" data-de="Prozess" data-fr="Processus" data-en="Process">Prozess</a>
 
-    <a
-      href="karriere.html"
-      data-de="Karriere"
-      data-fr="Carrière"
-      data-en="Career"
-    >Karriere</a>
+      <a href="karriere.html" data-de="Karriere" data-fr="Carrière" data-en="Career">Karriere</a>
 
-    <details class="nav-dropdown">
-      <summary>
-        <span>Mehr</span>
-        <span
-          class="nav-dropdown-icon"
-          aria-hidden="true"
-        >⌄</span>
-      </summary>
+      <details class="nav-dropdown">
+        <summary>
+          <span>Mehr</span>
+          <span class="nav-dropdown-icon" aria-hidden="true">⌄</span>
+        </summary>
 
-      <div class="nav-dropdown-menu">
+        <div class="nav-dropdown-menu">
 
-        <a
-          href="index.html#about"
-          data-de="Über uns"
-          data-fr="À propos"
-          data-en="About"
-        >Über uns</a>
+          <a href="index.html#about" data-de="Über uns" data-fr="À propos" data-en="About">Über uns</a>
 
-        <a
-          href="index.html#vergleich"
-          data-de="Vergleich"
-          data-fr="Comparaison"
-          data-en="Comparison"
-        >Vergleich</a>
+          <a href="index.html#vergleich" data-de="Vergleich" data-fr="Comparaison" data-en="Comparison">Vergleich</a>
 
-        <a
-          href="index.html#team"
-          data-de="Team"
-          data-fr="Équipe"
-          data-en="Team"
-        >Team</a>
+          <a href="index.html#team" data-de="Team" data-fr="Équipe" data-en="Team">Team</a>
 
-        <a
-          href="index.html#faq"
-          data-de="FAQ"
-          data-fr="FAQ"
-          data-en="FAQ"
-        >FAQ</a>
+          <a href="index.html#faq" data-de="FAQ" data-fr="FAQ" data-en="FAQ">FAQ</a>
 
-        <a
-          href="index.html#contact"
-          data-de="Kontakt"
-          data-fr="Contact"
-          data-en="Contact"
-        >Kontakt</a>
+          <a href="index.html#contact" data-de="Kontakt" data-fr="Contact" data-en="Contact">Kontakt</a>
 
+        </div>
+      </details>
+
+    </div>
+
+    <div class="nav-right">
+      <a href="index.html#contact" class="nav-cta" data-de="Gratis Erstgespräch" data-fr="Consultation gratuite"
+        data-en="Free consultation">Gratis Erstgespräch</a>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </nav>
+
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+
+    <a href="index.html#angebot" data-de="Angebot" data-fr="Offre" data-en="Offer">Angebot</a>
+
+    <a href="index.html#prozess" data-de="Prozess" data-fr="Processus" data-en="Process">Prozess</a>
+
+    <a href="karriere.html" data-de="Karriere" data-fr="Carrière" data-en="Career">Karriere</a>
+
+    <a href="index.html#about" data-de="Über uns" data-fr="À propos" data-en="About">Über uns</a>
+
+    <a href="index.html#vergleich" data-de="Vergleich" data-fr="Comparaison" data-en="Comparison">Vergleich</a>
+
+    <a href="index.html#team" data-de="Team" data-fr="Équipe" data-en="Team">Team</a>
+
+    <a href="index.html#faq" data-de="FAQ" data-fr="FAQ" data-en="FAQ">FAQ</a>
+
+    <a href="index.html#contact" data-de="Kontakt" data-fr="Contact" data-en="Contact">Kontakt</a>
+
+    <a href="index.html#contact" class="mobile-cta" data-de="Gratis Erstgespräch" data-fr="Consultation gratuite"
+      data-en="Free consultation">Gratis Erstgespräch →</a>
+
+  </div>
+
+
+  <!-- QUESTIONNAIRE -->
+  <main class="subscribe-wrapper">
+
+    <div class="questionnaire">
+
+      <div class="progress">
+        <span id="progress-step">
+          Schritt 1 von 4
+        </span>
       </div>
-    </details>
 
-  </div>
+      <div class="progress-bar">
+        <div class="progress-bar-fill" id="progressFill" style="width: 25%"></div>
+      </div>
 
-  <div class="nav-right">
-    <a
-      href="index.html#contact"
-      class="nav-cta"
-      data-de="Gratis Erstgespräch"
-      data-fr="Consultation gratuite"
-      data-en="Free consultation"
-    >Gratis Erstgespräch</a>
-  </div>
+      <!-- Wird dynamisch durch das JS befüllt -->
+      <div id="form-container"></div>
 
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+      <div class="actions">
+        <button id="prev" disabled>
+          Zurück
+        </button>
 
-</nav>
+        <button id="next">
+          Weiter
+        </button>
+      </div>
 
-
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-
-  <a
-    href="index.html#angebot"
-    data-de="Angebot"
-    data-fr="Offre"
-    data-en="Offer"
-  >Angebot</a>
-
-  <a
-    href="index.html#prozess"
-    data-de="Prozess"
-    data-fr="Processus"
-    data-en="Process"
-  >Prozess</a>
-
-  <a
-    href="karriere.html"
-    data-de="Karriere"
-    data-fr="Carrière"
-    data-en="Career"
-  >Karriere</a>
-
-  <a
-    href="index.html#about"
-    data-de="Über uns"
-    data-fr="À propos"
-    data-en="About"
-  >Über uns</a>
-
-  <a
-    href="index.html#vergleich"
-    data-de="Vergleich"
-    data-fr="Comparaison"
-    data-en="Comparison"
-  >Vergleich</a>
-
-  <a
-    href="index.html#team"
-    data-de="Team"
-    data-fr="Équipe"
-    data-en="Team"
-  >Team</a>
-
-  <a
-    href="index.html#faq"
-    data-de="FAQ"
-    data-fr="FAQ"
-    data-en="FAQ"
-  >FAQ</a>
-
-  <a
-    href="index.html#contact"
-    data-de="Kontakt"
-    data-fr="Contact"
-    data-en="Contact"
-  >Kontakt</a>
-
-  <a
-    href="index.html#contact"
-    class="mobile-cta"
-    data-de="Gratis Erstgespräch"
-    data-fr="Consultation gratuite"
-    data-en="Free consultation"
-  >Gratis Erstgespräch →</a>
-
-</div>
-
-
-<!-- QUESTIONNAIRE -->
-<main class="subscribe-wrapper">
-
-  <div class="questionnaire">
-
-    <div class="progress">
-      <span id="progress-step">
-        Schritt 1 von 4
-      </span>
     </div>
 
-    <div class="progress-bar">
-      <div
-        class="progress-bar-fill"
-        id="progressFill"
-        style="width: 25%"
-      ></div>
-    </div>
-
-    <!-- Wird dynamisch durch das JS befüllt -->
-    <div id="form-container"></div>
-
-    <div class="actions">
-      <button id="prev" disabled>
-        Zurück
-      </button>
-
-      <button id="next">
-        Weiter
-      </button>
-    </div>
-
-  </div>
-
-</main>
+  </main>
 
 
-<footer>
-  <div class="footer-inner">
+  <footer>
+    <div class="footer-inner">
 
-    <div class="brand footer-brand">
-      iscu<span>.ch</span>
-    </div>
+      <div class="brand footer-brand">
+        iscu<span>.ch</span>
+      </div>
 
-    <p class="footer-copy">
-      © 2025 iscu.ch – B2B Client Acquisition
-    </p>
+      <p class="footer-copy">
+        © 2025 iscu.ch – B2B Client Acquisition
+      </p>
 
-    <!--
+      <!--
     ALTER FOOTER – BEI BEDARF REAKTIVIEREN
 
     <p class="footer-copy">
@@ -253,8 +156,8 @@
     </p>
     -->
 
-  </div>
-</footer>
+    </div>
+  </footer>
 
   <script>
     const cursor = document.querySelector('.cursor');
@@ -281,10 +184,23 @@
     });
   </script>
 
-<!-- WhatsApp contact button -->
-<a class="whatsapp-button" href="https://wa.me/message/PDIHFZINMVZZD1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" aria-labelledby="whatsapp-label" title="WhatsApp">
-  <span id="whatsapp-label" data-de="Schreiben Sie uns auf WhatsApp" data-fr="Écrivez-nous sur WhatsApp" data-en="Message us on WhatsApp">Schreiben Sie uns auf WhatsApp</span>
-  <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079.002,9.845,1.979,13.43,5.566,3.584,3.588,5.558,8.356,5.556,13.428-.004,10.465-8.522,18.98-18.986,18.98h-.008c-3.177-.001-6.3-.798-9.073-2.311L4.868,43.303z" fill="#fff"/><path d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626-8.704,0-15.783,7.076-15.787,15.774-.001,2.981.833,5.883,2.413,8.396l.376.597-1.595,5.821,5.973-1.566.577.342c2.422,1.438,5.2,2.198,8.032,2.199h.006c8.698,0,15.777-7.077,15.78-15.776.001-4.215-1.638-8.179-4.618-11.161z" fill="#40c351"/></svg>
-</a>
+  <!-- WhatsApp contact button -->
+  <a class="whatsapp-button" href="https://wa.me/message/PDIHFZINMVZZD1" target="_blank" rel="noopener noreferrer"
+    aria-label="WhatsApp" aria-labelledby="whatsapp-label" title="WhatsApp">
+    <span id="whatsapp-label" data-de="Schreiben Sie uns auf WhatsApp" data-fr="Écrivez-nous sur WhatsApp"
+      data-en="Message us on WhatsApp">Schreiben Sie uns auf WhatsApp</span>
+    <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079.002,9.845,1.979,13.43,5.566,3.584,3.588,5.558,8.356,5.556,13.428-.004,10.465-8.522,18.98-18.986,18.98h-.008c-3.177-.001-6.3-.798-9.073-2.311L4.868,43.303z"
+        fill="#fff" />
+      <path
+        d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626-8.704,0-15.783,7.076-15.787,15.774-.001,2.981.833,5.883,2.413,8.396l.376.597-1.595,5.821,5.973-1.566.577.342c2.422,1.438,5.2,2.198,8.032,2.199h.006c8.698,0,15.777-7.077,15.78-15.776.001-4.215-1.638-8.179-4.618-11.161z"
+        fill="#40c351" />
+                <path clip-rule="evenodd"
+            d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+            fill-rule="evenodd" fill="#fff"></path>
+    </svg>
+  </a>
 </body>
+
 </html>
