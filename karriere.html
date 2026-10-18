@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,7 @@
 
   <title>Karriere bei iscu.ch – Jobs im Bereich B2B-Kundenakquise</title>
 
-  <meta
-    name="description"
+  <meta name="description"
     content="Werde Teil von iscu.ch – der Schweizer Agentur für B2B-Kundenakquise und Vertriebsunterstützung. Offene Stellen, Praktika und Freelance-Möglichkeiten in einem wachsenden Team.">
 
   <link rel="canonical" href="https://iscu.ch/karriere.html">
@@ -16,8 +16,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://iscu.ch/karriere.html">
   <meta property="og:title" content="Karriere bei iscu.ch – Jobs im Bereich B2B-Kundenakquise">
-  <meta
-    property="og:description"
+  <meta property="og:description"
     content="Offene Stellen bei iscu.ch. Werde Teil einer Schweizer Agentur für B2B-Kundenakquise und Vertriebsunterstützung.">
   <meta property="og:image" content="https://iscu.ch/assets/img/logo-v3-transparent.png">
 
@@ -37,87 +36,391 @@
   </script>
 
   <style>
-    .karriere-hero { min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 100px 20px 60px; }
-    .karriere-hero h1 { font-family: 'Fraunces', serif; font-size: clamp(2.4rem,5vw,4.2rem); font-weight: 600; letter-spacing:-1.5px; line-height:1.1; margin-bottom:1.2rem; }
-    .karriere-hero h1 em { font-style:italic; font-weight:300; color:var(--highlight); }
-    .karriere-hero p { color:var(--muted); font-size:1.05rem; font-weight:300; max-width:560px; line-height:1.75; margin-bottom:2.5rem; }
-    .open-positions { max-width: 760px; margin: 0 auto; padding: 80px 20px; }
-    .open-positions h2 { font-family:'Fraunces',serif; font-size:2rem; font-weight:600; letter-spacing:-0.5px; margin-bottom:40px; text-align:center; }
-    .position-card { background:white; border-radius:16px; padding:32px 36px; border:1px solid var(--accent); box-shadow:0 2px 20px rgba(0,0,0,.04); margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; gap:20px; transition:transform .3s, box-shadow .3s; }
-    .position-card:hover { transform:translateY(-3px); box-shadow:0 10px 32px rgba(0,0,0,.08); }
-    .position-info h3 { font-family:'Fraunces',serif; font-size:1.2rem; font-weight:600; margin-bottom:6px; }
-    .position-info p { color:var(--muted); font-size:.88rem; font-weight:300; }
-    .position-tags { display:flex; gap:8px; margin-top:10px; flex-wrap:wrap; }
-    .position-tag { font-size:.75rem; font-weight:500; letter-spacing:.06em; text-transform:uppercase; background:var(--warm); color:var(--text); padding:4px 12px; border-radius:3px; }
-    .apply-btn { background:var(--text); color:var(--bg); padding:12px 24px; border-radius:4px; text-decoration:none; font-size:.88rem; font-weight:500; white-space:nowrap; transition:background .3s, transform .2s; flex-shrink:0; }
-    .apply-btn:hover { background:var(--highlight); transform:translateY(-2px); }
-    .spontan-section { background:var(--text); color:var(--bg); padding:100px 20px; text-align:center; }
-    .spontan-section h2 { font-family:'Fraunces',serif; font-size:clamp(1.8rem,3.5vw,2.8rem); font-weight:600; letter-spacing:-1px; line-height:1.15; margin-bottom:1rem; }
-    .spontan-section h2 em { font-style:italic; font-weight:300; color:var(--highlight); }
-    .spontan-section p { color:rgba(242,248,252,.6); font-size:1rem; font-weight:300; max-width:500px; margin:0 auto 2.5rem; line-height:1.75; }
-    .spontan-form { max-width:480px; margin:0 auto; display:flex; flex-direction:column; gap:12px; }
-    .spontan-form input, .spontan-form textarea, .spontan-form select {
-      border:1px solid rgba(255,255,255,.12); border-radius:8px; padding:13px 16px;
-      font-size:.93rem; font-family:'DM Sans',sans-serif;
-      background:rgba(255,255,255,.06); color:var(--bg); width:100%;
-      transition:border-color .2s;
+    .karriere-hero {
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 100px 20px 60px;
     }
-    .spontan-form input::placeholder, .spontan-form textarea::placeholder { color:rgba(242,248,252,.3); }
-    .spontan-form input:focus, .spontan-form textarea:focus, .spontan-form select:focus { outline:none; border-color:var(--highlight); }
-    .spontan-form select option { background:#0D2535; }
-    .spontan-form textarea { resize:vertical; min-height:100px; }
-    .spontan-form button { background:var(--bg); color:var(--text); border:none; border-radius:4px; padding:14px; font-size:.9rem; font-weight:500; font-family:'DM Sans',sans-serif; cursor:none; transition:background .3s, transform .2s; }
-    .spontan-form button:hover { background:var(--highlight); transform:translateY(-2px); }
+
+    .karriere-hero h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
+      font-weight: 600;
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+    }
+
+    .karriere-hero h1 em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--highlight);
+    }
+
+    .karriere-hero p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      font-weight: 300;
+      max-width: 560px;
+      line-height: 1.75;
+      margin-bottom: 2.5rem;
+    }
+
+    .open-positions {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    .open-positions h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .position-card {
+      background: white;
+      border-radius: 16px;
+      padding: 32px 36px;
+      border: 1px solid var(--accent);
+      box-shadow: 0 2px 20px rgba(0, 0, 0, .04);
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      transition: transform .3s, box-shadow .3s;
+    }
+
+    .position-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 32px rgba(0, 0, 0, .08);
+    }
+
+    .position-info h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .position-info p {
+      color: var(--muted);
+      font-size: .88rem;
+      font-weight: 300;
+    }
+
+    .position-tags {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .position-tag {
+      font-size: .75rem;
+      font-weight: 500;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      background: var(--warm);
+      color: var(--text);
+      padding: 4px 12px;
+      border-radius: 3px;
+    }
+
+    .apply-btn {
+      background: var(--text);
+      color: var(--bg);
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: .88rem;
+      font-weight: 500;
+      white-space: nowrap;
+      transition: background .3s, transform .2s;
+      flex-shrink: 0;
+    }
+
+    .apply-btn:hover {
+      background: var(--highlight);
+      transform: translateY(-2px);
+    }
+
+    .spontan-section {
+      background: var(--text);
+      color: var(--bg);
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .spontan-section h2 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .spontan-section h2 em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--highlight);
+    }
+
+    .spontan-section p {
+      color: rgba(242, 248, 252, .6);
+      font-size: 1rem;
+      font-weight: 300;
+      max-width: 500px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.75;
+    }
+
+    .spontan-form {
+      max-width: 480px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .spontan-form input,
+    .spontan-form textarea,
+    .spontan-form select {
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 8px;
+      padding: 13px 16px;
+      font-size: .93rem;
+      font-family: 'DM Sans', sans-serif;
+      background: rgba(255, 255, 255, .06);
+      color: var(--bg);
+      width: 100%;
+      transition: border-color .2s;
+    }
+
+    .spontan-form input::placeholder,
+    .spontan-form textarea::placeholder {
+      color: rgba(242, 248, 252, .3);
+    }
+
+    .spontan-form input:focus,
+    .spontan-form textarea:focus,
+    .spontan-form select:focus {
+      outline: none;
+      border-color: var(--highlight);
+    }
+
+    .spontan-form select option {
+      background: #0D2535;
+    }
+
+    .spontan-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .spontan-form button {
+      background: var(--bg);
+      color: var(--text);
+      border: none;
+      border-radius: 4px;
+      padding: 14px;
+      font-size: .9rem;
+      font-weight: 500;
+      font-family: 'DM Sans', sans-serif;
+      cursor: none;
+      transition: background .3s, transform .2s;
+    }
+
+    .spontan-form button:hover {
+      background: var(--highlight);
+      transform: translateY(-2px);
+    }
+
     @media (max-width:600px) {
-      .position-card { flex-direction:column; align-items:flex-start; }
-      .apply-btn { width:100%; text-align:center; }
+      .position-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .apply-btn {
+        width: 100%;
+        text-align: center;
+      }
     }
 
     /* ── Internal Application Form ── */
-    .apply-section { background:var(--text); color:var(--bg); padding:80px 20px; }
-    .apply-inner { max-width:560px; margin:0 auto; }
-    .apply-close { background:rgba(255,255,255,.12); border:none; color:var(--bg); padding:8px 18px; border-radius:4px; font-size:.85rem; font-family:'DM Sans',sans-serif; cursor:pointer; margin-bottom:32px; transition:background .2s; }
-    .apply-close:hover { background:rgba(255,255,255,.22); }
-    .apply-section h2 { font-family:'Fraunces',serif; font-size:clamp(1.6rem,3vw,2.4rem); font-weight:600; letter-spacing:-0.5px; line-height:1.15; margin-bottom:1rem; }
-    .apply-section h2 em { font-style:italic; font-weight:300; color:var(--highlight); }
-    .apply-intro { color:rgba(242,248,252,.65); font-size:.95rem; font-weight:300; margin-bottom:2rem; line-height:1.7; }
-    .apply-form { display:flex; flex-direction:column; gap:12px; }
-    .apply-form input, .apply-form textarea {
-      border:1px solid rgba(255,255,255,.12); border-radius:8px; padding:13px 16px;
-      font-size:.93rem; font-family:'DM Sans',sans-serif;
-      background:rgba(255,255,255,.06); color:var(--bg); width:100%;
-      transition:border-color .2s; box-sizing:border-box;
+    .apply-section {
+      background: var(--text);
+      color: var(--bg);
+      padding: 80px 20px;
     }
-    .apply-form input::placeholder, .apply-form textarea::placeholder { color:rgba(242,248,252,.3); }
-    .apply-form input:focus, .apply-form textarea:focus { outline:none; border-color:var(--highlight); }
-    .apply-form textarea { resize:vertical; }
-    .upload-group { display:flex; flex-direction:column; gap:10px; margin-top:4px; }
+
+    .apply-inner {
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .apply-close {
+      background: rgba(255, 255, 255, .12);
+      border: none;
+      color: var(--bg);
+      padding: 8px 18px;
+      border-radius: 4px;
+      font-size: .85rem;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer;
+      margin-bottom: 32px;
+      transition: background .2s;
+    }
+
+    .apply-close:hover {
+      background: rgba(255, 255, 255, .22);
+    }
+
+    .apply-section h2 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .apply-section h2 em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--highlight);
+    }
+
+    .apply-intro {
+      color: rgba(242, 248, 252, .65);
+      font-size: .95rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .apply-form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .apply-form input,
+    .apply-form textarea {
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 8px;
+      padding: 13px 16px;
+      font-size: .93rem;
+      font-family: 'DM Sans', sans-serif;
+      background: rgba(255, 255, 255, .06);
+      color: var(--bg);
+      width: 100%;
+      transition: border-color .2s;
+      box-sizing: border-box;
+    }
+
+    .apply-form input::placeholder,
+    .apply-form textarea::placeholder {
+      color: rgba(242, 248, 252, .3);
+    }
+
+    .apply-form input:focus,
+    .apply-form textarea:focus {
+      outline: none;
+      border-color: var(--highlight);
+    }
+
+    .apply-form textarea {
+      resize: vertical;
+    }
+
+    .upload-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
     .upload-label {
-      display:flex; align-items:center; gap:12px;
-      border:1.5px dashed rgba(255,255,255,.2); border-radius:10px;
-      padding:14px 18px; cursor:pointer; transition:border-color .2s;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border: 1.5px dashed rgba(255, 255, 255, .2);
+      border-radius: 10px;
+      padding: 14px 18px;
+      cursor: pointer;
+      transition: border-color .2s;
     }
-    .upload-label:hover { border-color:var(--highlight); }
-    .upload-icon { font-size:1.3rem; flex-shrink:0; }
-    .upload-text { font-size:.88rem; font-weight:400; color:rgba(242,248,252,.8); }
-    .upload-text em { font-style:normal; color:rgba(242,248,252,.45); font-size:.8rem; display:block; margin-top:2px; }
-    .upload-label input[type="file"] { display:none; }
-    .upload-label.has-file { border-color:var(--highlight); }
+
+    .upload-label:hover {
+      border-color: var(--highlight);
+    }
+
+    .upload-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .upload-text {
+      font-size: .88rem;
+      font-weight: 400;
+      color: rgba(242, 248, 252, .8);
+    }
+
+    .upload-text em {
+      font-style: normal;
+      color: rgba(242, 248, 252, .45);
+      font-size: .8rem;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .upload-label input[type="file"] {
+      display: none;
+    }
+
+    .upload-label.has-file {
+      border-color: var(--highlight);
+    }
+
     .apply-form button[type="submit"] {
-      background:var(--bg); color:var(--text); border:none; border-radius:4px;
-      padding:14px; font-size:.9rem; font-weight:500; font-family:'DM Sans',sans-serif;
-      cursor:pointer; transition:background .3s, transform .2s; margin-top:4px;
+      background: var(--bg);
+      color: var(--text);
+      border: none;
+      border-radius: 4px;
+      padding: 14px;
+      font-size: .9rem;
+      font-weight: 500;
+      font-family: 'DM Sans', sans-serif;
+      cursor: pointer;
+      transition: background .3s, transform .2s;
+      margin-top: 4px;
     }
-    .apply-form button[type="submit"]:hover { background:var(--highlight); transform:translateY(-2px); }
+
+    .apply-form button[type="submit"]:hover {
+      background: var(--highlight);
+      transform: translateY(-2px);
+    }
   </style>
 
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="ISCU" />
-<link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="ISCU" />
+  <link rel="manifest" href="/site.webmanifest" />
 </head>
+
 <body>
   <div class="cursor"></div>
   <div class="cursor-follower"></div>
@@ -165,7 +468,8 @@
   <section class="karriere-hero reveal">
     <span class="hero-label">Werde Teil von iscu.ch</span>
     <h1>Wir wachsen –<br>wächst du <em>mit uns?</em></h1>
-    <p>Wir sind ein junges, ambitioniertes Team aus der Schweiz. Wenn du Lust hast, Social Recruiting und Webdesign neu zu denken, bist du bei uns richtig.</p>
+    <p>Wir sind ein junges, ambitioniertes Team aus der Schweiz. Wenn du Lust hast, Social Recruiting und Webdesign neu
+      zu denken, bist du bei uns richtig.</p>
     <a href="#offene-stellen" class="cta">Offene Stellen ansehen</a>
   </section>
 
@@ -218,7 +522,8 @@
     <div class="position-card reveal">
       <div class="position-info">
         <h3>Vertriebsmitarbeiter (m/w/d) – Provisionsbasis</h3>
-        <p>Du akquirierst selbstständig Neukunden im Bereich IT-Outsourcing & Support und überzeugst Schweizer KMU von modernen IT-Lösungen – komplett vor ort und mit freier Zeiteinteilung.</p>
+        <p>Du akquirierst selbstständig Neukunden im Bereich IT-Outsourcing & Support und überzeugst Schweizer KMU von
+          modernen IT-Lösungen – komplett vor ort und mit freier Zeiteinteilung.</p>
         <div class="position-tags">
           <span class="position-tag">Vor ort</span>
           <span class="position-tag">Freelance</span>
@@ -226,174 +531,127 @@
           <span class="position-tag">Schweiz</span>
         </div>
       </div>
-      <a href="#apply-vertrieb" class="apply-btn" onclick="openApply('Vertriebsmitarbeiter (m/w/d) – Provisionsbasis')">Jetzt bewerben</a>
+      <a href="#apply-vertrieb" class="apply-btn"
+        onclick="openApply('Vertriebsmitarbeiter (m/w/d) – Provisionsbasis')">Jetzt bewerben</a>
     </div>
   </section>
 
-<!-- =========================================================
+  <!-- =========================================================
      BEWERBUNGSFORMULAR (Intern)
      IDs und Klassen beibehalten – werden vom JS verwendet.
 ========================================================= -->
-<section id="apply-vertrieb" class="apply-section reveal" style="display:none;">
-  <div class="apply-inner">
+  <section id="apply-vertrieb" class="apply-section reveal" style="display:none;">
+    <div class="apply-inner">
 
-    <button class="apply-close" onclick="closeApply()">✕ Schliessen</button>
+      <button class="apply-close" onclick="closeApply()">✕ Schliessen</button>
+
+      <div class="section-label light">Bewerbung</div>
+
+      <h2>
+        Bewerbung für:<br>
+        <em id="applyTitle">Vertriebsmitarbeiter</em>
+      </h2>
+
+      <p class="apply-intro">
+        Füll das Formular aus und lade deine Unterlagen direkt hoch – wir melden uns innerhalb von 48 Stunden.
+      </p>
+
+      <form class="apply-form" id="applyForm" action="https://formspree.io/f/mbdqveaz" method="POST"
+        enctype="multipart/form-data">
+
+        <div class="form-row">
+          <input type="text" name="vorname" placeholder="Vorname" required>
+          <input type="text" name="nachname" placeholder="Nachname" required>
+        </div>
+
+        <div class="form-row">
+          <input type="email" name="email" placeholder="E-Mail" required>
+          <input type="tel" name="phone" placeholder="Telefon">
+        </div>
+
+        <!-- Wird vom JS verwendet -->
+        <input type="hidden" name="position" id="applyPosition" value="Vertriebsmitarbeiter (m/w/d)">
+
+        <textarea name="motivation" placeholder="Kurzes Motivationsschreiben – warum passt du zu uns?" rows="4"
+          required></textarea>
+
+        <div class="upload-group">
+
+          <label class="upload-label">
+            <span class="upload-icon">📄</span>
+            <span class="upload-text">
+              Lebenslauf hochladen
+              <em>(PDF, max. 5 MB)</em>
+            </span>
+            <input type="file" name="documents" accept=".pdf,application/pdf" required>
+          </label>
+
+          <label class="upload-label">
+            <span class="upload-icon">📎</span>
+            <span class="upload-text">
+              Zeugnisse / Referenzen
+              <em>(optional, PDF)</em>
+            </span>
+            <input type="file" name="documents" accept=".pdf,application/pdf" multiple>
+          </label>
+
+          <label class="upload-label">
+            <span class="upload-icon">＋</span>
+            <span class="upload-text">
+              Weitere Dokumente hochladen
+              <em>(optional, PDF, max. 5 MB pro Datei)</em>
+            </span>
+            <input type="file" name="documents" accept=".pdf,application/pdf" multiple>
+          </label>
+
+        </div>
+
+        <button type="submit" id="applySubmit">
+          Bewerbung senden
+        </button>
+
+        <!-- ID vom JS beibehalten -->
+        <p class="form-success" id="applySuccess" style="display:none">
+          ✓ Bewerbung eingegangen – wir melden uns bald!
+        </p>
+
+      </form>
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+     SPONTANBEWERBUNG
+     IDs/Klassen beibehalten – werden vom JS verwendet.
+========================================================= -->
+  <section class="spontan-section" id="bewerbung">
 
     <div class="section-label light">Bewerbung</div>
 
     <h2>
-      Bewerbung für:<br>
-      <em id="applyTitle">Vertriebsmitarbeiter</em>
+      Nichts Passendes dabei?<br>
+      <em>Meld dich trotzdem.</em>
     </h2>
 
-    <p class="apply-intro">
-      Füll das Formular aus und lade deine Unterlagen direkt hoch – wir melden uns innerhalb von 48 Stunden.
+    <p>
+      Wir freuen uns über Spontanbewerbungen – wenn die Chemie stimmt, finden wir einen Weg.
     </p>
 
-    <form
-      class="apply-form"
-      id="applyForm"
-      action="https://formspree.io/f/mbdqveaz"
-      method="POST"
-      enctype="multipart/form-data"
-    >
+    <form class="spontan-form" id="karriereForm" action="https://formspree.io/f/mbdqveaz" method="POST"
+      enctype="multipart/form-data">
 
       <div class="form-row">
-        <input type="text" name="vorname" placeholder="Vorname" required>
-        <input type="text" name="nachname" placeholder="Nachname" required>
-      </div>
+        <input type="text" name="name" placeholder="Dein Name" required>
 
-      <div class="form-row">
         <input type="email" name="email" placeholder="E-Mail" required>
-        <input type="tel" name="phone" placeholder="Telefon">
       </div>
 
-      <!-- Wird vom JS verwendet -->
-      <input
-        type="hidden"
-        name="position"
-        id="applyPosition"
-        value="Vertriebsmitarbeiter (m/w/d)"
-      >
+      <select name="position">
+        <option value="" disabled selected>
+          Interessensbereich wählen
+        </option>
 
-      <textarea
-        name="motivation"
-        placeholder="Kurzes Motivationsschreiben – warum passt du zu uns?"
-        rows="4"
-        required
-      ></textarea>
-
-      <div class="upload-group">
-
-        <label class="upload-label">
-          <span class="upload-icon">📄</span>
-          <span class="upload-text">
-            Lebenslauf hochladen
-            <em>(PDF, max. 5 MB)</em>
-          </span>
-          <input
-            type="file"
-            name="documents"
-            accept=".pdf,application/pdf"
-            required
-          >
-        </label>
-
-        <label class="upload-label">
-          <span class="upload-icon">📎</span>
-          <span class="upload-text">
-            Zeugnisse / Referenzen
-            <em>(optional, PDF)</em>
-          </span>
-          <input
-            type="file"
-            name="documents"
-            accept=".pdf,application/pdf"
-            multiple
-          >
-        </label>
-
-        <label class="upload-label">
-          <span class="upload-icon">＋</span>
-          <span class="upload-text">
-            Weitere Dokumente hochladen
-            <em>(optional, PDF, max. 5 MB pro Datei)</em>
-          </span>
-          <input
-            type="file"
-            name="documents"
-            accept=".pdf,application/pdf"
-            multiple
-          >
-        </label>
-
-      </div>
-
-      <button type="submit" id="applySubmit">
-        Bewerbung senden
-      </button>
-
-      <!-- ID vom JS beibehalten -->
-      <p
-        class="form-success"
-        id="applySuccess"
-        style="display:none"
-      >
-        ✓ Bewerbung eingegangen – wir melden uns bald!
-      </p>
-
-    </form>
-  </div>
-</section>
-
-
-<!-- =========================================================
-     SPONTANBEWERBUNG
-     IDs/Klassen beibehalten – werden vom JS verwendet.
-========================================================= -->
-<section class="spontan-section" id="bewerbung">
-
-  <div class="section-label light">Bewerbung</div>
-
-  <h2>
-    Nichts Passendes dabei?<br>
-    <em>Meld dich trotzdem.</em>
-  </h2>
-
-  <p>
-    Wir freuen uns über Spontanbewerbungen – wenn die Chemie stimmt, finden wir einen Weg.
-  </p>
-
-  <form
-    class="spontan-form"
-    id="karriereForm"
-    action="https://formspree.io/f/mbdqveaz"
-    method="POST"
-    enctype="multipart/form-data"
-  >
-
-    <div class="form-row">
-      <input
-        type="text"
-        name="name"
-        placeholder="Dein Name"
-        required
-      >
-
-      <input
-        type="email"
-        name="email"
-        placeholder="E-Mail"
-        required
-      >
-    </div>
-
-    <select name="position">
-      <option value="" disabled selected>
-        Interessensbereich wählen
-      </option>
-
-      <!--
+        <!--
       ALTE BEREICHE – BEI BEDARF REAKTIVIEREN
 
       <option>Social Media Recruiting</option>
@@ -401,69 +659,53 @@
       <option>Webdesign / Development</option>
       -->
 
-      <option>Sales / Business Development</option>
-      <option>B2B-Kundenakquise</option>
-      <option>B2B-Prospecting / Lead Generation</option>
-      <option>Spontanbewerbung</option>
-    </select>
+        <option>Sales / Business Development</option>
+        <option>B2B-Kundenakquise</option>
+        <option>B2B-Prospecting / Lead Generation</option>
+        <option>Spontanbewerbung</option>
+      </select>
 
-    <textarea
-      name="message"
-      placeholder="Erzähl uns kurz von dir – wer du bist, was dich antreibt und warum iscu.ch."
-      required
-    ></textarea>
+      <textarea name="message" placeholder="Erzähl uns kurz von dir – wer du bist, was dich antreibt und warum iscu.ch."
+        required></textarea>
 
-    <div class="upload-group">
+      <div class="upload-group">
 
-      <label class="upload-label">
-        <span class="upload-icon">＋</span>
-        <span class="upload-text">
-          Zusätzliche Dokumente
-          <em>(optional, PDF, max. 5 MB pro Datei)</em>
-        </span>
+        <label class="upload-label">
+          <span class="upload-icon">＋</span>
+          <span class="upload-text">
+            Zusätzliche Dokumente
+            <em>(optional, PDF, max. 5 MB pro Datei)</em>
+          </span>
 
-        <input
-          type="file"
-          name="documents"
-          accept=".pdf,application/pdf"
-          multiple
-        >
-      </label>
+          <input type="file" name="documents" accept=".pdf,application/pdf" multiple>
+        </label>
 
-    </div>
+      </div>
 
-    <!-- ID vom JS beibehalten -->
-    <button type="submit" id="karriereSubmit">
-      Bewerbung senden
-    </button>
+      <!-- ID vom JS beibehalten -->
+      <button type="submit" id="karriereSubmit">
+        Bewerbung senden
+      </button>
 
-    <!-- ID vom JS beibehalten -->
-    <p
-      class="form-success"
-      id="karriereSuccess"
-      style="display:none"
-    >
-      ✓ Bewerbung erhalten – wir melden uns!
-    </p>
+      <!-- ID vom JS beibehalten -->
+      <p class="form-success" id="karriereSuccess" style="display:none">
+        ✓ Bewerbung erhalten – wir melden uns!
+      </p>
 
-  </form>
-</section>
+    </form>
+  </section>
 
 
-<footer>
-  <div class="footer-inner">
+  <footer>
+    <div class="footer-inner">
 
-    <img
-      src="assets/img/logo-v3-transparent.png"
-      alt="iscu.ch"
-      class="brand-logo footer-logo"
-    >
+      <img src="assets/img/logo-v3-transparent.png" alt="iscu.ch" class="brand-logo footer-logo">
 
-    <p class="footer-tagline">
-      B2B Client Acquisition · Made in Switzerland
-    </p>
+      <p class="footer-tagline">
+        B2B Client Acquisition · Made in Switzerland
+      </p>
 
-    <!--
+      <!--
     ALTER FOOTER – BEI BEDARF REAKTIVIEREN
 
     <p class="footer-tagline">
@@ -471,30 +713,27 @@
     </p>
     -->
 
-    <div class="footer-links">
-      <a href="index.html">Startseite</a>
-      <a href="index.html#angebot">Angebot</a>
-      <a href="index.html#contact">Kontakt</a>
+      <div class="footer-links">
+        <a href="index.html">Startseite</a>
+        <a href="index.html#angebot">Angebot</a>
+        <a href="index.html#contact">Kontakt</a>
 
-      <!-- Karriere bleibt aktiv, da die JS-Verknüpfungen
+        <!-- Karriere bleibt aktiv, da die JS-Verknüpfungen
            und die Karriereseite weiterhin bestehen. -->
-      <a href="karriere.html">Karriere</a>
-    </div>
+        <a href="karriere.html">Karriere</a>
+      </div>
 
-    <div
-      class="footer-links"
-      style="margin-top:12px; opacity:.7; font-size:.8rem;"
-    >
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-      <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
-    </div>
+      <div class="footer-links" style="margin-top:12px; opacity:.7; font-size:.8rem;">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+      </div>
 
-    <p class="footer-copy">
-      © 2025 iscu.ch – B2B Client Acquisition
-    </p>
+      <p class="footer-copy">
+        © 2025 iscu.ch – B2B Client Acquisition
+      </p>
 
-    <!--
+      <!--
     ALTER COPYRIGHT – BEI BEDARF REAKTIVIEREN
 
     <p class="footer-copy">
@@ -502,154 +741,167 @@
     </p>
     -->
 
-  </div>
-</footer>
+    </div>
+  </footer>
 
-<script>
-const cursor = document.querySelector('.cursor');
-const follower = document.querySelector('.cursor-follower');
-let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
-document.addEventListener('mousemove', e => {
-  mouseX = e.clientX; mouseY = e.clientY;
-  cursor.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
-});
-function animateFollower() {
-  followerX += (mouseX - followerX) * 0.12;
-  followerY += (mouseY - followerY) * 0.12;
-  follower.style.transform = `translate(${followerX}px, ${followerY}px)`;
-  requestAnimationFrame(animateFollower);
-}
-animateFollower();
-
-const obs = new IntersectionObserver(e => e.forEach(en => { if(en.isIntersecting){en.target.classList.add('visible');obs.unobserve(en.target);}}),{threshold:.1});
-document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
-document.getElementById('hamburger').addEventListener('click', () => {
-  document.getElementById('mobileMenu').classList.toggle('open');
-  document.getElementById('hamburger').classList.toggle('open');
-});
-
-// ── Apply form toggle ──────────────────────
-function openApply(position) {
-  const sec = document.getElementById('apply-vertrieb');
-  document.getElementById('applyTitle').textContent = position;
-  document.getElementById('applyPosition').value = position;
-  sec.style.display = 'block';
-  setTimeout(() => sec.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
-}
-function closeApply() {
-  const sec = document.getElementById('apply-vertrieb');
-  sec.style.display = 'none';
-  sec.scrollIntoView({ behavior: 'smooth', block: 'end' });
-}
-
-// File input visual feedback
-document.querySelectorAll('.upload-label input[type="file"]').forEach(input => {
-  const label = input.closest('.upload-label');
-  const em = label.querySelector('.upload-text em');
-  if (em) em.dataset.defaultText = em.textContent;
-  input.addEventListener('change', () => {
-    label.classList.toggle('has-file', input.files.length > 0);
-    const span = label.querySelector('.upload-text');
-    if (input.files.length > 0) {
-      const names = Array.from(input.files).map(f => f.name).join(', ');
-      span.querySelector('em') && (span.querySelector('em').textContent = names);
-    } else if (em && em.dataset.defaultText) {
-      em.textContent = em.dataset.defaultText;
+  <script>
+    const cursor = document.querySelector('.cursor');
+    const follower = document.querySelector('.cursor-follower');
+    let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX; mouseY = e.clientY;
+      cursor.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+    });
+    function animateFollower() {
+      followerX += (mouseX - followerX) * 0.12;
+      followerY += (mouseY - followerY) * 0.12;
+      follower.style.transform = `translate(${followerX}px, ${followerY}px)`;
+      requestAnimationFrame(animateFollower);
     }
-  });
-});
+    animateFollower();
 
-function resetUploadLabels(form) {
-  form.querySelectorAll('.upload-label').forEach(label => {
-    label.classList.remove('has-file');
-    const em = label.querySelector('.upload-text em');
-    if (em && em.dataset.defaultText) em.textContent = em.dataset.defaultText;
-  });
-}
+    const obs = new IntersectionObserver(e => e.forEach(en => { if (en.isIntersecting) { en.target.classList.add('visible'); obs.unobserve(en.target); } }), { threshold: .1 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-function getSelectedUploadNames(form) {
-  const selectedFiles = [];
-  form.querySelectorAll('input[type="file"]').forEach(input => {
-    Array.from(input.files || []).forEach(file => selectedFiles.push(file.name));
-  });
-  return selectedFiles;
-}
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('open');
+      document.getElementById('hamburger').classList.toggle('open');
+    });
 
-function validateUploads(form) {
-  const maxBytes = 5 * 1024 * 1024;
-  const files = Array.from(form.querySelectorAll('input[type="file"]'))
-    .flatMap(input => Array.from(input.files || []));
+    // ── Apply form toggle ──────────────────────
+    function openApply(position) {
+      const sec = document.getElementById('apply-vertrieb');
+      document.getElementById('applyTitle').textContent = position;
+      document.getElementById('applyPosition').value = position;
+      sec.style.display = 'block';
+      setTimeout(() => sec.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+    }
+    function closeApply() {
+      const sec = document.getElementById('apply-vertrieb');
+      sec.style.display = 'none';
+      sec.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
 
-  for (const file of files) {
-    const isPdf = file.type === 'application/pdf' || file.name.toLowerCase().endsWith('.pdf');
-    if (!isPdf) return 'Nur PDF-Dateien sind erlaubt';
-    if (file.size > maxBytes) return `PDF zu gross: ${file.name} max. 5 MB`;
-  }
+    // File input visual feedback
+    document.querySelectorAll('.upload-label input[type="file"]').forEach(input => {
+      const label = input.closest('.upload-label');
+      const em = label.querySelector('.upload-text em');
+      if (em) em.dataset.defaultText = em.textContent;
+      input.addEventListener('change', () => {
+        label.classList.toggle('has-file', input.files.length > 0);
+        const span = label.querySelector('.upload-text');
+        if (input.files.length > 0) {
+          const names = Array.from(input.files).map(f => f.name).join(', ');
+          span.querySelector('em') && (span.querySelector('em').textContent = names);
+        } else if (em && em.dataset.defaultText) {
+          em.textContent = em.dataset.defaultText;
+        }
+      });
+    });
 
-  return '';
-}
+    function resetUploadLabels(form) {
+      form.querySelectorAll('.upload-label').forEach(label => {
+        label.classList.remove('has-file');
+        const em = label.querySelector('.upload-text em');
+        if (em && em.dataset.defaultText) em.textContent = em.dataset.defaultText;
+      });
+    }
 
-function setHiddenField(form, name, value) {
-  let input = form.querySelector(`input[type="hidden"][name="${name}"]`);
-  if (!input) {
-    input = document.createElement('input');
-    input.type = 'hidden';
-    input.name = name;
-    form.appendChild(input);
-  }
-  input.value = value;
-}
+    function getSelectedUploadNames(form) {
+      const selectedFiles = [];
+      form.querySelectorAll('input[type="file"]').forEach(input => {
+        Array.from(input.files || []).forEach(file => selectedFiles.push(file.name));
+      });
+      return selectedFiles;
+    }
 
-// Apply form submit
-document.getElementById('applyForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const btn = document.getElementById('applySubmit');
-  btn.textContent = '…'; btn.disabled = true;
-  const uploadError = validateUploads(e.target);
-  if (uploadError) {
-    btn.textContent = uploadError;
-    btn.disabled = false;
-    return;
-  }
+    function validateUploads(form) {
+      const maxBytes = 5 * 1024 * 1024;
+      const files = Array.from(form.querySelectorAll('input[type="file"]'))
+        .flatMap(input => Array.from(input.files || []));
 
-  const form = e.target;
-  const fullName = `${form.elements.vorname.value || ''} ${form.elements.nachname.value || ''}`.trim();
-  const selectedFiles = getSelectedUploadNames(form);
-  const uploadNote = selectedFiles.length ? `\n\nAusgewählte Dokumente: ${selectedFiles.join(', ')}` : '';
-  setHiddenField(form, 'name', fullName);
-  setHiddenField(form, 'message', `${form.elements.motivation.value || ''}${uploadNote}`);
-  setHiddenField(form, 'type', 'Bewerbung');
-  setHiddenField(form, '_subject', `Neue Bewerbung: ${form.elements.position.value || 'Karriere'}`);
-  if (selectedFiles.length) setHiddenField(form, 'documents_selected', selectedFiles.join(', '));
-  form.submit();
-});
+      for (const file of files) {
+        const isPdf = file.type === 'application/pdf' || file.name.toLowerCase().endsWith('.pdf');
+        if (!isPdf) return 'Nur PDF-Dateien sind erlaubt';
+        if (file.size > maxBytes) return `PDF zu gross: ${file.name} max. 5 MB`;
+      }
 
-// ── Karriere spontan form ───────────────
-document.getElementById('karriereForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const btn = document.getElementById('karriereSubmit');
-  btn.textContent = '…'; btn.disabled = true;
-  const uploadError = validateUploads(e.target);
-  if (uploadError) {
-    btn.textContent = uploadError;
-    btn.disabled = false;
-    return;
-  }
+      return '';
+    }
 
-  const form = e.target;
-  const selectedFiles = getSelectedUploadNames(form);
-  setHiddenField(form, 'type', 'Spontanbewerbung');
-  setHiddenField(form, '_subject', `Neue Spontanbewerbung: ${form.elements.position.value || 'Karriere'}`);
-  if (selectedFiles.length) setHiddenField(form, 'documents_selected', selectedFiles.join(', '));
-  form.submit();
-});
-</script>
+    function setHiddenField(form, name, value) {
+      let input = form.querySelector(`input[type="hidden"][name="${name}"]`);
+      if (!input) {
+        input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = name;
+        form.appendChild(input);
+      }
+      input.value = value;
+    }
 
-<!-- WhatsApp contact button -->
-<a class="whatsapp-button" href="https://wa.me/message/PDIHFZINMVZZD1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" aria-labelledby="whatsapp-label" title="WhatsApp">
-  <span id="whatsapp-label" data-de="Schreiben Sie uns auf WhatsApp" data-fr="Écrivez-nous sur WhatsApp" data-en="Message us on WhatsApp">Schreiben Sie uns auf WhatsApp</span>
-  <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079.002,9.845,1.979,13.43,5.566,3.584,3.588,5.558,8.356,5.556,13.428-.004,10.465-8.522,18.98-18.986,18.98h-.008c-3.177-.001-6.3-.798-9.073-2.311L4.868,43.303z" fill="#fff"/><path d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626-8.704,0-15.783,7.076-15.787,15.774-.001,2.981.833,5.883,2.413,8.396l.376.597-1.595,5.821,5.973-1.566.577.342c2.422,1.438,5.2,2.198,8.032,2.199h.006c8.698,0,15.777-7.077,15.78-15.776.001-4.215-1.638-8.179-4.618-11.161z" fill="#40c351"/></svg>
-</a>
+    // Apply form submit
+    document.getElementById('applyForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = document.getElementById('applySubmit');
+      btn.textContent = '…'; btn.disabled = true;
+      const uploadError = validateUploads(e.target);
+      if (uploadError) {
+        btn.textContent = uploadError;
+        btn.disabled = false;
+        return;
+      }
+
+      const form = e.target;
+      const fullName = `${form.elements.vorname.value || ''} ${form.elements.nachname.value || ''}`.trim();
+      const selectedFiles = getSelectedUploadNames(form);
+      const uploadNote = selectedFiles.length ? `\n\nAusgewählte Dokumente: ${selectedFiles.join(', ')}` : '';
+      setHiddenField(form, 'name', fullName);
+      setHiddenField(form, 'message', `${form.elements.motivation.value || ''}${uploadNote}`);
+      setHiddenField(form, 'type', 'Bewerbung');
+      setHiddenField(form, '_subject', `Neue Bewerbung: ${form.elements.position.value || 'Karriere'}`);
+      if (selectedFiles.length) setHiddenField(form, 'documents_selected', selectedFiles.join(', '));
+      form.submit();
+    });
+
+    // ── Karriere spontan form ───────────────
+    document.getElementById('karriereForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = document.getElementById('karriereSubmit');
+      btn.textContent = '…'; btn.disabled = true;
+      const uploadError = validateUploads(e.target);
+      if (uploadError) {
+        btn.textContent = uploadError;
+        btn.disabled = false;
+        return;
+      }
+
+      const form = e.target;
+      const selectedFiles = getSelectedUploadNames(form);
+      setHiddenField(form, 'type', 'Spontanbewerbung');
+      setHiddenField(form, '_subject', `Neue Spontanbewerbung: ${form.elements.position.value || 'Karriere'}`);
+      if (selectedFiles.length) setHiddenField(form, 'documents_selected', selectedFiles.join(', '));
+      form.submit();
+    });
+  </script>
+
+  <!-- WhatsApp contact button -->
+  <a class="whatsapp-button" href="https://wa.me/message/PDIHFZINMVZZD1" target="_blank" rel="noopener noreferrer"
+    aria-label="WhatsApp" aria-labelledby="whatsapp-label" title="WhatsApp">
+    <span id="whatsapp-label" data-de="Schreiben Sie uns auf WhatsApp" data-fr="Écrivez-nous sur WhatsApp"
+      data-en="Message us on WhatsApp">Schreiben Sie uns auf WhatsApp</span>
+    <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079.002,9.845,1.979,13.43,5.566,3.584,3.588,5.558,8.356,5.556,13.428-.004,10.465-8.522,18.98-18.986,18.98h-.008c-3.177-.001-6.3-.798-9.073-2.311L4.868,43.303z"
+        fill="#fff" />
+      <path
+        d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626-8.704,0-15.783,7.076-15.787,15.774-.001,2.981.833,5.883,2.413,8.396l.376.597-1.595,5.821,5.973-1.566.577.342c2.422,1.438,5.2,2.198,8.032,2.199h.006c8.698,0,15.777-7.077,15.78-15.776.001-4.215-1.638-8.179-4.618-11.161z"
+        fill="#40c351" />
+                <path clip-rule="evenodd"
+            d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+            fill-rule="evenodd" fill="#fff"></path>
+    </svg>
+  </a>
 </body>
+
 </html>
