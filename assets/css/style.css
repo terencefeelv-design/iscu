@@ -169,12 +169,16 @@ body {
 .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+#hamburger {
+  position: fixed; bottom: 20px; right: 20px; z-index: 1001;
+}
 
 .mobile-menu {
   display: none; flex-direction: column;
   background: var(--bg); border-bottom: 1px solid var(--accent);
   max-height: 0; overflow: hidden;
   transition: max-height .4s ease, padding .3s ease;
+    position: fixed; bottom: 20px; right: 20px; z-index: 1001;
 }
 .mobile-menu.open { max-height: 500px; padding: 20px 0; }
 .mobile-menu-bottom { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px 4px; border-top: 1px solid var(--accent); margin-top: 8px; }
