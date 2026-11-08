@@ -341,6 +341,25 @@
 
     </div>
 
+    <div class="about-founder reveal">
+      <div class="about-founder-photo">
+        <img src="assets/img/abdu-portrait.jpg" width="900" height="1200" loading="lazy"
+          alt="Abdullahi Hassan, Gründer von iscu.ch, in Solothurn">
+      </div>
+      <div class="about-founder-text">
+        <p class="about-founder-quote"
+          data-de="Ich habe iscu.ch gegründet, weil zu viele gute Schweizer Unternehmen darauf warten, entdeckt zu werden. Wir nehmen ihnen den ersten Schritt ab – und bringen sie direkt ins Gespräch mit den richtigen Entscheidern."
+          data-fr="J’ai fondé iscu.ch parce que trop de bonnes entreprises suisses attendent d’être découvertes. Nous prenons en charge le premier pas – et les mettons directement en contact avec les bons décideurs."
+          data-en="I founded iscu.ch because too many good Swiss companies are waiting to be discovered. We take care of the first step – and put them straight into conversation with the right decision-makers.">
+          Ich habe iscu.ch gegründet, weil zu viele gute Schweizer Unternehmen darauf warten, entdeckt zu werden.
+          Wir nehmen ihnen den ersten Schritt ab – und bringen sie direkt ins Gespräch mit den richtigen Entscheidern.
+        </p>
+        <span class="about-founder-name">Abdullahi Hassan</span>
+        <span class="about-founder-role" data-de="Gründer &amp; CEO" data-fr="Fondateur &amp; CEO"
+          data-en="Founder &amp; CEO">Gründer &amp; CEO</span>
+      </div>
+    </div>
+
     <div class="mission-vision">
 
       <div class="mv-card reveal">
@@ -829,7 +848,8 @@
     </p>
     <div class="team-grid reveal">
       <div class="team-card">
-        <div class="team-photo placeholder-photo">A.H</div>
+        <div class="team-photo"><img src="assets/img/abdu-headshot.jpg" width="96" height="96" loading="lazy"
+            alt="Abdullahi Hassan, Gründer und CEO von iscu.ch"></div>
         <h3>Abdullahi Hassan</h3>
         <p class="team-role" data-de="Gründer &amp; CEO" data-fr="Fondateur &amp; CEO" data-en="Founder &amp; CEO">
           Gründer &amp; CEO</p>
@@ -1261,7 +1281,7 @@
 </section>
 
   <!-- CONTACT / BOOKING -->
-  <section id="contact" class="contact reveal tabbed-section">
+  <section id="contact" class="contact contact--photo reveal tabbed-section">
     <div class="section-label light" data-de="Gratis Erstgespräch" data-fr="Entretien gratuit"
       data-en="Free Discovery Call">Gratis Erstgespräch</div>
     <h2 data-de="Bereit, mehr Bewerbungen&lt;br&gt;&lt;em&gt;zu erhalten?&lt;/em&gt;"
@@ -1711,23 +1731,3 @@ document.getElementById('contactForm').addEventListener('submit', async e => {
       if (mLabel) mLabel.textContent = dark ? 'Hell' : 'Dunkel';
       localStorage.setItem('iscu-theme', dark ? 'dark' : 'light');
     }
-    if (themeBtn) themeBtn.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') !== 'dark'));
-    if (mThemeBtn) mThemeBtn.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') !== 'dark'));
-
-    setTheme(localStorage.getItem('iscu-theme') === 'dark');
-
-    // Exemple de fonction pour changer la langue
-    // function changeLanguage(lang) {
-    //c onst elements = document.querySelectorAll('[data-' + lang + ']');
-  
-    // elements.forEach(el => {
-    // Utiliser innerHTML pour interpréter
-    
-
-
-  </script>
-
-
-</body>
-
-</html>
