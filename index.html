@@ -1731,3 +1731,23 @@ document.getElementById('contactForm').addEventListener('submit', async e => {
       if (mLabel) mLabel.textContent = dark ? 'Hell' : 'Dunkel';
       localStorage.setItem('iscu-theme', dark ? 'dark' : 'light');
     }
+    if (themeBtn) themeBtn.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') !== 'dark'));
+    if (mThemeBtn) mThemeBtn.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') !== 'dark'));
+
+    setTheme(localStorage.getItem('iscu-theme') === 'dark');
+
+    // Exemple de fonction pour changer la langue
+    // function changeLanguage(lang) {
+    //c onst elements = document.querySelectorAll('[data-' + lang + ']');
+  
+    // elements.forEach(el => {
+    // Utiliser innerHTML pour interpréter
+    
+
+
+  </script>
+
+
+</body>
+
+</html>
