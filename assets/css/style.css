@@ -1159,10 +1159,10 @@ html[data-theme="dark"] .logo-dark {
 .calendly-consent-link { font-size: .78rem; color: rgba(245,244,240,.45); text-decoration: underline; }
 .calendly-consent-link:hover { color: var(--highlight); }
 .calendly-consent.loaded {
-  display: block; min-height: 760px; padding: 0;
+  display: block; height: 760px; padding: 0;
   border: none; background: none; text-align: left;
 }
 @media (max-width: 600px) {
   .calendly-consent { min-height: 340px; padding: 32px 20px; }
-  .calendly-consent.loaded { min-height: 580px; }
+  .calendly-consent.loaded { height: 580px; }
 }
