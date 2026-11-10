@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap');
-
+@font-face{font-family:'Fraunces';src:url('../fonts/web/fraunces-300.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:'Fraunces';src:url('../fonts/web/fraunces-300-italic.woff2') format('woff2');font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:'Fraunces';src:url('../fonts/web/fraunces-600.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('../fonts/web/dmsans-300.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('../fonts/web/dmsans-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('../fonts/web/dmsans-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
 :root {
   --bg: #F2F8FC;
   --text: #0D2535;
@@ -1134,4 +1138,31 @@ html[data-theme="dark"] .logo-dark {
   }
   .about-founder-photo { max-width: 190px; margin: 0 auto; }
   .contact--photo::before { height: min(50%, 380px); opacity: .13; }
+}
+
+
+/* ── CALENDLY : CHARGEMENT AU CLIC ─────────────── */
+.calendly-consent {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 420px; width: 100%;
+  padding: 40px 28px; text-align: center;
+  border: 1px dashed rgba(255,255,255,.22);
+  border-radius: 20px;
+  background: rgba(255,255,255,.04);
+}
+.calendly-consent-inner { display: flex; flex-direction: column; align-items: center; gap: 14px; max-width: 340px; }
+.calendly-consent-icon { width: 34px; height: 34px; color: var(--highlight); }
+.calendly-consent h3 { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 600; color: var(--bg); }
+.calendly-consent p { color: rgba(245,244,240,.55); font-size: .88rem; font-weight: 300; line-height: 1.6; }
+.calendly-consent .booking-cta { cursor: pointer; font-family: 'DM Sans', sans-serif; }
+.calendly-consent .booking-cta:disabled { opacity: .5; cursor: default; }
+.calendly-consent-link { font-size: .78rem; color: rgba(245,244,240,.45); text-decoration: underline; }
+.calendly-consent-link:hover { color: var(--highlight); }
+.calendly-consent.loaded {
+  display: block; min-height: 760px; padding: 0;
+  border: none; background: none; text-align: left;
+}
+@media (max-width: 600px) {
+  .calendly-consent { min-height: 340px; padding: 32px 20px; }
+  .calendly-consent.loaded { min-height: 580px; }
 }

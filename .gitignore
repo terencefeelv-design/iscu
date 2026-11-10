@@ -1,0 +1,13 @@
+.DS_Store
+
+# sources et documents internes — jamais publier (voir Labo/iscu-private/)
+clientconditions.txt
+iscu.txt
+*.docx
+assets/img/Corporatepic-abdu.jpeg
+assets/img/potential-websitebg-abdu.jpeg
+config/
+api/
+admin/
+*.sql
+test_db.php
