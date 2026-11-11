@@ -1166,3 +1166,23 @@ html[data-theme="dark"] .logo-dark {
   .calendly-consent { min-height: 340px; padding: 32px 20px; }
   .calendly-consent.loaded { height: 580px; }
 }
+
+
+/* ── HERO : FOND PHOTO ────────────────────────── */
+.hero { isolation: isolate; }
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('../img/iscu-team-bg.jpg') center 42% / cover no-repeat;
+  opacity: .12;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,.88) 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,.88) 50%, transparent 100%);
+  pointer-events: none;
+}
+[data-theme="dark"] .hero::before { opacity: .16; }
+@media (max-width: 600px) {
+  .hero::before { opacity: .10; background-position: 72% 50%; }
+  [data-theme="dark"] .hero::before { opacity: .18; }
+}
