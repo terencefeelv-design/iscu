@@ -486,7 +486,7 @@ body {
   text-align: left;
 }
 .booking-card { display: flex; flex-direction: column; gap: 16px; padding: 0 !important; background: none !important; border: none !important; }
-.booking-card .calendly-inline-widget { width: 100%; }
+.booking-card .booking-consent.loaded iframe { width: 100%; }
 .booking-icon { font-size: 2.4rem; }
 .booking-card h3, .contact-form-card h3 {
   font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 600; color: var(--bg);
@@ -626,7 +626,6 @@ footer { background: var(--footer-bg); border-top: 1px solid rgba(255,255,255,.0
   .or-divider { padding: 0; }
   .or-divider span { writing-mode: horizontal-tb; border-left: none; border-top: 1px solid rgba(255,255,255,.1); padding-left: 0; padding-top: 8px; }
   .contact-form-card { padding: 28px 20px; }
-  .booking-card .calendly-inline-widget { height: 580px !important; }
   .form-row { grid-template-columns: 1fr; }
   .contact { padding: 64px 16px; }
   .questionnaire { padding: 40px 24px; }
@@ -1141,8 +1140,8 @@ html[data-theme="dark"] .logo-dark {
 }
 
 
-/* ── CALENDLY : CHARGEMENT AU CLIC ─────────────── */
-.calendly-consent {
+/* ── CAL.COM : CHARGEMENT AU CLIC ─────────────── */
+.booking-consent {
   display: flex; align-items: center; justify-content: center;
   min-height: 420px; width: 100%;
   padding: 40px 28px; text-align: center;
@@ -1150,21 +1149,21 @@ html[data-theme="dark"] .logo-dark {
   border-radius: 20px;
   background: rgba(255,255,255,.04);
 }
-.calendly-consent-inner { display: flex; flex-direction: column; align-items: center; gap: 14px; max-width: 340px; }
-.calendly-consent-icon { width: 34px; height: 34px; color: var(--highlight); }
-.calendly-consent h3 { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 600; color: var(--bg); }
-.calendly-consent p { color: rgba(245,244,240,.55); font-size: .88rem; font-weight: 300; line-height: 1.6; }
-.calendly-consent .booking-cta { cursor: pointer; font-family: 'DM Sans', sans-serif; }
-.calendly-consent .booking-cta:disabled { opacity: .5; cursor: default; }
-.calendly-consent-link { font-size: .78rem; color: rgba(245,244,240,.45); text-decoration: underline; }
-.calendly-consent-link:hover { color: var(--highlight); }
-.calendly-consent.loaded {
-  display: block; height: 760px; padding: 0;
+.booking-consent-inner { display: flex; flex-direction: column; align-items: center; gap: 14px; max-width: 340px; }
+.booking-consent-icon { width: 34px; height: 34px; color: var(--highlight); }
+.booking-consent h3 { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 600; color: var(--bg); }
+.booking-consent p { color: rgba(245,244,240,.55); font-size: .88rem; font-weight: 300; line-height: 1.6; }
+.booking-consent .booking-cta { cursor: pointer; font-family: 'DM Sans', sans-serif; }
+.booking-consent .booking-cta:disabled { opacity: .5; cursor: default; }
+.booking-consent-link { font-size: .78rem; color: rgba(245,244,240,.45); text-decoration: underline; }
+.booking-consent-link:hover { color: var(--highlight); }
+.booking-consent.loaded {
+  display: block; height: 760px; padding: 0; overflow: auto;
   border: none; background: none; text-align: left;
 }
 @media (max-width: 600px) {
-  .calendly-consent { min-height: 340px; padding: 32px 20px; }
-  .calendly-consent.loaded { height: 580px; }
+  .booking-consent { min-height: 340px; padding: 32px 20px; }
+  .booking-consent.loaded { height: 580px; }
 }
 
 
